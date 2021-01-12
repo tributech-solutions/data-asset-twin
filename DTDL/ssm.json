@@ -1,0 +1,50 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:com:tributech:ssm;1",
+    "@type": "Interface",
+    "displayName": "SSM",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "DeviceId",
+        "schema": "string",
+        "writable": false,
+        "displayName": "Device Id",
+        "description": "Represents the unique ID of the Tributech-SSM-device."
+      },
+      {
+        "@type": "Property",
+        "name": "PublicKey",
+        "schema": "string",
+        "writable": false,
+        "displayName": "Publik key",
+        "description": "Represents the current public-key of the device which matches with the current key-pair generated inside the Optiga Trust M chip."
+      },
+      {
+        "@type": "Property",
+        "name": "SubmitValues",
+        "schema": "boolean",
+        "writable": true,
+        "displayName": "Submit telemetry values",
+        "description": "Specifies it the submission of telemetry-data is activated or not."
+      },
+      {
+        "@type": "Property",
+        "name": "SubmitProofs",
+        "schema": "boolean",
+        "writable": true,
+        "displayName": "Submit proofs of telemetry-values.",
+        "description": "Specifies it the submission of integrity- and origin-verification data is activated or not."
+      },
+      {
+        "@type": "Relationship",
+        "name": "Sources",
+        "minMultiplicity": 0,
+        "maxMultiplicity": 10,
+        "target": "dtmi:io:tributech:Source;1",
+        "displayName": "Sources",
+        "description": "Contains all sources of the given agent."
+      }
+    ]
+  }
+  

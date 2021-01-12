@@ -1,0 +1,33 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:Edge;1",
+  "@type": "Interface",
+  "displayName": "Edge",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "DeviceId",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Device Id",
+      "comment": "Represents the unique ID of the Tributech-SSM-device."
+    },
+    {
+      "@type": "Property",
+      "name": "PublicKey",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Publik key",
+      "comment": "Represents the current public-key of the device which matches with the current key-pair generated inside the Optiga Trust M chip."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Sources",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 10,
+      "target": "dtmi:io:tributech:Source;1",
+      "displayName": "Sources",
+      "description": "Contains all sources of the given agent."
+    }
+  ]
+}

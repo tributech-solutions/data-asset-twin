@@ -1,0 +1,33 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:Source;1",
+  "@type": "Interface",
+  "displayName": "Source",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Id",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Id",
+      "description": "Identifier of the source."
+    },
+    {
+      "@type": "Property",
+      "name": "Name",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Name",
+      "description": "Human-readable name of the source."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Streams",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 10,
+      "target": "dtmi:io:tributech:Stream;1",
+      "displayName": "Streams",
+      "description": "Contains all streams the given source."
+    }
+  ]
+}
