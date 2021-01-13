@@ -44,12 +44,12 @@
       "description": "Type of Value Source"
     },
     {
-      "@type": "Property",  // this should really be optional with a default topic that is specified by the implementation of each Value Source
-      "name": "Topic",
+      "@type": "Property",
+      "name": "ValueTopic",
       "schema": "string",
       "writable": false,
-      "displayName": "Topic",
-      "description": "Topic on the message broker that is used by the Value Source"
+      "displayName": "Value Topic",
+      "description": "Topic on the message broker that is used by the Value Source to deliver the values to the Agent. This setting is optional. There should be a default for each type of Value Source"
     },
     {
       "@type": "Relationship",
