@@ -21,6 +21,37 @@
       "description": "Human-readable name of the source."
     },
     {
+      "@type": "Property",
+      "name": "Type",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "generic",
+            "displayName": "Generic Value Source",
+            "enumValue": "generic-value-source"
+          },
+          {
+            "name": "azure_simulated",
+            "displayName": "Azure IoT Simulated Temperature Sensor",
+            "enumValue": "azure-simulated-temperature"
+          }
+        ]
+      },
+      "writable": false,
+      "displayName": "Type",
+      "description": "Type of Value Source"
+    },
+    {
+      "@type": "Property",
+      "name": "ValueTopic",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Value Topic",
+      "description": "Topic on the message broker that is used by the Value Source to deliver the values to the Agent. This setting is optional. There should be a default for each type of Value Source"
+    },
+    {
       "@type": "Relationship",
       "name": "Streams",
       "minMultiplicity": 0,
