@@ -14,11 +14,86 @@
       },
       {
         "@type": "Property",
+        "name": "Id",
+        "schema": "string",
+        "writable": false,
+        "displayName": "Id",
+        "description": "Identifier of the data-set."
+      },
+      {
+        "@type": "Property",
         "name": "PublicKey",
         "schema": "string",
         "writable": false,
-        "displayName": "Publik key",
+        "displayName": "Public key",
         "description": "Represents the current public-key of the device which matches with the current key-pair generated inside the Optiga Trust M chip."
+      },
+      {
+        "@type": "Property",
+        "name": "SoftwareVersion",
+        "schema": "string",
+        "writable": true,
+        "displayName": "Software Version",
+        "description": "Represents the current running software version."
+      },
+      {
+        "@type": "Property",
+        "name": "HardwareVersion",
+        "schema": "string",
+        "writable": true,
+        "displayName": "Hardware Version",
+        "description": "Represents the current running hardware version."
+      },
+      {
+        "@type": "Property",
+        "name": "KeyStorageType",
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+              {
+                  "name": "None",
+                  "displayName": "None",
+                  "enumValue": "NONE"
+              },
+              {
+                  "name": "Tpm20",
+                  "displayName": "TPM 20",
+                  "enumValue": "TPM_2_0"
+              },
+              {
+                  "name": "OptigaTrustM",
+                  "displayName": "Optiga Trust M",
+                  "enumValue": "OPTIGA_TRUST_M"
+              }
+          ]
+        },
+        "writable": false,
+        "displayName": "Key Storage Type",
+        "description": ""
+      },
+      {
+        "@type": "Property",
+        "name": "ProofKind",
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+              {
+                  "name": "SHA256_RSA2048_PSS",
+                  "displayName": "SHA256_RSA2048_PSS",
+                  "enumValue": "SHA256_RSA2048_PSS"
+              },
+              {
+                  "name": "SHA256_RSA2048_PKCS1",
+                  "displayName": "SHA256_RSA2048_PKCS1",
+                  "enumValue": "SHA256_RSA2048_PKCS1"
+              }
+          ]
+        },
+        "writable": false,
+        "displayName": "Proof Kind",
+        "description": ""
       },
       {
         "@type": "Property",
