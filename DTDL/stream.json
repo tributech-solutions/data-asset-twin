@@ -74,7 +74,7 @@
           {
             "name": "String",
             "schema": "string",
-            "description": "String-value."
+            "description": "String-value (UTF-8)."
           },
           {
             "name": "Double",
