@@ -1,0 +1,33 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:io:tributech:MLAnnotation;1",
+    "@type": "Interface",
+    "displayName": "Machine learning annotation",
+    "contents": [
+
+        {
+            "@type": "Property",
+            "name": "Type",
+            "schema": {
+              "@type": "Enum",
+              "valueSchema": "string",
+              "enumValues": [
+                {
+                  "name": "AnomalyDetection",
+                  "displayName": "Anomaly detection",
+                  "enumValue": "anomaly_detection_1"
+                },
+                {
+                  "name": "PredictiveMaintenance",
+                  "displayName": "Predictive maintenance",
+                  "enumValue": "predective_maintenance_1"
+                }
+              ]
+            },
+            "writable": false,
+            "displayName": "Type",
+            "description": "Machine-learning annotation"
+        }
+
+    ]
+}
