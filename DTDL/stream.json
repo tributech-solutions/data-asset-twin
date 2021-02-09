@@ -22,7 +22,7 @@
     },
     {
       "@type": "Property",
-      "name": "SourceConfig",
+      "name": "StreamConfig",
       "schema": {
         "@type": "Map",
         "mapKey": {"name": "key", "schema": "string"},
@@ -57,24 +57,53 @@
       "comment": "If a stream doesn't provides enought values to build an entire merkle tree with the given depth in the given period it will be splitted into smaller merkle-trees."
     },
     {
+      "@type": "Relationship",
+      "name": "MlAnnotation",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1,
+      "target": "dtmi:io:tributech:MLAnnotation;1",
+      "displayName": "Machine learning annotation",
+      "description": "Machine learning annotation."
+    },
+    {
       "@type": "Telemetry",
       "name": "CurrentValue",
       "schema": {
         "@type": "Object",
         "fields": [
           {
-            "name": "Base64String",
+            "name": "String",
             "schema": "string",
-            "description": "Base64 encoded value."
+            "description": "String-value."
           },
           {
             "name": "Double",
             "schema": "double",
-            "description": "Value encoded as double."
+            "description": "Double-encoded value."
+          },
+          {
+            "name": "Long",
+            "schema": "long",
+            "description": "Long-encoded value."
+          },
+          {
+            "name": "Boolean",
+            "schema": "boolean",
+            "description": "Boolean-encoded value."
+          },
+          {
+            "name": "DateTime",
+            "schema": "dateTime",
+            "description": "DateTime-encoded value."
+          },
+          {
+            "name": "Base64String",
+            "schema": "string",
+            "description": "Base64-encoded value."
           }
         ],
         "displayName": "Value",
-        "description": "Value represented in different data-types."
+        "description": "Strongly typed value. At least one field must be set. Multiple encodings are possible."
       },
       "displayName": "CurrentValue",
       "description": "Current value of the stream."
