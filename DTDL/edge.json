@@ -40,6 +40,15 @@
     },
     {
       "@type": "Relationship",
+      "name": "OPCUA_Sources",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 10,
+      "target": "dtmi:io:tributech:OPCUA_Source;1",
+      "displayName": "OPCUA Sources",
+      "description": "Contains all sources of the given agent."
+    },
+    {
+      "@type": "Relationship",
       "name": "MlAnnotation",
       "minMultiplicity": 0,
       "maxMultiplicity": 1,
