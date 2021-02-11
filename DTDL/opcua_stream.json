@@ -1,9 +1,9 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:OPCUA_Stream;1",
+    "@id": "dtmi:io:tributech:opcua:stream;1",
     "@type": "Interface",
     "displayName": "OPCUA Stream",
-    "extends": "dtmi:io:tributech:base:Stream;1",
+    "extends": "dtmi:io:tributech:base:stream;1",
     "contents": [
         {
             "@type": "Property",
@@ -15,7 +15,7 @@
         },
         {
             "@type": "Property",
-        "name": "Identifier",
+            "name": "Identifier",
             "schema": "integer",
             "writable": false,
             "displayName": "Identifier",

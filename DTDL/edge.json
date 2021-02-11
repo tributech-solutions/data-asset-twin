@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:Edge;1",
+  "@id": "dtmi:io:tributech:edge;1",
   "@type": "Interface",
   "displayName": "Edge",
   "contents": [
@@ -25,34 +25,40 @@
       "name": "AgentConfig",
       "schema": {
         "@type": "Map",
-        "mapKey": {"name": "key", "schema": "string"},
-        "mapValue": {"name": "value", "schema": "string"}
+        "mapKey": {
+          "name": "key",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "value",
+          "schema": "string"
+        }
       }
     },
     {
       "@type": "Relationship",
-      "name": "Sources",
+      "name": "GenericSources",
       "minMultiplicity": 0,
       "maxMultiplicity": 10,
-      "target": "dtmi:io:tributech:Source;1",
-      "displayName": "Sources",
+      "target": "dtmi:io:tributech:generic:source;1",
+      "displayName": "Generic sources",
       "description": "Contains all sources of the given agent."
     },
     {
       "@type": "Relationship",
-      "name": "OPCUA_Sources",
+      "name": "OPCUASources",
       "minMultiplicity": 0,
       "maxMultiplicity": 10,
-      "target": "dtmi:io:tributech:OPCUA_Source;1",
-      "displayName": "OPCUA Sources",
-      "description": "Contains all sources of the given agent."
+      "target": "dtmi:io:tributech:opcua:source;1",
+      "displayName": "OPCUA sources",
+      "description": "Contains all opcua sources of the given agent."
     },
     {
       "@type": "Relationship",
       "name": "MlAnnotation",
       "minMultiplicity": 0,
       "maxMultiplicity": 1,
-      "target": "dtmi:io:tributech:MLAnnotation;1",
+      "target": "dtmi:io:tributech:annotations:ml;1",
       "displayName": "Machine learning annotation",
       "description": "Machine learning annotation."
     }

@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:base:Source;1",
+  "@id": "dtmi:io:tributech:base:source;1",
   "@type": "Interface",
   "displayName": "Base source",
   "contents": [
@@ -71,7 +71,7 @@
       "name": "MlAnnotation",
       "minMultiplicity": 0,
       "maxMultiplicity": 1,
-      "target": "dtmi:io:tributech:MLAnnotation;1",
+      "target": "dtmi:io:tributech:annotations:ml;1",
       "displayName": "Machine learning annotation",
       "description": "Machine learning annotation."
     }

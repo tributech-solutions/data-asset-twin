@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:base:Stream;1",
+  "@id": "dtmi:io:tributech:base:stream;1",
   "@type": "Interface",
   "displayName": "Base stream",
   "contents": [
@@ -104,6 +104,15 @@
       },
       "displayName": "CurrentValue",
       "description": "Current value of the stream."
+    },
+    {
+      "@type": "Relationship",
+      "name": "MlAnnotation",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1,
+      "target": "dtmi:io:tributech:annotations:ml;1",
+      "displayName": "Machine learning annotation",
+      "description": "Machine learning annotation."
     }
   ]
 }

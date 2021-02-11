@@ -1,25 +1,17 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:OPCUA_Source;1",
+  "@id": "dtmi:io:tributech:generic:source;1",
   "@type": "Interface",
-  "extends": "dtmi:io:tributech:base:Source;1",
-  "displayName": "OPCUA-Source",
+  "extends": "dtmi:io:tributech:base:source;1",
+  "displayName": "Generic-Source",
   "contents": [
     {
-      "@type": "Property",
-      "name": "ConnectionString",
-      "schema": "string",
-      "writable": false,
-      "displayName": "OPCUA Connection string",
-      "description": "The connection string for the opcua value source"
-    },
-    {
       "@type": "Relationship",
-      "name": "Streams",
+      "name": "GenericStreams",
       "minMultiplicity": 0,
       "maxMultiplicity": 10,
-      "target": "dtmi:io:tributech:OPCUA_Stream;1",
-      "displayName": "Streams",
+      "target": "dtmi:io:tributech:generic:stream;1",
+      "displayName": "Generic streams",
       "description": "Contains all streams the given source."
     }
   ]
