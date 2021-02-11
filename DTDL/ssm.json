@@ -112,6 +112,15 @@
         "description": "Specifies it the submission of integrity- and origin-verification data is activated or not."
       },
       {
+        "@type": "Property",
+        "name": "AgentConfig",
+        "schema": {
+          "@type": "Map",
+          "mapKey": {"name": "key", "schema": "string"},
+          "mapValue": {"name": "value", "schema": "string"}
+        }
+      },
+      {
         "@type": "Relationship",
         "name": "Sources",
         "minMultiplicity": 0,
@@ -119,6 +128,15 @@
         "target": "dtmi:io:tributech:Source;1",
         "displayName": "Sources",
         "description": "Contains all sources of the given agent."
+      },
+      {
+        "@type": "Relationship",
+        "name": "MlAnnotation",
+        "minMultiplicity": 0,
+        "maxMultiplicity": 1,
+        "target": "dtmi:io:tributech:MLAnnotation;1",
+        "displayName": "Machine learning annotation",
+        "description": "Machine learning annotation."
       }
     ]
   }
