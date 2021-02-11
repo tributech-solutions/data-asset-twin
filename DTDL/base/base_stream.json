@@ -1,0 +1,83 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:base:Stream;1",
+  "@type": "Interface",
+  "displayName": "Base stream",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Name",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Name",
+      "comment": "Human-readable name of the stream."
+    },
+    {
+      "@type": "Property",
+      "name": "ValueMetadataId",
+      "schema": "string",
+      "writable": false,
+      "displayName": "ValueMetadataId",
+      "comment": "Represents the global unique id of a stream."
+    },
+    {
+      "@type": "Property",
+      "name": "SourceConfig",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {"name": "key", "schema": "string"},
+        "mapValue": {"name": "value", "schema": "string"}
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "MerkleTreeDepth",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "MerkleTreeDepth",
+      "description": "Depth of the merkle-tree for proofs.",
+      "comment": "Proofs allows to verify integrity and origin of the stream. A proof represents a binary-merkle-tree and 2^MerkleTreeDepth values are necessary to build a single proof."
+    },
+    {
+      "@type": "Property",
+      "name": "MerkleTreeTimeout",
+      "schema": "duration",
+      "writable": true,
+      "displayName": "MerkleTreeTimeout",
+      "description": "Timeout for a single merkle-tree for proofs.",
+      "comment": "If a stream doesn't provides enought values to build an entire merkle tree with the given depth in the given period it will be splitted into smaller merkle-trees."
+    },
+    {
+      "@type": "Property",
+      "name": "SubmissionInterval",
+      "schema": "duration",
+      "writable": true,
+      "displayName": "SubmissionInterval",
+      "description": "Timeout for a single merkle-tree for proofs.",
+      "comment": "If a stream doesn't provides enought values to build an entire merkle tree with the given depth in the given period it will be splitted into smaller merkle-trees."
+    },
+    {
+      "@type": "Telemetry",
+      "name": "CurrentValue",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "Base64String",
+            "schema": "string",
+            "description": "Base64 encoded value."
+          },
+          {
+            "name": "Double",
+            "schema": "double",
+            "description": "Value encoded as double."
+          }
+        ],
+        "displayName": "Value",
+        "description": "Value represented in different data-types."
+      },
+      "displayName": "CurrentValue",
+      "description": "Current value of the stream."
+    }
+  ]
+}

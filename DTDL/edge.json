@@ -21,12 +21,37 @@
       "comment": "Represents the current public-key of the device which matches with the current key-pair generated inside the Optiga Trust M chip."
     },
     {
+      "@type": "Property",
+      "name": "MaxMerkleTreeDepth",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Max merkle tree depth",
+      "comment": "Represents the max merkle tree depth setting"
+    },
+    {
+      "@type": "Property",
+      "name": "MaxMerkleTreeAge",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Max merkle tree age",
+      "comment": "Represents the max merkle tree age setting"
+    },
+    {
       "@type": "Relationship",
       "name": "Sources",
       "minMultiplicity": 0,
       "maxMultiplicity": 10,
       "target": "dtmi:io:tributech:Source;1",
       "displayName": "Sources",
+      "description": "Contains all sources of the given agent."
+    },
+    {
+      "@type": "Relationship",
+      "name": "OPCUA_Sources",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 10,
+      "target": "dtmi:io:tributech:OPCUA_Source;1",
+      "displayName": "OPCUA Sources",
       "description": "Contains all sources of the given agent."
     }
   ]
