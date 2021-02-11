@@ -22,6 +22,21 @@
     },
     {
       "@type": "Property",
+      "name": "SourceConfig",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "key",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "value",
+          "schema": "string"
+        }
+      }
+    },
+    {
+      "@type": "Property",
       "name": "Type",
       "schema": {
         "@type": "Enum",
@@ -50,6 +65,15 @@
       "writable": false,
       "displayName": "Value Topic",
       "description": "Topic on the message broker that is used by the Value Source to deliver the values to the Agent. This setting is optional. There should be a default for each type of Value Source"
+    },
+    {
+      "@type": "Relationship",
+      "name": "MlAnnotation",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1,
+      "target": "dtmi:io:tributech:MLAnnotation;1",
+      "displayName": "Machine learning annotation",
+      "description": "Machine learning annotation."
     }
   ]
 }

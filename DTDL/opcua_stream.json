@@ -15,7 +15,7 @@
         },
         {
             "@type": "Property",
-            "name": "Identifier",
+        "name": "Identifier",
             "schema": "integer",
             "writable": false,
             "displayName": "Identifier",

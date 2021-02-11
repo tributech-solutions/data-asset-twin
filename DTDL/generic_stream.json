@@ -1,0 +1,10 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:io:tributech:Generic_Stream;1",
+    "@type": "Interface",
+    "displayName": "Generic Stream",
+    "extends": "dtmi:io:tributech:base:Stream;1",
+    "contents": [
+        
+    ]
+}
