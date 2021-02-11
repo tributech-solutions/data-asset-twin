@@ -22,6 +22,15 @@
     },
     {
       "@type": "Property",
+      "name": "SourceConfig",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {"name": "key", "schema": "string"},
+        "mapValue": {"name": "value", "schema": "string"}
+      }
+    },
+    {
+      "@type": "Property",
       "name": "Type",
       "schema": {
         "@type": "Enum",
@@ -59,6 +68,15 @@
       "target": "dtmi:io:tributech:Stream;1",
       "displayName": "Streams",
       "description": "Contains all streams the given source."
+    },
+    {
+      "@type": "Relationship",
+      "name": "MlAnnotation",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1,
+      "target": "dtmi:io:tributech:MLAnnotation;1",
+      "displayName": "Machine learning annotation",
+      "description": "Machine learning annotation."
     }
   ]
 }

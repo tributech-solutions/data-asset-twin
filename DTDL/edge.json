@@ -22,19 +22,12 @@
     },
     {
       "@type": "Property",
-      "name": "MaxMerkleTreeDepth",
-      "schema": "string",
-      "writable": false,
-      "displayName": "Max merkle tree depth",
-      "comment": "Represents the max merkle tree depth setting"
-    },
-    {
-      "@type": "Property",
-      "name": "MaxMerkleTreeAge",
-      "schema": "string",
-      "writable": false,
-      "displayName": "Max merkle tree age",
-      "comment": "Represents the max merkle tree age setting"
+      "name": "AgentConfig",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {"name": "key", "schema": "string"},
+        "mapValue": {"name": "value", "schema": "string"}
+      }
     },
     {
       "@type": "Relationship",
@@ -47,12 +40,12 @@
     },
     {
       "@type": "Relationship",
-      "name": "OPCUA_Sources",
+      "name": "MlAnnotation",
       "minMultiplicity": 0,
-      "maxMultiplicity": 10,
-      "target": "dtmi:io:tributech:OPCUA_Source;1",
-      "displayName": "OPCUA Sources",
-      "description": "Contains all sources of the given agent."
+      "maxMultiplicity": 1,
+      "target": "dtmi:io:tributech:MLAnnotation;1",
+      "displayName": "Machine learning annotation",
+      "description": "Machine learning annotation."
     }
   ]
 }
