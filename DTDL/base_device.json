@@ -1,0 +1,57 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:io:tributech:device:base;1",
+    "@type": "Interface",
+    "displayName": "Base device",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "DeviceId",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Device Id",
+            "comment": "Represents the unique ID of the Tributech-device."
+        },
+        {
+            "@type": "Property",
+            "name": "PublicKey",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Publik key",
+            "comment": "Represents the current public-key of the device which matches with the current key-pair generated inside the Optiga Trust M chip."
+        },
+        {
+            "@type": "Property",
+            "name": "AgentConfig",
+            "schema": {
+                "@type": "Map",
+                "mapKey": {
+                    "name": "key",
+                    "schema": "string"
+                },
+                "mapValue": {
+                    "name": "value",
+                    "schema": "string"
+                }
+            }
+        },
+        {
+            "@type": "Relationship",
+            "name": "Sources",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 10,
+            "target": "dtmi:io:tributech:base:source;1",
+            "displayName": "Sources",
+            "description": "Contains all sources of the given agent."
+        },
+        {
+            "@type": "Relationship",
+            "name": "Annotations",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:io:tributech:annotations:base;1",
+            "displayName": "Annotations",
+            "description": "Annotations"
+        }
+    ]
+}

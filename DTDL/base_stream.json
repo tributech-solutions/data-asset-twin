@@ -1,8 +1,8 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:Stream;1",
+  "@id": "dtmi:io:tributech:base:stream;1",
   "@type": "Interface",
-  "displayName": "Stream",
+  "displayName": "Base stream",
   "contents": [
     {
       "@type": "Property",
@@ -25,8 +25,14 @@
       "name": "StreamConfig",
       "schema": {
         "@type": "Map",
-        "mapKey": {"name": "key", "schema": "string"},
-        "mapValue": {"name": "value", "schema": "string"}
+        "mapKey": {
+          "name": "key",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "value",
+          "schema": "string"
+        }
       }
     },
     {
@@ -55,15 +61,6 @@
       "displayName": "SubmissionInterval",
       "description": "Timeout for a single merkle-tree for proofs.",
       "comment": "If a stream doesn't provides enought values to build an entire merkle tree with the given depth in the given period it will be splitted into smaller merkle-trees."
-    },
-    {
-      "@type": "Relationship",
-      "name": "MlAnnotation",
-      "minMultiplicity": 0,
-      "maxMultiplicity": 1,
-      "target": "dtmi:io:tributech:MLAnnotation;1",
-      "displayName": "Machine learning annotation",
-      "description": "Machine learning annotation."
     },
     {
       "@type": "Telemetry",
@@ -107,6 +104,15 @@
       },
       "displayName": "CurrentValue",
       "description": "Current value of the stream."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Annotations",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1,
+      "target": "dtmi:io:tributech:annotations:base;1",
+      "displayName": "Machine learning annotation",
+      "description": "Machine learning annotation."
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:Source;1",
+  "@id": "dtmi:io:tributech:base:source;1",
   "@type": "Interface",
-  "displayName": "Source",
+  "displayName": "Base source",
   "contents": [
     {
       "@type": "Property",
@@ -25,8 +25,14 @@
       "name": "SourceConfig",
       "schema": {
         "@type": "Map",
-        "mapKey": {"name": "key", "schema": "string"},
-        "mapValue": {"name": "value", "schema": "string"}
+        "mapKey": {
+          "name": "key",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "value",
+          "schema": "string"
+        }
       }
     },
     {
@@ -62,19 +68,10 @@
     },
     {
       "@type": "Relationship",
-      "name": "Streams",
-      "minMultiplicity": 0,
-      "maxMultiplicity": 10,
-      "target": "dtmi:io:tributech:Stream;1",
-      "displayName": "Streams",
-      "description": "Contains all streams the given source."
-    },
-    {
-      "@type": "Relationship",
-      "name": "MlAnnotation",
+      "name": "Annotations",
       "minMultiplicity": 0,
       "maxMultiplicity": 1,
-      "target": "dtmi:io:tributech:MLAnnotation;1",
+      "target": "dtmi:io:tributech:annotations:base;1",
       "displayName": "Machine learning annotation",
       "description": "Machine learning annotation."
     }
