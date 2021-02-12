@@ -107,10 +107,10 @@
     },
     {
       "@type": "Relationship",
-      "name": "MlAnnotation",
+      "name": "Annotations",
       "minMultiplicity": 0,
       "maxMultiplicity": 1,
-      "target": "dtmi:io:tributech:annotations:ml;1",
+      "target": "dtmi:io:tributech:annotations:base;1",
       "displayName": "Machine learning annotation",
       "description": "Machine learning annotation."
     }

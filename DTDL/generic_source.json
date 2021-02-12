@@ -7,11 +7,11 @@
   "contents": [
     {
       "@type": "Relationship",
-      "name": "GenericStreams",
+      "name": "Streams",
       "minMultiplicity": 0,
       "maxMultiplicity": 10,
-      "target": "dtmi:io:tributech:generic:stream;1",
-      "displayName": "Generic streams",
+      "target": "dtmi:io:tributech:base:stream;1",
+      "displayName": "Streams",
       "description": "Contains all streams the given source."
     }
   ]

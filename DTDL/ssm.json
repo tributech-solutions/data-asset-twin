@@ -1,33 +1,10 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:ssm;1",
+  "@id": "dtmi:io:tributech:device:ssm;1",
+  "extends": "dtmi:io:tributech:device:base;1",
   "@type": "Interface",
   "displayName": "SSM",
-  "contents": [
-    {
-      "@type": "Property",
-      "name": "DeviceId",
-      "schema": "string",
-      "writable": false,
-      "displayName": "Device Id",
-      "description": "Represents the unique ID of the Tributech-SSM-device."
-    },
-    {
-      "@type": "Property",
-      "name": "Id",
-      "schema": "string",
-      "writable": false,
-      "displayName": "Id",
-      "description": "Identifier of the data-set."
-    },
-    {
-      "@type": "Property",
-      "name": "PublicKey",
-      "schema": "string",
-      "writable": false,
-      "displayName": "Public key",
-      "description": "Represents the current public-key of the device which matches with the current key-pair generated inside the Optiga Trust M chip."
-    },
+  "contents": [ 
     {
       "@type": "Property",
       "name": "SoftwareVersion",
@@ -110,39 +87,6 @@
       "writable": true,
       "displayName": "Submit proofs of telemetry-values.",
       "description": "Specifies it the submission of integrity- and origin-verification data is activated or not."
-    },
-    {
-      "@type": "Property",
-      "name": "AgentConfig",
-      "schema": {
-        "@type": "Map",
-        "mapKey": {
-          "name": "key",
-          "schema": "string"
-        },
-        "mapValue": {
-          "name": "value",
-          "schema": "string"
-        }
-      }
-    },
-    {
-      "@type": "Relationship",
-      "name": "Sources",
-      "minMultiplicity": 0,
-      "maxMultiplicity": 10,
-      "target": "dtmi:io:tributech:generic:source;1",
-      "displayName": "Sources",
-      "description": "Contains all sources of the given agent."
-    },
-    {
-      "@type": "Relationship",
-      "name": "MlAnnotation",
-      "minMultiplicity": 0,
-      "maxMultiplicity": 1,
-      "target": "dtmi:io:tributech:annotations:ml;1",
-      "displayName": "Machine learning annotation",
-      "description": "Machine learning annotation."
     }
   ]
 }

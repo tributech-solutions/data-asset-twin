@@ -15,11 +15,11 @@
     },
     {
       "@type": "Relationship",
-      "name": "OPCUAStreams",
+      "name": "Streams",
       "minMultiplicity": 0,
       "maxMultiplicity": 10,
       "target": "dtmi:io:tributech:opcua:stream;1",
-      "displayName": "OPCUA streams",
+      "displayName": "Streams",
       "description": "Contains all opcua streams the given source."
     }
   ]
