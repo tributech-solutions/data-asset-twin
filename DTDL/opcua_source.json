@@ -14,6 +14,14 @@
       "description": "The connection string for the opcua value source"
     },
     {
+      "@type": "Property",
+      "name": "PublishingInterval",
+      "schema": "integer",
+      "writable": false,
+      "displayName": "OPCUA publishing interval",
+      "description": "The opcua publishing interval"
+    },
+    {
       "@type": "Relationship",
       "name": "Streams",
       "minMultiplicity": 0,

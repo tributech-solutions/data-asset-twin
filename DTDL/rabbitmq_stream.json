@@ -1,0 +1,17 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:io:tributech:rabbitmq:stream;1",
+    "@type": "Interface",
+    "displayName": "RabbitMQ Stream",
+    "extends": "dtmi:io:tributech:base:stream;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "QueueName",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Queue name",
+            "description": "The RabbitMQ name"
+        }
+    ]
+}
