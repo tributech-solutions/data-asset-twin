@@ -1,9 +1,9 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:rabbitmq:stream;1",
+    "@id": "dtmi:io:tributech:stream:rabbitmq;1",
     "@type": "Interface",
     "displayName": "RabbitMQ Stream",
-    "extends": "dtmi:io:tributech:base:stream;1",
+    "extends": "dtmi:io:tributech:stream:base;1",
     "contents": [
         {
             "@type": "Property",

@@ -3,7 +3,7 @@
   "@id": "dtmi:io:tributech:device:ssm;1",
   "extends": "dtmi:io:tributech:device:base;1",
   "@type": "Interface",
-  "displayName": "SSM",
+  "displayName": "Sensor Security Module",
   "contents": [ 
     {
       "@type": "Property",

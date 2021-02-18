@@ -1,9 +1,9 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:opcua:source;1",
+  "@id": "dtmi:io:tributech:source:opcua;1",
   "@type": "Interface",
-  "extends": "dtmi:io:tributech:base:source;1",
-  "displayName": "OPCUA-Source",
+  "extends": "dtmi:io:tributech:source:base;1",
+  "displayName": "OPCUA Source",
   "contents": [
     {
       "@type": "Property",
@@ -26,7 +26,7 @@
       "name": "Streams",
       "minMultiplicity": 0,
       "maxMultiplicity": 10,
-      "target": "dtmi:io:tributech:opcua:stream;1",
+      "target": "dtmi:io:tributech:stream:opcua;1",
       "displayName": "Streams",
       "description": "Contains all opcua streams the given source."
     }

@@ -1,9 +1,9 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:rabbitmq:source;1",
+    "@id": "dtmi:io:tributech:source:rabbitmq;1",
     "@type": "Interface",
-    "extends": "dtmi:io:tributech:base:source;1",
-    "displayName": "RabbitMQ-Source",
+    "extends": "dtmi:io:tributech:source:base;1",
+    "displayName": "RabbitMQ Source",
     "contents": [
         {
             "@type": "Property",
@@ -34,7 +34,7 @@
             "name": "Streams",
             "minMultiplicity": 0,
             "maxMultiplicity": 10,
-            "target": "dtmi:io:tributech:rabbitmq:stream;1",
+            "target": "dtmi:io:tributech:stream:rabbitmq;1",
             "displayName": "Streams",
             "description": "Contains all RabbitMQ streams the given source."
         }

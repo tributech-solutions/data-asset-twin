@@ -1,0 +1,24 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:sink:base;1",
+  "@type": "Interface",
+  "displayName": "Sink",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "MaxBatchSize",
+      "schema": "integer",
+      "writable": false,
+      "displayName": "Max batch size",
+      "description": "The maximum number of values to send as batch in one message to the sink."
+    },
+    {
+      "@type": "Property",
+      "name": "FlushInterval",
+      "schema": "integer",
+      "writable": false,
+      "displayName": "Flush interval",
+      "description": "The interval in which the values should be flushed from the buffer and send to the Data-API. Regardless if the MaxBatchSize was reached."
+    }
+  ]
+}

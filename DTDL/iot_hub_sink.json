@@ -1,0 +1,17 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:io:tributech:sink:iothub;1",
+    "@type": "Interface",
+    "displayName": "IoT Hub Sink",
+    "extends": "dtmi:io:tributech:sink:base;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "ConnectionString",
+            "schema": "string",
+            "writable": false,
+            "displayName": "IoT Hub Connection string",
+            "description": "The connection string for the IoT Hub"
+        }
+    ]
+}

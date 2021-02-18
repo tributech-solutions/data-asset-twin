@@ -1,25 +1,17 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:opcua:stream;1",
+    "@id": "dtmi:io:tributech:stream:opcua;1",
     "@type": "Interface",
     "displayName": "OPCUA Stream",
-    "extends": "dtmi:io:tributech:base:stream;1",
+    "extends": "dtmi:io:tributech:stream:base;1",
     "contents": [
         {
             "@type": "Property",
-            "name": "NamespaceIndex",
-            "schema": "integer",
-            "writable": false,
-            "displayName": "Namespace index",
-            "description": "The namespace index for the opcua value source"
-        },
-        {
-            "@type": "Property",
             "name": "Identifier",
-            "schema": "integer",
+            "schema": "string",
             "writable": false,
             "displayName": "Identifier",
-            "description": "The identifier for the opcua value source"
+            "description": "The identifier for the opcua value source (eg. \"ns=1;i=0\")"
         }
     ]
 }

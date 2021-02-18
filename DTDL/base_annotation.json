@@ -2,7 +2,7 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:io:tributech:annotations:base;1",
     "@type": "Interface",
-    "displayName": "Base annotations",
+    "displayName": "Annotation",
     "contents": [
       
     ]
