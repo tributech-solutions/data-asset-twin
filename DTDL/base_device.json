@@ -40,7 +40,7 @@
             "name": "Sources",
             "minMultiplicity": 0,
             "maxMultiplicity": 10,
-            "target": "dtmi:io:tributech:base:source;1",
+            "target": "dtmi:io:tributech:source:base;1",
             "displayName": "Sources",
             "description": "Contains all sources of the given agent."
         },
