@@ -1,16 +1,16 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:generic:source;1",
+  "@id": "dtmi:io:tributech:source:generic;1",
   "@type": "Interface",
-  "extends": "dtmi:io:tributech:base:source;1",
-  "displayName": "Generic-Source",
+  "extends": "dtmi:io:tributech:source:base;1",
+  "displayName": "Generic Source",
   "contents": [
     {
       "@type": "Relationship",
       "name": "Streams",
       "minMultiplicity": 0,
       "maxMultiplicity": 10,
-      "target": "dtmi:io:tributech:base:stream;1",
+      "target": "dtmi:io:tributech:stream:base;1",
       "displayName": "Streams",
       "description": "Contains all streams the given source."
     }

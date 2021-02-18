@@ -1,8 +1,8 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:base:source;1",
+  "@id": "dtmi:io:tributech:source:base;1",
   "@type": "Interface",
-  "displayName": "Base source",
+  "displayName": "Source",
   "contents": [
     {
       "@type": "Property",

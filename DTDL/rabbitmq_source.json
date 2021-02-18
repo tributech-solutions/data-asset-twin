@@ -1,0 +1,42 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:io:tributech:source:rabbitmq;1",
+    "@type": "Interface",
+    "extends": "dtmi:io:tributech:source:base;1",
+    "displayName": "RabbitMQ Source",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "ConnectionString",
+            "schema": "string",
+            "writable": false,
+            "displayName": "RabbitMQ Connection string",
+            "description": "The connection string for the RabbitMQ value source"
+        },
+        {
+            "@type": "Property",
+            "name": "MaxBatchSize",
+            "schema": "integer",
+            "writable": false,
+            "displayName": "Max batch size",
+            "description": "The maximum number of values to send as batch in one message to the EdgeAgent."
+        },
+        {
+            "@type": "Property",
+            "name": "FlushInterval",
+            "schema": "integer",
+            "writable": false,
+            "displayName": "Flush interval",
+            "description": "The interval in which the values should be flushed from the buffer and send to the Data-API. Regardless if the MaxBatchSize was reached."
+        },
+        {
+            "@type": "Relationship",
+            "name": "Streams",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 10,
+            "target": "dtmi:io:tributech:stream:rabbitmq;1",
+            "displayName": "Streams",
+            "description": "Contains all RabbitMQ streams the given source."
+        }
+    ]
+}

@@ -1,17 +1,17 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:stream:opcua;1",
+    "@id": "dtmi:io:tributech:stream:rabbitmq;1",
     "@type": "Interface",
-    "displayName": "OPCUA Stream",
+    "displayName": "RabbitMQ Stream",
     "extends": "dtmi:io:tributech:stream:base;1",
     "contents": [
         {
             "@type": "Property",
-            "name": "Identifier",
+            "name": "QueueName",
             "schema": "string",
             "writable": false,
-            "displayName": "Identifier",
-            "description": "The identifier for the opcua value source (eg. \"ns=1;i=0\")"
+            "displayName": "Queue name",
+            "description": "The RabbitMQ name"
         }
     ]
 }

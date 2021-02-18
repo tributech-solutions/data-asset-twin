@@ -1,0 +1,33 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:io:tributech:sink:dataapivaluesink;1",
+    "@type": "Interface",
+    "displayName": "Data-API Value Sink",
+    "extends": "dtmi:io:tributech:sink:base;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "DataAPIBaseUrl",
+            "schema": "string",
+            "writable": false,
+            "displayName": "API Url",
+            "description": ""
+        },
+        {
+            "@type": "Property",
+            "name": "AuthUrl",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Identity server URL",
+            "description": ""
+        },
+        {
+            "@type": "Property",
+            "name": "AuthScope",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Identity server scope",
+            "description": ""
+        }
+    ]
+}

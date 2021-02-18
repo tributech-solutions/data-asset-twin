@@ -3,7 +3,7 @@
   "@id": "dtmi:io:tributech:annotations:ml;1",
   "extends": "dtmi:io:tributech:annotations:base;1",
   "@type": "Interface",
-  "displayName": "Machine learning annotation",
+  "displayName": "Machine Learning Annotation",
   "contents": [
     {
       "@type": "Property",

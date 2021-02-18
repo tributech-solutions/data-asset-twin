@@ -2,7 +2,7 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:io:tributech:device:base;1",
     "@type": "Interface",
-    "displayName": "Base device",
+    "displayName": "Device",
     "contents": [
         {
             "@type": "Property",
@@ -40,7 +40,7 @@
             "name": "Sources",
             "minMultiplicity": 0,
             "maxMultiplicity": 10,
-            "target": "dtmi:io:tributech:base:source;1",
+            "target": "dtmi:io:tributech:source:base;1",
             "displayName": "Sources",
             "description": "Contains all sources of the given agent."
         },
@@ -52,6 +52,15 @@
             "target": "dtmi:io:tributech:annotations:base;1",
             "displayName": "Annotations",
             "description": "Annotations"
+        },
+        {
+            "@type": "Relationship",
+            "name": "Sinks",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:io:tributech:sink:base;1",
+            "displayName": "Sinks",
+            "description": "Sinks"
         }
     ]
 }

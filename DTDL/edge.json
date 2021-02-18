@@ -4,5 +4,22 @@
   "extends": "dtmi:io:tributech:device:base;1",
   "@type": "Interface",
   "displayName": "Edge",
-  "contents": []
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "MaxMerkleTreeDepth",
+      "schema": "integer",
+      "writable": false,
+      "displayName": "Max merkle tree depth",
+      "description": "The Max merkle tree depth"
+    },
+    {
+      "@type": "Property",
+      "name": "MaxMerkleTreeAge",
+      "schema": "integer",
+      "writable": false,
+      "displayName": "Max merkle tree age",
+      "description": "The Max merkle tree age"
+    }
+  ]
 }
