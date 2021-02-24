@@ -9,7 +9,7 @@
       "@type": "Property",
       "name": "MaxMerkleTreeDepth",
       "schema": "integer",
-      "writable": false,
+      "writable": true,
       "displayName": "Max merkle tree depth",
       "description": "The Max merkle tree depth"
     },
@@ -17,7 +17,7 @@
       "@type": "Property",
       "name": "MaxMerkleTreeAge",
       "schema": "integer",
-      "writable": false,
+      "writable": true,
       "displayName": "Max merkle tree age",
       "description": "The Max merkle tree age"
     }
