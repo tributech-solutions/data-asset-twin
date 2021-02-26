@@ -7,9 +7,9 @@
     "contents": [
         {
             "@type": "Property",
-            "name": "DataAPIBaseUrl",
+            "name": "BaseUrl",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "API Url",
             "description": ""
         },
@@ -17,7 +17,7 @@
             "@type": "Property",
             "name": "AuthUrl",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Identity server URL",
             "description": ""
         },
@@ -25,7 +25,7 @@
             "@type": "Property",
             "name": "AuthScope",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Identity server scope",
             "description": ""
         }
