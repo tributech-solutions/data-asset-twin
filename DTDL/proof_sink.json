@@ -28,6 +28,61 @@
             "writable": true,
             "displayName": "Identity server scope",
             "description": ""
+        },
+        {
+            "@type": "Property",
+            "name": "ClientId",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Client id for authentication",
+            "description": ""
+        },
+        {
+            "@type": "Property",
+            "name": "ClientSecret",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Client secret for authentication",
+            "description": ""
+        },
+        {
+            "@type": "Property",
+            "name": "BrokerType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "MQTT",
+                        "displayName": "Mqtt",
+                        "enumValue": "MQTT"
+                    },
+                    {
+                        "name": "AzureEdgeRuntime",
+                        "displayName": "AzureEdgeRuntime",
+                        "enumValue": "AzureEdgeRuntime"
+                    }
+                ]
+            },
+            "writable": false,
+            "displayName": "Broker type",
+            "description": ""
+        },
+        {
+            "@type": "Property",
+            "name": "MaxRetries",
+            "schema": "integer",
+            "writable": true,
+            "displayName": "Max retries",
+            "description": "Number of maximum retries for calls at Trust-API"
+        },
+        {
+            "@type": "Property",
+            "name": "MaxRetryInterval",
+            "schema": "integer",
+            "writable": true,
+            "displayName": "Max retry interval",
+            "description": "Maximum interval for delays of calls at Trust-API on error"
         }
     ]
 }

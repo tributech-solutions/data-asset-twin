@@ -28,6 +28,54 @@
             "writable": true,
             "displayName": "Identity server scope",
             "description": ""
+        },
+        {
+            "@type": "Property",
+            "name": "ClientId",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Client id for authentication",
+            "description": ""
+        },
+        {
+            "@type": "Property",
+            "name": "ClientSecret",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Client secret for authentication",
+            "description": ""
+        },
+        {
+            "@type": "Property",
+            "name": "MaxRetries",
+            "schema": "integer",
+            "writable": true,
+            "displayName": "Max retries",
+            "description": "Number of maximum retries for calls at Data-API"
+        },
+        {
+            "@type": "Property",
+            "name": "RetryInterval",
+            "schema": "integer",
+            "writable": true,
+            "displayName": "Retry interval",
+            "description": "Delay interval for the first retry of call to Data-API on error"
+        },
+        {
+            "@type": "Property",
+            "name": "MaxRetryInterval",
+            "schema": "integer",
+            "writable": true,
+            "displayName": "Max retry interval",
+            "description": "Maximum interval for delays of calls at Data-API on error"
+        },
+        {
+            "@type": "Property",
+            "name": "DataApiSkipUniqueConstraintViolationCheck",
+            "schema": "boolean",
+            "writable": true,
+            "displayName": "Skip unique constraint violation check",
+            "description": "See DataAPI Doc"
         }
     ]
 }
