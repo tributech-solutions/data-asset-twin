@@ -29,7 +29,7 @@
                     }
                 ]
             },
-            "writable": false,
+            "writable": true,
             "displayName": "Type",
             "description": "Generated data type"
         },
@@ -37,7 +37,7 @@
             "@type": "Property",
             "name": "MinValue",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Min value",
             "description": "Minimum for generated values."
         },
@@ -45,15 +45,15 @@
             "@type": "Property",
             "name": "MaxValue",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Max value",
             "description": "Maximum for generated values."
         },
         {
-            "@type": "Frequency",
-            "name": "MaxValue",
+            "@type": "Property",
+            "name": "Frequency",
             "schema": "double",
-            "writable": false,
+            "writable": true,
             "displayName": "Frequency",
             "description": "Data Frequency in Hz (1/s) "
         }
