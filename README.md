@@ -11,6 +11,7 @@ The definitions can be found in the corresponding sub-folders [DTDL](./DTDL) and
 The DTDL-models are in widespread use by services of the DSK. The DSK exposes various services- and provides additional tooling to work with the given definitions.
 
 Tools which are not part of a DSK ecosystem which can be used with the DTDL-definitions are:
+- [VSCode extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-dtdl)
 - [Azure Digital Twins (ADT)](https://azure.microsoft.com/en-us/services/digital-twins/)
 - [Azure Digital Twins (ADT) explorer](https://github.com/Azure-Samples/digital-twins-explorer)
 
