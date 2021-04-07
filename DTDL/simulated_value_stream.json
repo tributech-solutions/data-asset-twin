@@ -1,0 +1,61 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:io:tributech:stream:simulated;1",
+    "@type": "Interface",
+    "displayName": "Simulated Stream",
+    "extends": "dtmi:io:tributech:stream:base;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Type",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Double",
+                        "displayName": "Double",
+                        "enumValue": "Double"
+                    },
+                    {
+                        "name": "Int32",
+                        "displayName": "Int32",
+                        "enumValue": "Int32"
+                    },
+                    {
+                        "name": "Binary",
+                        "displayName": "Binary",
+                        "enumValue": "Binary"
+                    }
+                ]
+            },
+            "writable": true,
+            "displayName": "Type",
+            "description": "Generated data type"
+        },
+        {
+            "@type": "Property",
+            "name": "MinValue",
+            "schema": "integer",
+            "writable": true,
+            "displayName": "Min value",
+            "description": "Minimum for generated values."
+        },
+        {
+            "@type": "Property",
+            "name": "MaxValue",
+            "schema": "integer",
+            "writable": true,
+            "displayName": "Max value",
+            "description": "Maximum for generated values."
+        },
+        {
+            "@type": "Property",
+            "name": "Frequency",
+            "schema": "double",
+            "writable": true,
+            "displayName": "Frequency",
+            "description": "Data Frequency in Hz (1/s) "
+        }
+    ]
+}
