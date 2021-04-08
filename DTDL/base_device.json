@@ -14,6 +14,14 @@
         },
         {
             "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Name",
+            "comment": "Represents the name of the Tributech-device."
+        },
+        {
+            "@type": "Property",
             "name": "PublicKey",
             "schema": "string",
             "writable": false,
