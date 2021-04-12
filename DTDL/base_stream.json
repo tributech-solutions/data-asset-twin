@@ -106,6 +106,14 @@
       "description": "Current value of the stream."
     },
     {
+      "@type": "Property",
+      "name": "Unit",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Unit",
+      "comment": "Represents the unit of the stream."
+    },
+    {
       "@type": "Relationship",
       "name": "Annotations",
       "minMultiplicity": 0,
