@@ -1,0 +1,153 @@
+{
+    "digitalTwins": [{
+        "$dtId": "IoTDevice",
+        "$etag": "W/\"3124077c-a9d8-40b4-bacf-e987cdcc4bfd\"",
+        "Name": "IoT Device Converter #21",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:source:simulated;1"
+        }
+    }, {
+        "$dtId": "DSK-Edge-Agent",
+        "$etag": "W/\"e0f7afb9-70ee-4f62-a3b3-f05c98a4e37a\"",
+        "Name": "Steel Factory Plant Line #21",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:device:edge;1"
+        }
+    }, {
+        "$dtId": "Proof-Sink",
+        "$etag": "W/\"9a4fd6a9-9da2-495c-ad2b-0f85d079ae5d\"",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:sink:proof;1"
+        }
+    }, {
+        "$dtId": "Converter-Temperature-1",
+        "$etag": "W/\"38813a4b-c404-4445-8374-e7fc724e48b2\"",
+        "MaxValue": 20,
+        "Frequency": 0.016,
+        "ValueMetadataId": "a483279a-c3f7-4221-aee2-95915199b324",
+        "Name": "Converter Temperature 1",
+        "Unit": "°C",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }, {
+        "$dtId": "Value-Sink",
+        "$etag": "W/\"d40bd92c-72e1-4908-a961-3a97cc168816\"",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:sink:dataapivaluesink;1"
+        }
+    }, {
+        "$dtId": "Converter-Temperature-2",
+        "$etag": "W/\"772f6a23-23a8-4fec-8e61-d46f2fe81f4d\"",
+        "MinValue": 10,
+        "MaxValue": 35,
+        "ValueMetadataId": "db73f3c7-d901-4080-ab56-f0ed81faac72",
+        "Frequency": 1,
+        "Name": "Converter Temperature 2",
+        "Unit": "°C",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }, {
+        "$dtId": "ConverterPressure2",
+        "$etag": "W/\"0902c4bf-4702-421e-965a-d966ba77cfb2\"",
+        "MinValue": 100,
+        "MaxValue": 200,
+        "Frequency": 1,
+        "Name": "Converter Pressure 2",
+        "ValueMetadataId": "a501a50c-02a5-4633-92d6-290593c4b52f ",
+        "Unit": "Pa",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }, {
+        "$dtId": "ConverterPressure1",
+        "$etag": "W/\"b9703642-2a8c-4318-a074-1273683bd673\"",
+        "ValueMetadataId": "44bc6eb6-3c07-42c7-ab33-9fd83ace2320",
+        "Frequency": 0.016,
+        "Name": "Converter Pressure 1",
+        "Unit": "Pa",
+        "MaxValue": 100,
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }, {
+        "$dtId": "AirTemperature",
+        "$etag": "W/\"7e62a8d3-5167-4acf-ba82-5a3f417e5854\"",
+        "MinValue": 25,
+        "MaxValue": 30,
+        "Name": "Air Temperature",
+        "ValueMetadataId": "ae42374f-41fa-425f-b39f-2067a540371d ",
+        "Unit": "°C",
+        "Frequency": 0.016,
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }, {
+        "$dtId": "Error",
+        "$etag": "W/\"287ead4e-d975-4e35-8c18-b1f1dc0aef6c\"",
+        "MaxValue": 1,
+        "Frequency": 0.0016,
+        "Name": "Error ",
+        "ValueMetadataId": "57167bd8-f15a-4254-8f60-395e07b61884",
+        "Unit": "Binary",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }],
+    "relationships": [{
+        "$relationshipId": "5476d402-08a6-48fb-a920-f1c911620e50",
+        "$etag": "W/\"9e95b609-0292-4834-9a10-5af3fd8ddd79\"",
+        "$sourceId": "DSK-Edge-Agent",
+        "$relationshipName": "Sinks",
+        "$targetId": "Proof-Sink"
+    }, {
+        "$relationshipId": "71ee6774-e50e-482b-bcd7-f62c5375e024",
+        "$etag": "W/\"405de1ee-d715-40fa-9472-aa27917e10c7\"",
+        "$sourceId": "DSK-Edge-Agent",
+        "$relationshipName": "Sinks",
+        "$targetId": "Value-Sink"
+    }, {
+        "$relationshipId": "fc649f75-3633-4446-a9f0-bec7992ec943",
+        "$etag": "W/\"cd7b9b4d-72e8-4670-b62f-065dcf5e3d7a\"",
+        "$sourceId": "DSK-Edge-Agent",
+        "$relationshipName": "Sources",
+        "$targetId": "IoTDevice"
+    }, {
+        "$relationshipId": "06769b91-2f0e-4944-b5b4-ad274435f0c1",
+        "$etag": "W/\"26d40441-bef2-4d1c-ae48-f355363c6e20\"",
+        "$sourceId": "IoTDevice",
+        "$relationshipName": "Streams",
+        "$targetId": "ConverterPressure2"
+    }, {
+        "$relationshipId": "5157f132-563d-43a0-af29-7ffeb8fdb8d1",
+        "$etag": "W/\"30203f7c-35a3-4bd8-9066-3dc4c37efacb\"",
+        "$sourceId": "IoTDevice",
+        "$relationshipName": "Streams",
+        "$targetId": "Converter-Temperature-1"
+    }, {
+        "$relationshipId": "7081e343-fd30-4a7c-a2bd-365cb4869a15",
+        "$etag": "W/\"a2fc972a-965a-4fdc-b2da-5246b5f3758e\"",
+        "$sourceId": "IoTDevice",
+        "$relationshipName": "Streams",
+        "$targetId": "Converter-Temperature-2"
+    }, {
+        "$relationshipId": "cc505d8d-9ef2-45af-8258-80da8d6a663b",
+        "$etag": "W/\"65791742-a1b0-480d-8b00-aa0887edf636\"",
+        "$sourceId": "IoTDevice",
+        "$relationshipName": "Streams",
+        "$targetId": "Error"
+    }, {
+        "$relationshipId": "cd0aeeee-7d85-4e7c-a6ad-d5a0960aa69f",
+        "$etag": "W/\"f328b6a1-4628-45ec-bdc4-16ffbea90989\"",
+        "$sourceId": "IoTDevice",
+        "$relationshipName": "Streams",
+        "$targetId": "ConverterPressure1"
+    }, {
+        "$relationshipId": "cf2d9dd4-0427-466a-9b02-cdc7578404fc",
+        "$etag": "W/\"ebe97900-94b7-43ac-af0f-083800e520c1\"",
+        "$sourceId": "IoTDevice",
+        "$relationshipName": "Streams",
+        "$targetId": "AirTemperature"
+    }]
+}
