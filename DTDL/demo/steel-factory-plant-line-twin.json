@@ -33,11 +33,6 @@
     }, {
         "$dtId": "Value-Sink",
         "$etag": "W/\"d40bd92c-72e1-4908-a961-3a97cc168816\"",
-        "BaseUrl": "https://data-api.dev-node-a.dataspace-node.com/",
-        "AuthUrl": "https://auth.dev.dataspace-hub.com/auth/realms/dev-node-a/protocol/openid-connect/token",
-        "ClientSecret": "68ac2c07-d297-4ece-aaa3-774b87404fe6",
-        "AuthScope": "data-api",
-        "ClientId": "data-api",
         "$metadata": {
             "$model": "dtmi:io:tributech:sink:dataapivaluesink;1"
         }
