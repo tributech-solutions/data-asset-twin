@@ -10,6 +10,10 @@
         "$dtId": "DSK-Edge-Agent",
         "$etag": "W/\"e0f7afb9-70ee-4f62-a3b3-f05c98a4e37a\"",
         "Name": "Steel Factory Plant Line #21",
+        "DeviceId": "0803cb52-f60f-4d15-9de7-b155373d9b00",
+        "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArVCsutPbfbxb7hCkURE9\nxueRmBjtTe1lxXCz2VqkvZHRcFEvJeiXnyjCsYAyrHmmChAXgz95kvkzzvlYsME7\nonjac22smQVbAaJl7cMtq7YeduVacUlgTAHv5De7K4zUG2epy7UiyXqaaUS10uqi\ny8IyvxB1IbwABRU2kXt7cTzGLR7NkCnewlE53REuwaZhYOtEF7gyakz5lEs6MgGP\nY4ivQcDDrDRis3OFFY22T1Q4kGDRP3Q8yvefFi0spWCiDhiR9dLZ8KaV+4fwYpru\nSi8AsLeAjb7P7ebwTdumojm9uvJK2qDFPFv2rGN336AmNpnc6WbiWKFGD9f4Te1h\ncwIDAQAB\n-----END PUBLIC KEY-----",
+        "KeyStorageType": "NONE",
+        "ProofKind": "SHA256_RSA2048_PSS",
         "$metadata": {
             "$model": "dtmi:io:tributech:device:edge;1"
         }
@@ -55,7 +59,7 @@
         "MaxValue": 200,
         "Frequency": 1,
         "Name": "Converter Pressure 2",
-        "ValueMetadataId": "a501a50c-02a5-4633-92d6-290593c4b52f ",
+        "ValueMetadataId": "a501a50c-02a5-4633-92d6-290593c4b52f",
         "Unit": "Pa",
         "$metadata": {
             "$model": "dtmi:io:tributech:stream:simulated;1"
@@ -77,7 +81,7 @@
         "MinValue": 25,
         "MaxValue": 30,
         "Name": "Air Temperature",
-        "ValueMetadataId": "ae42374f-41fa-425f-b39f-2067a540371d ",
+        "ValueMetadataId": "ae42374f-41fa-425f-b39f-2067a540371d",
         "Unit": "°C",
         "Frequency": 0.016,
         "$metadata": {
