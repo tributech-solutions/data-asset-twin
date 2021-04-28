@@ -1,0 +1,125 @@
+{
+    "digitalTwins": [{
+        "$dtId": "DSK-Edge",
+        "$etag": "W/\"5bf27229-f825-40d4-9731-8c8ba12723d6\"",
+        "DeviceId": "7e97cd3c-91ee-430d-bbcc-72842eb4dc73",
+        "Name": "Battery Pack Renault Zoe",
+        "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1LbWvLKChtdoMhan67DV\nJhPqxmme7/mdsevRnRC3SkIg7+8DlN90tzXNThztt4o2D4rRZ4pzFmpDCBh6ynN7\nj5O9ejYpqfv+8v/n+qbjkuO/07QUBu9ml5+tmu4zyxVBhcwTh1DIRofj+jYQqEre\n18IHBxzhHCU0JJ91gw/pSGsWnsi38KOR9Y5wIddesglSScl/gkUVHGMgVnBGW/In\nozRVnY1QzgSAAQoae+/a7c4iOZVkv7r+LKHni1InaiCLIQAWOT1pqQe+ytvdPKau\nRAPbowbYAEuOt9wlrXUI4W+ycauzeHYtZWfLJflaDQkDorBU3N12WiEx4faLJ9it\nkwIDAQAB\n-----END PUBLIC KEY-----",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:device:edge;1"
+        }
+    }, {
+        "$dtId": "EV1",
+        "$etag": "W/\"ecc543e6-8a33-4f5d-9815-e33b4ad84076\"",
+        "Name": "Renault Zoe",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:source:simulated;1"
+        }
+    }, {
+        "$dtId": "Voltage-1",
+        "$etag": "W/\"c7e8ce85-c211-44b1-af9a-c1c5ac1c0d76\"",
+        "MinValue": 380,
+        "MaxValue": 405,
+        "Frequency": 0.016,
+        "Name": "Voltage",
+        "ValueMetadataId": "910effc2-b587-406f-9efc-ccc0db5bed83",
+        "Unit": "V",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }, {
+        "$dtId": "Current-1",
+        "$etag": "W/\"dfbae6f2-6c3e-4368-8067-f325c0bb435c\"",
+        "MaxValue": 250,
+        "Frequency": 0.016,
+        "Name": "Current",
+        "ValueMetadataId": "19e3e970-c77f-4984-88d1-ac542bd00943",
+        "Unit": "A",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }, {
+        "$dtId": "PowerConsumption-1",
+        "$etag": "W/\"e390babd-f338-48ec-bbbb-76789f957fde\"",
+        "MaxValue": 100,
+        "Frequency": 0.016,
+        "Name": "Power Consumption",
+        "ValueMetadataId": "3da2fe86-638f-400f-b969-396c0e22eca4",
+        "Unit": "kW",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }, {
+        "$dtId": "CellVoltage-1",
+        "$etag": "W/\"e3862f54-1922-410b-b325-084a7250b436\"",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }, {
+        "$dtId": "CellTemperature-1",
+        "$etag": "W/\"b51efd80-daaf-406e-8a0c-c5857cc33d77\"",
+        "MinValue": -10,
+        "MaxValue": 58,
+        "Frequency": 0.0333,
+        "Name": "Cell Temperature",
+        "ValueMetadataId": "be7e15ae-682b-4a9f-b0cc-e373bd2a5b96",
+        "Unit": "°C",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }, {
+        "$dtId": "ErrorCode-1",
+        "$etag": "W/\"c5e27f6b-1d7c-469f-b305-be547510e568\"",
+        "MaxValue": 1,
+        "Frequency": 9.0016,
+        "Name": "Error",
+        "ValueMetadataId": "ce7594c9-6ab6-49ac-801e-61c4ac320fe7",
+        "Unit": "",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:simulated;1"
+        }
+    }],
+    "relationships": [{
+        "$relationshipId": "9edf9d79-2e7c-4519-825e-ea3a3e9b6ca5",
+        "$etag": "W/\"dd5291da-2ae1-41f8-b6bf-c9d0565c05a5\"",
+        "$sourceId": "DSK-Edge",
+        "$relationshipName": "Sources",
+        "$targetId": "EV1"
+    }, {
+        "$relationshipId": "0b692aee-6bd7-450a-92ec-df1b4755513d",
+        "$etag": "W/\"bd894d7f-9d8d-456d-aa01-2ac6c750cb90\"",
+        "$sourceId": "EV1",
+        "$relationshipName": "Streams",
+        "$targetId": "ErrorCode-1"
+    }, {
+        "$relationshipId": "87e48186-d30a-444d-9842-36ff13ca330e",
+        "$etag": "W/\"17207a59-443d-4fe4-987f-641d19e6cba7\"",
+        "$sourceId": "EV1",
+        "$relationshipName": "Streams",
+        "$targetId": "CellVoltage-1"
+    }, {
+        "$relationshipId": "9157eaec-3bdd-40ea-b046-443154e70242",
+        "$etag": "W/\"584073c8-b1fd-4c71-859b-1f1860a2d06d\"",
+        "$sourceId": "EV1",
+        "$relationshipName": "Streams",
+        "$targetId": "CellTemperature-1"
+    }, {
+        "$relationshipId": "a31c77b8-e5bf-4508-811f-4c6c92919901",
+        "$etag": "W/\"0797222e-1d0c-4859-a965-8ec7c6b28763\"",
+        "$sourceId": "EV1",
+        "$relationshipName": "Streams",
+        "$targetId": "Current-1"
+    }, {
+        "$relationshipId": "dafa0e51-68cc-4c9b-b1cc-271e3ad501fb",
+        "$etag": "W/\"e3ff124a-b47f-4df2-9988-16388705bb84\"",
+        "$sourceId": "EV1",
+        "$relationshipName": "Streams",
+        "$targetId": "PowerConsumption-1"
+    }, {
+        "$relationshipId": "f239f633-4342-422a-b676-b0c9cffdc2d9",
+        "$etag": "W/\"f1ab23f4-9505-4bac-b82d-de9f167d031a\"",
+        "$sourceId": "EV1",
+        "$relationshipName": "Streams",
+        "$targetId": "Voltage-1"
+    }]
+}
