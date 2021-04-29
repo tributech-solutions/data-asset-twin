@@ -1,0 +1,60 @@
+{
+    "digitalTwins": [{
+        "$dtId": "DSK-Edge",
+        "$etag": "W/\"c0b8601e-48c3-4ca1-9244-cef73f37ca89\"",
+        "DeviceId": "123",
+        "Name": "DSK-Edge",
+        "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1LbWvLKChtdoMhan67DV\nJhPqxmme7/mdsevRnRC3SkIg7+8DlN90tzXNThztt4o2D4rRZ4pzFmpDCBh6ynN7\nj5O9ejYpqfv+8v/n+qbjkuO/07QUBu9ml5+tmu4zyxVBhcwTh1DIRofj+jYQqEre\n18IHBxzhHCU0JJ91gw/pSGsWnsi38KOR9Y5wIddesglSScl/gkUVHGMgVnBGW/In\nozRVnY1QzgSAAQoae+/a7c4iOZVkv7r+LKHni1InaiCLIQAWOT1pqQe+ytvdPKau\nRAPbowbYAEuOt9wlrXUI4W+ycauzeHYtZWfLJflaDQkDorBU3N12WiEx4faLJ9it\nkwIDAQAB\n-----END PUBLIC KEY-----",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:device:edge;1"
+        }
+    }, {
+        "$dtId": "OPCUA",
+        "$etag": "W/\"6cf47af5-9358-436f-9d7d-b065c74471a9\"",
+        "ConnectionString": "CONNECTION_STRING",
+        "Id": "",
+        "Name": "OPCUA",
+        "ValueTopic": "VALUE_TOPIC",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:source:opcua;1"
+        }
+    }, {
+        "$dtId": "OPCUA-Stream-1",
+        "$etag": "W/\"b84666f6-7b5b-45b7-8532-70fd1ffe110b\"",
+        "Identifier": "sn=0",
+        "Name": "OPCUA-Stream-1",
+        "ValueMetadataId": "bb024d1a-1f9c-4702-9de8-0494741fe1dc",
+        "Unit": "",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:opcua;1"
+        }
+    }, {
+        "$dtId": "OPCUA-Stream-2",
+        "$etag": "W/\"ffafa5f4-a74c-4724-a792-f40428a2ec1c\"",
+        "Identifier": "sn=2",
+        "Name": "OPCUA-Stream-2",
+        "ValueMetadataId": "85680b81-a176-4c50-a538-4e0067defcb2",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:opcua;1"
+        }
+    }],
+    "relationships": [{
+        "$relationshipId": "33475a13-b35b-46de-9418-61eb5ac25c3b",
+        "$etag": "W/\"9db56255-4aaf-462f-93fa-01379d5ddb2e\"",
+        "$sourceId": "DSK-Edge",
+        "$relationshipName": "Sources",
+        "$targetId": "OPCUA"
+    }, {
+        "$relationshipId": "1518515f-b781-4304-9b49-710abd3420f3",
+        "$etag": "W/\"3c013f6b-2ce0-40d6-ba2e-63cf6f473596\"",
+        "$sourceId": "OPCUA",
+        "$relationshipName": "Streams",
+        "$targetId": "OPCUA-Stream-2"
+    }, {
+        "$relationshipId": "48798a54-4b2c-40b9-86d6-6f70044305be",
+        "$etag": "W/\"9b7e2f0c-ea94-4429-96ad-222a108eb485\"",
+        "$sourceId": "OPCUA",
+        "$relationshipName": "Streams",
+        "$targetId": "OPCUA-Stream-1"
+    }]
+}

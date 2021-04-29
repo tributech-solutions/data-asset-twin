@@ -1,0 +1,57 @@
+{
+    "digitalTwins": [{
+        "$dtId": "DSK-Edge",
+        "$etag": "W/\"8206e441-7a44-44b6-915b-c6b0b44332cc\"",
+        "DeviceId": "7e97cd3c-91ee-430d-bbcc-72842eb4dc73",
+        "Name": "DSK-Edge",
+        "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1LbWvLKChtdoMhan67DV\nJhPqxmme7/mdsevRnRC3SkIg7+8DlN90tzXNThztt4o2D4rRZ4pzFmpDCBh6ynN7\nj5O9ejYpqfv+8v/n+qbjkuO/07QUBu9ml5+tmu4zyxVBhcwTh1DIRofj+jYQqEre\n18IHBxzhHCU0JJ91gw/pSGsWnsi38KOR9Y5wIddesglSScl/gkUVHGMgVnBGW/In\nozRVnY1QzgSAAQoae+/a7c4iOZVkv7r+LKHni1InaiCLIQAWOT1pqQe+ytvdPKau\nRAPbowbYAEuOt9wlrXUI4W+ycauzeHYtZWfLJflaDQkDorBU3N12WiEx4faLJ9it\nkwIDAQAB\n-----END PUBLIC KEY-----",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:device:edge;1"
+        }
+    }, {
+        "$dtId": "RabbitMQ-Source",
+        "$etag": "W/\"e11464b5-d209-49d7-9b45-17a5af5f1489\"",
+        "ConnectionString": "CON_STRING",
+        "Name": "Rabbit-MQ",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:source:rabbitmq;1"
+        }
+    }, {
+        "$dtId": "RabbitMQ-Stream-1",
+        "$etag": "W/\"83b9d3ca-8e54-4d49-9565-e69d5d1657d9\"",
+        "ValueMetadataId": "186b620f-32a6-4fa7-a0d1-7ef61e73b4c5",
+        "QueueName": "STREAM-1-Q",
+        "Name": "Stream-1",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:rabbitmq;1"
+        }
+    }, {
+        "$dtId": "RabbitMQ-Stream-2",
+        "$etag": "W/\"e67f8b1a-de89-4b75-a7ae-edb03c227e27\"",
+        "QueueName": "STREAM-2-Q",
+        "Name": "Stream-2",
+        "ValueMetadataId": "997c6917-19b5-494c-99f7-1ed0f02d8121",
+        "$metadata": {
+            "$model": "dtmi:io:tributech:stream:rabbitmq;1"
+        }
+    }],
+    "relationships": [{
+        "$relationshipId": "4e2a52b2-7d5d-451e-aec0-202898a65f9b",
+        "$etag": "W/\"fb1b10aa-8943-4fa2-b6dd-ccce540cb9fb\"",
+        "$sourceId": "DSK-Edge",
+        "$relationshipName": "Sources",
+        "$targetId": "RabbitMQ-Source"
+    }, {
+        "$relationshipId": "f66b3e2b-3fc0-435f-abc7-92761a3a39cf",
+        "$etag": "W/\"7926b7b5-3b83-4744-b07c-d749b08c55fa\"",
+        "$sourceId": "RabbitMQ-Source",
+        "$relationshipName": "Streams",
+        "$targetId": "RabbitMQ-Stream-1"
+    }, {
+        "$relationshipId": "f74fe866-412f-49de-bc73-05bf021ef829",
+        "$etag": "W/\"d3072f30-eaf2-48eb-9aff-f54e030d036d\"",
+        "$sourceId": "RabbitMQ-Source",
+        "$relationshipName": "Streams",
+        "$targetId": "RabbitMQ-Stream-2"
+    }]
+}
