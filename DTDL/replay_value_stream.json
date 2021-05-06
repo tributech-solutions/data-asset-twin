@@ -1,0 +1,10 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:io:tributech:stream:replay;1",
+    "@type": "Interface",
+    "displayName": "Replay Stream",
+    "extends": "dtmi:io:tributech:stream:base;1",
+    "contents": [
+      
+    ]
+}

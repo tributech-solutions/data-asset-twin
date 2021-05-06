@@ -1,0 +1,42 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:io:tributech:source:replay;1",
+    "@type": "Interface",
+    "extends": "dtmi:io:tributech:source:base;1",
+    "displayName": "Replay Source",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "FileName",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Frequency",
+            "description": "Line by line interval in ms"
+        },
+        {
+            "@type": "Property",
+            "name": "Frequency",
+            "schema": "double",
+            "writable": true,
+            "displayName": "Frequency",
+            "description": "Line by line interval in ms"
+        },
+        {
+            "@type": "Property",
+            "name": "RestartAutomatically",
+            "schema": "boolean",
+            "writable": true,
+            "displayName": "Frequency",
+            "description": "Line by line interval in ms"
+        },
+        {
+            "@type": "Relationship",
+            "name": "Streams",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 10,
+            "target": "dtmi:io:tributech:stream:replay;1",
+            "displayName": "Streams",
+            "description": "Contains all Simualted streams the given source."
+        }
+    ]
+}
