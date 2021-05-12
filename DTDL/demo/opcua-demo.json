@@ -12,9 +12,7 @@
         "$dtId": "OPCUA",
         "$etag": "W/\"6cf47af5-9358-436f-9d7d-b065c74471a9\"",
         "ConnectionString": "CONNECTION_STRING",
-        "Id": "",
         "Name": "OPCUA",
-        "ValueTopic": "VALUE_TOPIC",
         "$metadata": {
             "$model": "dtmi:io:tributech:source:opcua;1"
         }
