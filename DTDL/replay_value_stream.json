@@ -5,6 +5,13 @@
     "displayName": "Replay Stream",
     "extends": "dtmi:io:tributech:stream:base;1",
     "contents": [
-      
+        {
+            "@type": "Property",
+            "name": "ColumnName",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Column name",
+            "description": "Header column name inside the csv file"
+        }
     ]
 }
