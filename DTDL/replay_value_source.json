@@ -7,6 +7,14 @@
     "contents": [
         {
             "@type": "Property",
+            "name": "RowValueMetadataId",
+            "schema": "string",
+            "writable": true,
+            "displayName": "RowValueMetadataId",
+            "description": "The value MetadataId for the row json object"
+        },
+        {
+            "@type": "Property",
             "name": "FileName",
             "schema": "string",
             "writable": true,
