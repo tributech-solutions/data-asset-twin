@@ -34,14 +34,14 @@
                     "enumValue": "NONE"
                 },
                 {
-                    "name": "NB-IoT",
+                    "name": "NBIoT",
                     "displayName": "NB-IoT",
-                    "enumValue": "NB_IoT"
+                    "enumValue": "NBIoT"
                 },
                 {
-                    "name": "CAT-M",
+                    "name": "CATM",
                     "displayName": "CAT-M",
-                    "enumValue": "CAT_M"
+                    "enumValue": "CATM"
                 },
                 {
                     "name": "LTE",
