@@ -10,7 +10,8 @@
             "schema": "string",
             "writable": false,
             "displayName": "Device Id",
-            "comment": "Represents the unique ID of the Tributech-device."
+            "description": "Represents the unique ID of the Tributech-device.",
+            "comment": "Device ID needs to be a UUID."
         },
         {
             "@type": "Property",
@@ -18,15 +19,15 @@
             "schema": "string",
             "writable": true,
             "displayName": "Name",
-            "comment": "Represents the name of the Tributech-device."
+            "description": "Represents the name of the Tributech-device."
         },
         {
             "@type": "Property",
             "name": "PublicKey",
             "schema": "string",
             "writable": false,
-            "displayName": "Publik key",
-            "comment": "Represents the current public-key of the device which matches with the current key-pair generated inside the Optiga Trust M chip."
+            "displayName": "Public Key",
+            "description": "Represents the current public-key of the device."
         },
         {
             "@type": "Property",
@@ -69,7 +70,7 @@
             },
             "writable": false,
             "displayName": "Key Storage Type",
-            "description": ""
+            "description": "The supported key storage type of the device."
         },
         {
             "@type": "Property",
@@ -80,19 +81,19 @@
                 "enumValues": [
                     {
                         "name": "SHA256_RSA2048_PSS",
-                        "displayName": "SHA256_RSA2048_PSS",
+                        "displayName": "SHA256 RSA2048-PSS",
                         "enumValue": "SHA256_RSA2048_PSS"
                     },
                     {
                         "name": "SHA256_RSA2048_PKCS1",
-                        "displayName": "SHA256_RSA2048_PKCS1",
+                        "displayName": "SHA256 RSA2048-PKCS1",
                         "enumValue": "SHA256_RSA2048_PKCS1"
                     }
                 ]
             },
             "writable": false,
             "displayName": "Proof Kind",
-            "description": ""
+            "description": "The supported proof kind of the device."
         },
         {
             "@type": "Relationship",
@@ -101,7 +102,7 @@
             "maxMultiplicity": 10,
             "target": "dtmi:io:tributech:source:base;1",
             "displayName": "Sources",
-            "description": "Contains all sources of the given agent."
+            "description": "Contains all sources of the given device."
         },
         {
             "@type": "Relationship",
@@ -110,16 +111,16 @@
             "maxMultiplicity": 1,
             "target": "dtmi:io:tributech:annotations:base;1",
             "displayName": "Annotations",
-            "description": "Annotations"
+            "description": "Contains all annotations of the given device."
         },
         {
             "@type": "Relationship",
             "name": "Sinks",
             "minMultiplicity": 0,
-            "maxMultiplicity": 1,
+            "maxMultiplicity": 2,
             "target": "dtmi:io:tributech:sink:base;1",
             "displayName": "Sinks",
-            "description": "Sinks"
+            "description": "Contains all sinks of the given device."
         }
     ]
 }

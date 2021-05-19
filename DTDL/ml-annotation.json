@@ -24,7 +24,7 @@
           }
         ]
       },
-      "writable": false,
+      "writable": true,
       "displayName": "Type",
       "description": "Machine-learning annotation"
     }
