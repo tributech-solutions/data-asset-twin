@@ -9,7 +9,7 @@
       "@type": "Property",
       "name": "ConnectionString",
       "schema": "string",
-      "writable": false,
+      "writable": true,
       "displayName": "OPCUA Connection string",
       "description": "The connection string for the opcua value source"
     },
@@ -17,7 +17,7 @@
       "@type": "Property",
       "name": "PublishingInterval",
       "schema": "integer",
-      "writable": false,
+      "writable": true,
       "displayName": "OPCUA publishing interval",
       "description": "The opcua publishing interval"
     },

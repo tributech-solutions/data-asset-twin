@@ -3,7 +3,5 @@
     "@id": "dtmi:io:tributech:annotations:base;1",
     "@type": "Interface",
     "displayName": "Annotation",
-    "contents": [
-      
-    ]
+    "contents": []
   }
