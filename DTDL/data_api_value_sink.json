@@ -68,14 +68,6 @@
             "writable": true,
             "displayName": "Max retry interval",
             "description": "Maximum interval for delays of calls at Data-API on error"
-        },
-        {
-            "@type": "Property",
-            "name": "DataApiSkipUniqueConstraintViolationCheck",
-            "schema": "boolean",
-            "writable": true,
-            "displayName": "Skip unique constraint violation check",
-            "description": "See DataAPI Doc"
         }
     ]
 }
