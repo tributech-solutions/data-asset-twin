@@ -15,6 +15,7 @@
     {
       "@type": "Property",
       "name": "SourceConfig",
+      "writable": true,
       "schema": {
         "@type": "Map",
         "mapKey": {

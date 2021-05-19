@@ -9,7 +9,7 @@
             "@type": "Property",
             "name": "Identifier",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Identifier",
             "description": "The identifier for the opcua value source (eg. \"ns=1;i=0\")"
         }

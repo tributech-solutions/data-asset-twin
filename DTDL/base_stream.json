@@ -10,19 +10,20 @@
       "schema": "string",
       "writable": true,
       "displayName": "Name",
-      "comment": "Human-readable name of the stream."
+      "description": "Human-readable name of the stream."
     },
     {
       "@type": "Property",
       "name": "ValueMetadataId",
       "schema": "string",
-      "writable": false,
+      "writable": true,
       "displayName": "ValueMetadataId",
-      "comment": "Represents the global unique id of a stream."
+      "description": "Represents the global unique id of a stream."
     },
     {
       "@type": "Property",
       "name": "StreamConfig",
+      "writable": true,
       "schema": {
         "@type": "Map",
         "mapKey": {
@@ -40,8 +41,8 @@
       "name": "MerkleTreeDepth",
       "schema": "integer",
       "writable": true,
-      "displayName": "MerkleTreeDepth",
-      "description": "Depth of the merkle-tree for proofs.",
+      "displayName": "Merkle Tree Depth",
+      "description": "Depth of the binary merkle-tree used for proof generation. Value used as 2^MerkleTreeDepth.",
       "comment": "Proofs allows to verify integrity and origin of the stream. A proof represents a binary-merkle-tree and 2^MerkleTreeDepth values are necessary to build a single proof."
     },
     {
@@ -49,8 +50,8 @@
       "name": "MerkleTreeTimeout",
       "schema": "duration",
       "writable": true,
-      "displayName": "MerkleTreeTimeout",
-      "description": "Timeout for a single merkle-tree for proofs.",
+      "displayName": "Merkle Tree Timeout",
+      "description": "Timeout for a single merkle-tree for proofs in ms.",
       "comment": "If a stream doesn't provides enought values to build an entire merkle tree with the given depth in the given period it will be splitted into smaller merkle-trees."
     },
     {
@@ -58,7 +59,7 @@
       "name": "SubmissionInterval",
       "schema": "duration",
       "writable": true,
-      "displayName": "SubmissionInterval",
+      "displayName": "Submission Interval",
       "description": "Timeout for a single merkle-tree for proofs.",
       "comment": "If a stream doesn't provides enought values to build an entire merkle tree with the given depth in the given period it will be splitted into smaller merkle-trees."
     },
@@ -102,16 +103,16 @@
         "displayName": "Value",
         "description": "Strongly typed value. At least one field must be set. Multiple encodings are possible."
       },
-      "displayName": "CurrentValue",
+      "displayName": "Current Value",
       "description": "Current value of the stream."
     },
     {
       "@type": "Property",
       "name": "Unit",
       "schema": "string",
-      "writable": false,
+      "writable": true,
       "displayName": "Unit",
-      "comment": "Represents the unit of the stream."
+      "description": "Represents the unit of the stream."
     },
     {
       "@type": "Relationship",
