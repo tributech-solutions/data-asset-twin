@@ -1,0 +1,94 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:source:modbus;1",
+  "@type": "Interface",
+  "extends": "dtmi:io:tributech:source:base;1",
+  "displayName": "Modbus Source",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "UnitId",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "Unit Id",
+      "description": "Unit Id in terms of Modbus RTU."
+    },
+    {
+      "@type": "Property",
+      "name": "MsbFirst",
+      "schema": "boolean",
+      "writable": true,
+      "displayName": "Most significant byte first",
+      "description": "Specifies the byte order."
+    },
+    {
+      "@type": "Property",
+      "name": "MswFirst",
+      "schema": "boolean",
+      "writable": true,
+      "displayName": "Most significant word first",
+      "description": "Specifies the word-order."
+    },
+    {
+      "@type": "Property",
+      "name": "Baudrate",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "Baud rate",
+      "description": "Specifies the baud rate which in use for the underlying serial connection for the Modbus RTU connection."
+    },
+    {
+      "@type": "Property",
+      "name": "DataBits",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "Data bits",
+      "description": "Specifies the amount of data bits which are in use for the underlying serial connection for the Modbus RTU connection."
+    },
+    {
+      "@type": "Property",
+      "name": "StopBits",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "Stop bits",
+      "description": "Specifies the amount of stop bits which are in use for the underlying serial connection for the Modbus RTU connection."
+    },
+    {
+      "@type": "Property",
+      "name": "Parity",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+            {
+                "name": "none",
+                "displayName": "none",
+                "enumValue": "none"
+            },
+            {
+                "name": "odd",
+                "displayName": "odd",
+                "enumValue": "odd"
+            },
+            {
+                "name": "even",
+                "displayName": "even",
+                "enumValue": "even"
+            }
+        ]
+      },
+      "writable": true,
+      "displayName": "Parity",
+      "description": "Specifies the parity which are in use for the underlying serial connection for the Modbus RTU connection."
+    }
+    {
+      "@type": "Relationship",
+      "name": "Streams",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 25,
+      "target": "dtmi:io:tributech:stream:modbus;1",
+      "displayName": "Streams",
+      "description": "Contains all streams of the given source."
+    }
+  ]
+}

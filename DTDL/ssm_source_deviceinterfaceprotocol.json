@@ -1,16 +1,16 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:source:airquality;1",
+  "@id": "dtmi:io:tributech:source:deviceinterfaceprotocol;1",
   "@type": "Interface",
   "extends": "dtmi:io:tributech:source:base;1",
-  "displayName": "Air Quality Source",
+  "displayName": "Device Interface Protocol",
   "contents": [
     {
       "@type": "Relationship",
       "name": "Streams",
       "minMultiplicity": 0,
-      "maxMultiplicity": 3,
-      "target": "dtmi:io:tributech:stream:airquality;1",
+      "maxMultiplicity": 10,
+      "target": "dtmi:io:tributech:stream:deviceinterfaceprotocol;1",
       "displayName": "Streams",
       "description": "Contains all streams of the given source."
     }
