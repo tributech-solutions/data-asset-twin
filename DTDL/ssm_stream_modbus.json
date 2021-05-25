@@ -30,28 +30,28 @@
         "valueSchema": "string",
         "enumValues": [
             {
-                "name": "UINT16",
-                "displayName": "UINT16",
+                "name": "Uint16",
+                "displayName": "Uint16",
                 "enumValue": "UINT16"
             },
             {
-                "name": "UINT32",
-                "displayName": "UINT32",
+                "name": "Uint32",
+                "displayName": "Uint32",
                 "enumValue": "UINT32"
             },
             {
-              "name": "INT16",
-              "displayName": "INT16",
+              "name": "Int16",
+              "displayName": "Int16",
               "enumValue": "INT16"
             },
             {
-                "name": "INT32",
-                "displayName": "INT32",
+                "name": "Int32",
+                "displayName": "Int32",
                 "enumValue": "INT32"
             },
             {
-                "name": "FLOAT",
-                "displayName": "FLOAT",
+                "name": "Float",
+                "displayName": "Float",
                 "enumValue": "FLOAT"
             }
         ]
