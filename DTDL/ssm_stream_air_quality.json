@@ -36,7 +36,7 @@
       },
       "writable": true,
       "displayName": "Measure",
-      "description": "Specifies the kind of a measure of a stream of the Air Quality module."
+      "description": "Specifies the kind of measure of the stream of the Air Quality module."
     }
   ]
 }
