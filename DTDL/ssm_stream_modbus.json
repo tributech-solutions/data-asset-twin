@@ -1,0 +1,72 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:modbus;1",
+  "@type": "Interface",
+  "extends": "dtmi:io:tributech:stream:base;1",
+  "displayName": "Modbus Stream",
+  "description": "Represents a modbus register.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "RegisterAddress",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "Register address",
+      "description": "Specifies the register address in the terminology of modbus RTU which gets used in order to read the register."
+    },
+    {
+      "@type": "Property",
+      "name": "FunctionCode",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "Function Code",
+      "description": "Specifies the function code in the terminology of modbus RTU which gets used in order to read the register."
+    },
+    {
+      "@type": "Property",
+      "name": "DataType",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+            {
+                "name": "Uint16",
+                "displayName": "Uint16",
+                "enumValue": "UINT16"
+            },
+            {
+                "name": "Uint32",
+                "displayName": "Uint32",
+                "enumValue": "UINT32"
+            },
+            {
+              "name": "Int16",
+              "displayName": "Int16",
+              "enumValue": "INT16"
+            },
+            {
+                "name": "Int32",
+                "displayName": "Int32",
+                "enumValue": "INT32"
+            },
+            {
+                "name": "Float",
+                "displayName": "Float",
+                "enumValue": "FLOAT"
+            }
+        ]
+      },
+      "writable": true,
+      "displayName": "Data type",
+      "description": "Specifies the data type of the modbus register."
+    },
+    {
+      "@type": "Property",
+      "name": "Factor",
+      "schema": "float",
+      "writable": true,
+      "displayName": "Factor",
+      "description": "Specifies a factor. It can be used to scale a certain register value to handle it more easily. Can be set to 1 to get the raw value of the register."
+    }
+  ]
+}

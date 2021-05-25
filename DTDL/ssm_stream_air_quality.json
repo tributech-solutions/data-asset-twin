@@ -1,0 +1,42 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:airquality;1",
+  "@type": "Interface",
+  "extends": "dtmi:io:tributech:stream:base;1",
+  "displayName": "Air Quality Stream",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Measure",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+            {
+                "name": "CO2",
+                "displayName": "CO2",
+                "enumValue": "CO2"
+            },
+            {
+                "name": "Temperature",
+                "displayName": "Temperature",
+                "enumValue": "Temperature"
+            },
+            {
+                "name": "VOC",
+                "displayName": "VOC",
+                "enumValue": "VOC"
+            },
+            {
+                "name": "Humidity",
+                "displayName": "Humidity",
+                "enumValue": "Humidity"
+            }
+        ]
+      },
+      "writable": true,
+      "displayName": "Measure",
+      "description": "Specifies the kind of measure of the stream of the Air Quality module."
+    }
+  ]
+}
