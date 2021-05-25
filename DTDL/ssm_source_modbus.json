@@ -51,7 +51,7 @@
       "schema": "integer",
       "writable": true,
       "displayName": "Stop bits",
-      "description": "Specifies the amount of stop bits which are in use for the underlying serial connection for the Modbus RTU connection."
+      "description": "Specifies the amount of stop bits which are used for the underlying serial connection for the Modbus RTU connection."
     },
     {
       "@type": "Property",
