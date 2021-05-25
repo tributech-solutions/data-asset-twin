@@ -80,7 +80,7 @@
       "writable": true,
       "displayName": "Parity",
       "description": "Specifies the parity which is used for the underlying serial connection for the Modbus RTU connection."
-    }
+    },
     {
       "@type": "Relationship",
       "name": "Streams",
