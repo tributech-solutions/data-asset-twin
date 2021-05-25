@@ -35,7 +35,7 @@
       "schema": "integer",
       "writable": true,
       "displayName": "Baud rate",
-      "description": "Specifies the baud rate which in use for the underlying serial connection for the Modbus RTU connection."
+      "description": "Specifies the baud rate which is used for the underlying serial connection for the Modbus RTU connection."
     },
     {
       "@type": "Property",
