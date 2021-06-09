@@ -11,7 +11,7 @@
             "schema": "string",
             "writable": true,
             "displayName": "IoT Hub Connection string",
-            "description": "The connection string for the IoT Hub."
+            "description": "The connection string for the IoT Hub (e.g. \"HostName=<iot-hub-name>.azure-devices.net;DeviceId=<device-id>;SharedAccessKey=<key>\")."
         }
     ]
 }

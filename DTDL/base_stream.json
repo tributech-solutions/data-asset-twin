@@ -18,7 +18,7 @@
       "schema": "string",
       "writable": true,
       "displayName": "ValueMetadataId",
-      "description": "Represents the global unique id of a stream."
+      "description": "Represents the global unique id (UUID) of a stream."
     },
     {
       "@type": "Property",
@@ -41,27 +41,26 @@
       "name": "MerkleTreeDepth",
       "schema": "integer",
       "writable": true,
-      "displayName": "Merkle Tree Depth",
-      "description": "Depth of the binary merkle-tree used for proof generation. Value used as 2^MerkleTreeDepth.",
-      "comment": "Proofs allows to verify integrity and origin of the stream. A proof represents a binary-merkle-tree and 2^MerkleTreeDepth values are necessary to build a single proof."
+      "displayName": "Max Merkle Tree Depth",
+      "description": "Maximum depth of the binary merkle tree used for proof generation (e.g. 12). Value used as 2^MerkleTreeDepth.",
+      "comment": "Proofs allows to verify integrity and origin of the stream. A proof represents a binary-merkle tree and 2^MerkleTreeDepth values are necessary to build a single proof."
     },
     {
       "@type": "Property",
       "name": "MerkleTreeTimeout",
-      "schema": "duration",
+      "schema": "integer",
       "writable": true,
-      "displayName": "Merkle Tree Timeout",
-      "description": "Timeout for a single merkle-tree for proofs in ms.",
-      "comment": "If a stream doesn't provides enought values to build an entire merkle tree with the given depth in the given period it will be splitted into smaller merkle-trees."
+      "displayName": "Max Merkle Tree Age",
+      "description": "Maximum merkle tree age in seconds (e.g. 600s).",
+      "comment": "If a stream doesn't provides enough values to build an entire merkle tree with the given depth in the given time-period it will be splitted into smaller merkle trees."
     },
     {
       "@type": "Property",
       "name": "SubmissionInterval",
-      "schema": "duration",
+      "schema": "double",
       "writable": true,
       "displayName": "Submission Interval",
-      "description": "Timeout for a single merkle-tree for proofs.",
-      "comment": "If a stream doesn't provides enought values to build an entire merkle tree with the given depth in the given period it will be splitted into smaller merkle-trees."
+      "description": "The estimated data submission interval/frequency of the stream in Hz (e.g. 1.2Hz)."
     },
     {
       "@type": "Telemetry",

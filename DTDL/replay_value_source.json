@@ -20,7 +20,7 @@
             "schema": "string",
             "writable": true,
             "displayName": "File Name",
-            "description": "The name of the CSV file to use."
+            "description": "The name of the CSV file to use (e.g. \"Data/demo_data.csv\")."
         },
         {
             "@type": "Property",
@@ -28,7 +28,7 @@
             "schema": "double",
             "writable": true,
             "displayName": "Frequency",
-            "description": "The interval to use for replaying values line by line in ms."
+            "description": "The interval (in milliseconds) to use for replaying values line by line in (e.g. 100ms)"
         },
         {
             "@type": "Property",

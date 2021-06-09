@@ -10,7 +10,7 @@
       "schema": "integer",
       "writable": true,
       "displayName": "Max batch size",
-      "description": "The maximum number of values to send as batch in one message to the sink."
+      "description": "The maximum number of values to send as batch in one message to the sink (e.g. 20 (ProofSink), 1024 (ValueSink))."
     },
     {
       "@type": "Property",
@@ -18,7 +18,7 @@
       "schema": "integer",
       "writable": true,
       "displayName": "Flush interval",
-      "description": "The interval in which the values should be flushed from the buffer and send to the API. Regardless if the MaxBatchSize was reached."
+      "description": "The interval in which the values should be flushed from the buffer and send to the API. Regardless if the MaxBatchSize was reached. e.g. 1s"
     }
   ]
 }
