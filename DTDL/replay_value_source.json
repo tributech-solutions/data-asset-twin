@@ -28,7 +28,7 @@
             "schema": "double",
             "writable": true,
             "displayName": "Frequency",
-            "description": "The interval (in milliseconds) to use for replaying values line by line in (e.g. 100ms)"
+            "description": "The interval (in milliseconds) to use for replaying values line by line in (e.g. 100)"
         },
         {
             "@type": "Property",

@@ -10,8 +10,8 @@
             "name": "BaseUrl",
             "schema": "string",
             "writable": true,
-            "displayName": "Data-API Url",
-            "description": "URL of the Data-API (e.g. https://data-api.your-node-name.dataspace-node.com)"
+            "displayName": "Trust-API Url",
+            "description": "URL of the Trust-API (e.g. https://trust-api.your-node-name.dataspace-node.com)"
         },
         {
             "@type": "Property",
@@ -27,7 +27,7 @@
             "schema": "string",
             "writable": true,
             "displayName": "OAuth scope",
-            "description": "OAuth scope (e.g. \"profile email data-api node-id\")"
+            "description": "OAuth scope (e.g. \"profile email trust-api data-api node-id\")"
         },
         {
             "@type": "Property",
@@ -35,7 +35,7 @@
             "schema": "string",
             "writable": true,
             "displayName": "Client id for authentication",
-            "description": "Client Id used for authenticaiton (e.g. \"data-api\")"
+            "description": "Client Id used for authenticaiton (e.g. \"trust-api\")"
         },
         {
             "@type": "Property",
@@ -59,7 +59,7 @@
             "schema": "integer",
             "writable": true,
             "displayName": "Max retry interval",
-            "description": "Maximum interval (in seconds) for delays of calls at Trust-API on error (e.g. 30s)"
+            "description": "Maximum interval (in seconds) for delays of calls at Trust-API on error (e.g. 30)"
         }
     ]
 }

@@ -20,7 +20,7 @@
       "schema": "integer",
       "writable": true,
       "displayName": "Max Merkle Tree Age",
-      "description": "Maximum merkle tree age in seconds (e.g. 600s).",
+      "description": "Maximum merkle tree age in seconds (e.g. 600).",
       "comment": "If a stream doesn't provides enough values to build an entire merkle tree with the given depth in the given time-period it will be splitted into smaller merkle trees."
     }
   ]

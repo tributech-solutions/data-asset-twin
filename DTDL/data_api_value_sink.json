@@ -59,7 +59,7 @@
             "schema": "integer",
             "writable": true,
             "displayName": "Retry interval",
-            "description": "Delay interval (in seconds) for the first retry of call to Data-API on error (e.g. 1s)."
+            "description": "Delay interval (in seconds) for the first retry of call to Data-API on error (e.g. 1)."
         },
         {
             "@type": "Property",
@@ -67,7 +67,7 @@
             "schema": "integer",
             "writable": true,
             "displayName": "Max retry interval",
-            "description": "Maximum interval (in seconds) for delays of calls at Data-API on error (e.g. 30s)"
+            "description": "Maximum interval (in seconds) for delays of calls at Data-API on error (e.g. 30)"
         }
     ]
 }

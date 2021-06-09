@@ -19,7 +19,7 @@
       "schema": "integer",
       "writable": true,
       "displayName": "OPC UA publishing interval",
-      "description": "The OPC UA publishing interval in milliseconds (e.g. 100ms)."
+      "description": "The OPC UA publishing interval in milliseconds (e.g. 100)."
     },
     {
       "@type": "Relationship",

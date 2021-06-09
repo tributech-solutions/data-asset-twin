@@ -19,7 +19,7 @@
             "schema": "integer",
             "writable": true,
             "displayName": "Flush interval",
-            "description": "The interval (in seconds) in which the values should be flushed from the buffer and send to the Data-API. Regardless if the MaxBatchSize was reached. e.g. 1s"
+            "description": "The interval (in seconds) in which the values should be flushed from the buffer and send to the Data-API. Regardless if the MaxBatchSize was reached. (e.g. 1)"
         },
         {
             "@type": "Relationship",

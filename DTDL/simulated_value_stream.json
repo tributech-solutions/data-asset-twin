@@ -55,7 +55,7 @@
             "schema": "double",
             "writable": true,
             "displayName": "Frequency",
-            "description": "Data Frequency in Hz (1/s) (e.g 1.0Hz)"
+            "description": "Data Frequency in Hz (1/s) (e.g 1.0)"
         }
     ]
 }
