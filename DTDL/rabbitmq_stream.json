@@ -11,7 +11,7 @@
             "schema": "string",
             "writable": false,
             "displayName": "Queue name",
-            "description": "The RabbitMQ name"
+            "description": "The RabbitMQ queue name"
         }
     ]
 }

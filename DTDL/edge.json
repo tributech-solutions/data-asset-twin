@@ -10,16 +10,18 @@
       "name": "MaxMerkleTreeDepth",
       "schema": "integer",
       "writable": true,
-      "displayName": "Max merkle tree depth",
-      "description": "The Max merkle tree depth"
+      "displayName": "Max Merkle Tree Depth",
+      "description": "Maximum depth of the binary merkle-tree used for proof generation (e.g. 12). Value used as 2^MerkleTreeDepth.",
+      "comment": "Proofs allows to verify integrity and origin of the stream. A proof represents a binary-merkle-tree and 2^MerkleTreeDepth values are necessary to build a single proof."
     },
     {
       "@type": "Property",
       "name": "MaxMerkleTreeAge",
       "schema": "integer",
       "writable": true,
-      "displayName": "Max merkle tree age",
-      "description": "The Max merkle tree age"
+      "displayName": "Max Merkle Tree Age",
+      "description": "Maximum merkle tree age in seconds (e.g. 600).",
+      "comment": "If a stream doesn't provides enough values to build an entire merkle tree with the given depth in the given time-period it will be splitted into smaller merkle trees."
     }
   ]
 }

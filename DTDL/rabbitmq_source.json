@@ -11,7 +11,7 @@
             "schema": "string",
             "writable": false,
             "displayName": "RabbitMQ Connection string",
-            "description": "The connection string for the RabbitMQ value source"
+            "description": "The connection string for the RabbitMQ value source (e.g. \"amqp://user:pass@host:10000/vhost\")."
         },
         {
             "@type": "Property",
@@ -19,7 +19,7 @@
             "schema": "integer",
             "writable": false,
             "displayName": "Max batch size",
-            "description": "The maximum number of values to send as batch in one message to the EdgeAgent."
+            "description": "The maximum number of values to send as batch in one message to the EdgeAgent. (e.g. 1024)"
         },
         {
             "@type": "Property",
@@ -27,7 +27,7 @@
             "schema": "integer",
             "writable": false,
             "displayName": "Flush interval",
-            "description": "The interval in which the values should be flushed from the buffer and send to the Data-API. Regardless if the MaxBatchSize was reached."
+            "description": "The interval (in seconds) in which the values should be flushed from the buffer and send to the Data-API. Regardless if the MaxBatchSize was reached. (e.g. 1)"
         },
         {
             "@type": "Relationship",

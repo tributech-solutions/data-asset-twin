@@ -8,10 +8,10 @@
     {
       "@type": "Property",
       "name": "MinInterval",
-      "schema": "duration",
+      "schema": "integer",
       "writable": true,
       "displayName": "Minimum Time Interval",
-      "description": "Specifies the minimal time-interval of values which can be provided for this stream.",
+      "description": "Specifies the minimal time-interval (in milliseconds) of values which can be provided for this stream.",
       "comment": "Data for the stream provided in less than the specified minimal time-interval gets discarded."
     }
   ]

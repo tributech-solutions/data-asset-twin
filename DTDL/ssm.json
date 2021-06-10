@@ -11,7 +11,7 @@
       "schema": "string",
       "writable": true,
       "displayName": "Software Version",
-      "description": "Represents the current running software version."
+      "description": "Represents the current running software version (e.g. v1.0.0)."
     },
     {
       "@type": "Property",
@@ -19,7 +19,7 @@
       "schema": "string",
       "writable": true,
       "displayName": "Hardware Version",
-      "description": "Represents the current running hardware version."
+      "description": "Represents the current running hardware version (e.g. v1.0.0)."
     },
     {
       "@type": "Property",

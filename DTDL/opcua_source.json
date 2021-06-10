@@ -3,23 +3,23 @@
   "@id": "dtmi:io:tributech:source:opcua;1",
   "@type": "Interface",
   "extends": "dtmi:io:tributech:source:base;1",
-  "displayName": "OPCUA Source",
+  "displayName": "OPC UA Source",
   "contents": [
     {
       "@type": "Property",
       "name": "ConnectionString",
       "schema": "string",
       "writable": true,
-      "displayName": "OPCUA Connection string",
-      "description": "The connection string for the opcua value source"
+      "displayName": "OPC UA Connection string",
+      "description": "The connection string for the OPC UA value source (e.g. \"opc.tcp://opcua-server:4840\")"
     },
     {
       "@type": "Property",
       "name": "PublishingInterval",
       "schema": "integer",
       "writable": true,
-      "displayName": "OPCUA publishing interval",
-      "description": "The opcua publishing interval"
+      "displayName": "OPC UA publishing interval",
+      "description": "The OPC UA publishing interval in milliseconds (e.g. 100)."
     },
     {
       "@type": "Relationship",
@@ -28,7 +28,7 @@
       "maxMultiplicity": 10,
       "target": "dtmi:io:tributech:stream:opcua;1",
       "displayName": "Streams",
-      "description": "Contains all opcua streams the given source."
+      "description": "Contains all OPC UA streams the given source."
     }
   ]
 }

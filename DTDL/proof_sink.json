@@ -10,24 +10,24 @@
             "name": "BaseUrl",
             "schema": "string",
             "writable": true,
-            "displayName": "API Url",
-            "description": ""
+            "displayName": "Trust-API Url",
+            "description": "URL of the Trust-API (e.g. https://trust-api.your-node-name.dataspace-node.com)"
         },
         {
             "@type": "Property",
             "name": "AuthUrl",
             "schema": "string",
             "writable": true,
-            "displayName": "Identity server URL",
-            "description": ""
+            "displayName": "Auth Server Token URL",
+            "description": "URL of the Token API at the Auth Server (e.g. https://auth.your-hub-name.dataspace-hub.com/auth/realms/your-node-name/protocol/openid-connect/token)"
         },
         {
             "@type": "Property",
             "name": "AuthScope",
             "schema": "string",
             "writable": true,
-            "displayName": "Identity server scope",
-            "description": ""
+            "displayName": "OAuth scope",
+            "description": "OAuth scope (e.g. \"profile email trust-api data-api node-id\")"
         },
         {
             "@type": "Property",
@@ -35,7 +35,7 @@
             "schema": "string",
             "writable": true,
             "displayName": "Client id for authentication",
-            "description": ""
+            "description": "Client Id used for authenticaiton (e.g. \"trust-api\")"
         },
         {
             "@type": "Property",
@@ -47,34 +47,11 @@
         },
         {
             "@type": "Property",
-            "name": "BrokerType",
-            "schema": {
-                "@type": "Enum",
-                "valueSchema": "string",
-                "enumValues": [
-                    {
-                        "name": "MQTT",
-                        "displayName": "Mqtt",
-                        "enumValue": "MQTT"
-                    },
-                    {
-                        "name": "AzureEdgeRuntime",
-                        "displayName": "AzureEdgeRuntime",
-                        "enumValue": "AzureEdgeRuntime"
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "Broker type",
-            "description": ""
-        },
-        {
-            "@type": "Property",
             "name": "MaxRetries",
             "schema": "integer",
             "writable": true,
             "displayName": "Max retries",
-            "description": "Number of maximum retries for calls at Trust-API"
+            "description": "Number of maximum retries for calls at Trust-API (e.g. 1024)."
         },
         {
             "@type": "Property",
@@ -82,7 +59,7 @@
             "schema": "integer",
             "writable": true,
             "displayName": "Max retry interval",
-            "description": "Maximum interval for delays of calls at Trust-API on error"
+            "description": "Maximum interval (in seconds) for delays of calls at Trust-API on error (e.g. 30)"
         }
     ]
 }
