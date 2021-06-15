@@ -51,7 +51,7 @@
             "schema": "integer",
             "writable": true,
             "displayName": "Max retries",
-            "description": "Number of maximum retries for calls at Data-API (e.g. 1024)."
+            "description": "Number of maximum retries for calls at Data-API (e.g. 1)."
         },
         {
             "@type": "Property",
