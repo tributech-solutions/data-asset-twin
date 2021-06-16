@@ -1,18 +1,18 @@
 {
-	"@context": "dtmi:dtdl:context;2",
-	"@id": "dtmi:io:tributech:source:mqtt;1",
-	"@type": "Interface",
-	"extends": "dtmi:io:tributech:source:base;1",
-	"displayName": "MQTT Source",
-	"contents": [
-		{
-			"@type": "Relationship",
-			"name": "Streams",
-			"minMultiplicity": 0,
-			"maxMultiplicity": 1000,
-			"target": "dtmi:io:tributech:stream:mqtt;1",
-			"displayName": "Streams",
-			"description": "Contains all MQTT streams in the given source."
-		}
-	]
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:source:mqtt;1",
+  "@type": "Interface",
+  "extends": "dtmi:io:tributech:source:base;1",
+  "displayName": "MQTT Source",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "Streams",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1000,
+      "target": "dtmi:io:tributech:stream:mqtt;1",
+      "displayName": "Streams",
+      "description": "Contains all MQTT streams in the given source."
+    }
+  ]
 }
