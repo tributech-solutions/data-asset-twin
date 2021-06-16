@@ -1,0 +1,17 @@
+{
+	"@context": "dtmi:dtdl:context;2",
+	"@id": "dtmi:io:tributech:stream:mqtt;1",
+	"@type": "Interface",
+	"displayName": "MQTT Stream",
+	"extends": "dtmi:io:tributech:stream:base;1",
+	"contents": [
+		{
+			"@type": "Property",
+			"name": "CustomTopic",
+			"schema": "string",
+			"writable": true,
+			"displayName": "MQTT custom topic",
+			"description": "Define a custom topic for your MQTT message broker."
+		}
+	]
+}
