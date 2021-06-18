@@ -1,199 +1,226 @@
 {
-    "digitalTwins": [{
-        "$dtId": "DSK-Edge",
-        "$etag": "W/\"3248af42-1252-4cb0-a655-5d66d97791b5\"",
-        "DeviceId": "bfb4e69d-3b71-40e3-b1eb-80346c09df36",
-        "Name": "DSK Edge",
-        "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1LbWvLKChtdoMhan67DV\nJhPqxmme7/mdsevRnRC3SkIg7+8DlN90tzXNThztt4o2D4rRZ4pzFmpDCBh6ynN7\nj5O9ejYpqfv+8v/n+qbjkuO/07QUBu9ml5+tmu4zyxVBhcwTh1DIRofj+jYQqEre\n18IHBxzhHCU0JJ91gw/pSGsWnsi38KOR9Y5wIddesglSScl/gkUVHGMgVnBGW/In\nozRVnY1QzgSAAQoae+/a7c4iOZVkv7r+LKHni1InaiCLIQAWOT1pqQe+ytvdPKau\nRAPbowbYAEuOt9wlrXUI4W+ycauzeHYtZWfLJflaDQkDorBU3N12WiEx4faLJ9it\nkwIDAQAB\n-----END PUBLIC KEY-----",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:device:edge;1"
-        }
-    }, {
-        "$dtId": "Charging-Station-1",
-        "$etag": "W/\"266606e8-8c11-4756-8bc3-870f637c6faf\"",
-        "Name": "Charging Station Linz #4",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:source:simulated;1"
-        }
-    }, {
-        "$dtId": "Voltage-L1-1",
-        "$etag": "W/\"e78013d8-e745-4d73-bc64-4567a18fc43f\"",
-        "MinValue": 380,
-        "MaxValue": 405,
-        "Frequency": 0.016,
-        "Name": "Voltage L1",
-        "ValueMetadataId": "440706f9-fc8b-4513-9b46-13d42d5a4352",
-        "Unit": "V",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:stream:simulated;1"
-        }
-    }, {
-        "$dtId": "Voltage-L2-1",
-        "$etag": "W/\"c00cd47a-e083-4b5e-a5b0-63ef0d5d608e\"",
-        "MinValue": 380,
-        "MaxValue": 405,
-        "Frequency": 0.016,
-        "Name": "Voltage L2",
-        "ValueMetadataId": "eec59256-0fcb-479f-b33a-a6bb1b33d095",
-        "Unit": "V",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:stream:simulated;1"
-        }
-    }, {
-        "$dtId": "Voltage-L3-1",
-        "$etag": "W/\"ccb81240-a940-4923-9890-79923b626b8a\"",
-        "MinValue": 380,
-        "MaxValue": 405,
-        "Frequency": 0.016,
-        "Name": "Voltage L3",
-        "ValueMetadataId": "651c791c-e468-4674-aa9b-20eea31b1c07",
-        "Unit": "V",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:stream:simulated;1"
-        }
-    }, {
-        "$dtId": "Current-L1-1",
-        "$etag": "W/\"416e5a49-de07-4492-ac5c-4c3449da39b9\"",
-        "MaxValue": 125,
-        "Frequency": 0.016,
-        "Name": "Current L1",
-        "ValueMetadataId": "09de0b88-f9b4-4192-a0c3-1debeecc7870",
-        "Unit": "A",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:stream:simulated;1"
-        }
-    }, {
-        "$dtId": "Current-L2-1",
-        "$etag": "W/\"9fc5b91c-e411-4c55-a506-628220a18ab1\"",
-        "MaxValue": 125,
-        "Frequency": 0.016,
-        "Name": "Current L2",
-        "ValueMetadataId": "ea194c15-2e34-4d0c-93ff-f2aad1c47c7e",
-        "Unit": "A",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:stream:simulated;1"
-        }
-    }, {
-        "$dtId": "Current-L3-1",
-        "$etag": "W/\"82907b88-3136-42a6-8299-b1191f2b2077\"",
-        "MaxValue": 125,
-        "Frequency": 0.016,
-        "Name": "Current L3",
-        "ValueMetadataId": "531d7e53-5f51-48ba-92b7-4a88cadc4fb7",
-        "Unit": "A",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:stream:simulated;1"
-        }
-    }, {
-        "$dtId": "PowerConsumption-1",
-        "$etag": "W/\"3e2ba932-bb61-4ab6-8006-7f12581cb729\"",
-        "MaxValue": 150,
-        "Frequency": 0.00333,
-        "Name": "Power Consumption",
-        "ValueMetadataId": "98a2a6f0-215a-4528-b308-71f17b52b6f6",
-        "Unit": "kWh",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:stream:simulated;1"
-        }
-    }, {
-        "$dtId": "CurrentLoad-1",
-        "$etag": "W/\"e113e563-0927-460c-9620-6532da31b50b\"",
-        "MaxValue": 150,
-        "Frequency": 0.0033,
-        "Name": "Current Load",
-        "ValueMetadataId": "9a5e1727-b86b-4d90-8c07-af8794c3053e",
-        "Unit": "kW",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:stream:simulated;1"
-        }
-    }, {
-        "$dtId": "ChargingProcess-1",
-        "$etag": "W/\"8f7a81b7-892d-4fe8-b8ed-0ff8ebb8b20b\"",
-        "MaxValue": 1,
-        "Frequency": 0.000277,
-        "Name": "ChargingProcess",
-        "ValueMetadataId": "244a3dee-0b1e-44ed-998e-09975af8c131",
-        "Unit": "",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:stream:simulated;1"
-        }
-    }, {
-        "$dtId": "Charging-State-1",
-        "$etag": "W/\"21c5af41-e0a9-4dfc-8bcb-403a4b377e9c\"",
-        "MaxValue": 1,
-        "Frequency": 0.00055,
-        "Name": "Charging State",
-        "ValueMetadataId": "329e1a7e-2622-41d2-bb10-74eff4a1240a",
-        "Unit": "",
-        "$metadata": {
-            "$model": "dtmi:io:tributech:stream:simulated;1"
-        }
-    }],
-    "relationships": [{
-        "$relationshipId": "517689b2-06a5-440e-82c2-38d061977806",
-        "$etag": "W/\"309d765c-3dd1-4f11-a56d-29bc281a3216\"",
-        "$sourceId": "DSK-Edge",
-        "$relationshipName": "Sources",
-        "$targetId": "Charging-Station-1"
-    }, {
-        "$relationshipId": "1ad9ec75-29a5-4c7e-941c-69b79a600067",
-        "$etag": "W/\"b3808112-9ba7-4cd0-b727-3cc9619c5731\"",
-        "$sourceId": "Charging-Station-1",
-        "$relationshipName": "Streams",
-        "$targetId": "CurrentLoad-1"
-    }, {
-        "$relationshipId": "2098a1d1-057a-45de-9aed-df25d4335b91",
-        "$etag": "W/\"450db134-777d-4a7e-9096-46a3ed305310\"",
-        "$sourceId": "Charging-Station-1",
-        "$relationshipName": "Streams",
-        "$targetId": "PowerConsumption-1"
-    }, {
-        "$relationshipId": "2784e749-50bf-4a1d-a193-1d3e9d4cbbcc",
-        "$etag": "W/\"cdee4ed5-5910-4c84-8b3f-20a7784d92f1\"",
-        "$sourceId": "Charging-Station-1",
-        "$relationshipName": "Streams",
-        "$targetId": "Voltage-L1-1"
-    }, {
-        "$relationshipId": "34f63274-6543-4288-8929-c187b5f3027c",
-        "$etag": "W/\"ffd049a6-4b3e-4ba1-8722-0832fb4abb97\"",
-        "$sourceId": "Charging-Station-1",
-        "$relationshipName": "Streams",
-        "$targetId": "ChargingProcess-1"
-    }, {
-        "$relationshipId": "52b34d12-7bc4-4cb8-bffa-e68bf942b486",
-        "$etag": "W/\"88c9e8f7-c7d8-4c7a-b6ed-a732682ee1c2\"",
-        "$sourceId": "Charging-Station-1",
-        "$relationshipName": "Streams",
-        "$targetId": "Current-L3-1"
-    }, {
-        "$relationshipId": "801fa9ef-2037-457f-bbf0-1c9ab3e03bec",
-        "$etag": "W/\"b5908bf1-a20b-4d0c-bb2d-322001322fe7\"",
-        "$sourceId": "Charging-Station-1",
-        "$relationshipName": "Streams",
-        "$targetId": "Current-L1-1"
-    }, {
-        "$relationshipId": "ab2b8551-46af-4e08-a723-d4200461005f",
-        "$etag": "W/\"862826d7-ee8c-4f2b-9654-0f614ae079db\"",
-        "$sourceId": "Charging-Station-1",
-        "$relationshipName": "Streams",
-        "$targetId": "Charging-State-1"
-    }, {
-        "$relationshipId": "af5c73e0-626e-444f-8ae6-cdbdef78528d",
-        "$etag": "W/\"64bb8ab0-dda8-4511-85e9-fa4112a1c2ba\"",
-        "$sourceId": "Charging-Station-1",
-        "$relationshipName": "Streams",
-        "$targetId": "Current-L2-1"
-    }, {
-        "$relationshipId": "b6fa9d61-62eb-4de9-9469-62fc508dc6e7",
-        "$etag": "W/\"fdf08a5e-cee1-4cf7-aea5-bf13301a7d6f\"",
-        "$sourceId": "Charging-Station-1",
-        "$relationshipName": "Streams",
-        "$targetId": "Voltage-L2-1"
-    }, {
-        "$relationshipId": "f6da4462-f270-47a7-81cf-11a00285cecd",
-        "$etag": "W/\"72554de8-5072-4aba-a446-39d4da0afdf4\"",
-        "$sourceId": "Charging-Station-1",
-        "$relationshipName": "Streams",
-        "$targetId": "Voltage-L3-1"
-    }]
+  "digitalTwins": [
+    {
+      "Name": "DSK Edge",
+      "DeviceId": "bfb4e69d-3b71-40e3-b1eb-80346c09df36",
+      "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1LbWvLKChtdoMhan67DV\nJhPqxmme7/mdsevRnRC3SkIg7\u002B8DlN90tzXNThztt4o2D4rRZ4pzFmpDCBh6ynN7\nj5O9ejYpqfv\u002B8v/n\u002BqbjkuO/07QUBu9ml5\u002Btmu4zyxVBhcwTh1DIRofj\u002BjYQqEre\n18IHBxzhHCU0JJ91gw/pSGsWnsi38KOR9Y5wIddesglSScl/gkUVHGMgVnBGW/In\nozRVnY1QzgSAAQoae\u002B/a7c4iOZVkv7r\u002BLKHni1InaiCLIQAWOT1pqQe\u002BytvdPKau\nRAPbowbYAEuOt9wlrXUI4W\u002BycauzeHYtZWfLJflaDQkDorBU3N12WiEx4faLJ9it\nkwIDAQAB\n-----END PUBLIC KEY-----",
+      "KeyStorageType": "NONE",
+      "ProofKind": "SHA256_RSA2048_PSS",
+      "$dtId": "3248af42-1252-4cb0-a655-5d66d97791b4",
+      "$etag": "W/\u00223248af42-1252-4cb0-a655-5d66d97791b5\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:device:edge;1"
+      }
+    },
+    {
+      "Name": "Charging Station Linz #4",
+      "$dtId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$etag": "W/\u0022266606e8-8c11-4756-8bc3-870f637c6faf\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:source:simulated;1"
+      }
+    },
+    {
+      "MinValue": 380,
+      "MaxValue": 405,
+      "Frequency": 0.016,
+      "Name": "Voltage L1",
+      "ValueMetadataId": "440706f9-fc8b-4513-9b46-13d42d5a4352",
+      "Unit": "V",
+      "$dtId": "e78013d8-e745-4d73-bc64-4567a18fc43e",
+      "$etag": "W/\u0022e78013d8-e745-4d73-bc64-4567a18fc43f\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:simulated;1"
+      }
+    },
+    {
+      "MinValue": 380,
+      "MaxValue": 405,
+      "Frequency": 0.016,
+      "Name": "Voltage L2",
+      "ValueMetadataId": "eec59256-0fcb-479f-b33a-a6bb1b33d095",
+      "Unit": "V",
+      "$dtId": "c00cd47a-e083-4b5e-a5b0-63ef0d5d608d",
+      "$etag": "W/\u0022c00cd47a-e083-4b5e-a5b0-63ef0d5d608e\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:simulated;1"
+      }
+    },
+    {
+      "MinValue": 380,
+      "MaxValue": 405,
+      "Frequency": 0.016,
+      "Name": "Voltage L3",
+      "ValueMetadataId": "651c791c-e468-4674-aa9b-20eea31b1c07",
+      "Unit": "V",
+      "$dtId": "ccb81240-a940-4923-9890-79923b626b89",
+      "$etag": "W/\u0022ccb81240-a940-4923-9890-79923b626b8a\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:simulated;1"
+      }
+    },
+    {
+      "MaxValue": 125,
+      "Frequency": 0.016,
+      "Name": "Current L1",
+      "ValueMetadataId": "09de0b88-f9b4-4192-a0c3-1debeecc7870",
+      "Unit": "A",
+      "$dtId": "416e5a49-de07-4492-ac5c-4c3449da39b8",
+      "$etag": "W/\u0022416e5a49-de07-4492-ac5c-4c3449da39b9\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:simulated;1"
+      }
+    },
+    {
+      "MaxValue": 125,
+      "Frequency": 0.016,
+      "Name": "Current L2",
+      "ValueMetadataId": "ea194c15-2e34-4d0c-93ff-f2aad1c47c7e",
+      "Unit": "A",
+      "$dtId": "9fc5b91c-e411-4c55-a506-628220a18ab0",
+      "$etag": "W/\u00229fc5b91c-e411-4c55-a506-628220a18ab1\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:simulated;1"
+      }
+    },
+    {
+      "MaxValue": 125,
+      "Frequency": 0.016,
+      "Name": "Current L3",
+      "ValueMetadataId": "531d7e53-5f51-48ba-92b7-4a88cadc4fb7",
+      "Unit": "A",
+      "$dtId": "82907b88-3136-42a6-8299-b1191f2b2076",
+      "$etag": "W/\u002282907b88-3136-42a6-8299-b1191f2b2077\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:simulated;1"
+      }
+    },
+    {
+      "MaxValue": 150,
+      "Frequency": 0.00333,
+      "Name": "Power Consumption",
+      "ValueMetadataId": "98a2a6f0-215a-4528-b308-71f17b52b6f6",
+      "Unit": "kWh",
+      "$dtId": "3e2ba932-bb61-4ab6-8006-7f12581cb728",
+      "$etag": "W/\u00223e2ba932-bb61-4ab6-8006-7f12581cb729\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:simulated;1"
+      }
+    },
+    {
+      "MaxValue": 150,
+      "Frequency": 0.0033,
+      "Name": "Current Load",
+      "ValueMetadataId": "9a5e1727-b86b-4d90-8c07-af8794c3053e",
+      "Unit": "kW",
+      "$dtId": "e113e563-0927-460c-9620-6532da31b50a",
+      "$etag": "W/\u0022e113e563-0927-460c-9620-6532da31b50b\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:simulated;1"
+      }
+    },
+    {
+      "MaxValue": 1,
+      "Frequency": 0.000277,
+      "Name": "ChargingProcess",
+      "ValueMetadataId": "244a3dee-0b1e-44ed-998e-09975af8c131",
+      "Unit": "",
+      "$dtId": "8f7a81b7-892d-4fe8-b8ed-0ff8ebb8b20a",
+      "$etag": "W/\u00228f7a81b7-892d-4fe8-b8ed-0ff8ebb8b20b\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:simulated;1"
+      }
+    },
+    {
+      "MaxValue": 1,
+      "Frequency": 0.00055,
+      "Name": "Charging State",
+      "ValueMetadataId": "329e1a7e-2622-41d2-bb10-74eff4a1240a",
+      "Unit": "",
+      "$dtId": "21c5af41-e0a9-4dfc-8bcb-403a4b377e9b",
+      "$etag": "W/\u002221c5af41-e0a9-4dfc-8bcb-403a4b377e9c\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:simulated;1"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "$relationshipId": "517689b2-06a5-440e-82c2-38d061977806",
+      "$targetId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$sourceId": "3248af42-1252-4cb0-a655-5d66d97791b4",
+      "$relationshipName": "Sources",
+      "$etag": "W/\u0022309d765c-3dd1-4f11-a56d-29bc281a3216\u0022"
+    },
+    {
+      "$relationshipId": "1ad9ec75-29a5-4c7e-941c-69b79a600067",
+      "$targetId": "e113e563-0927-460c-9620-6532da31b50a",
+      "$sourceId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022b3808112-9ba7-4cd0-b727-3cc9619c5731\u0022"
+    },
+    {
+      "$relationshipId": "2098a1d1-057a-45de-9aed-df25d4335b91",
+      "$targetId": "3e2ba932-bb61-4ab6-8006-7f12581cb728",
+      "$sourceId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022450db134-777d-4a7e-9096-46a3ed305310\u0022"
+    },
+    {
+      "$relationshipId": "2784e749-50bf-4a1d-a193-1d3e9d4cbbcc",
+      "$targetId": "e78013d8-e745-4d73-bc64-4567a18fc43e",
+      "$sourceId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022cdee4ed5-5910-4c84-8b3f-20a7784d92f1\u0022"
+    },
+    {
+      "$relationshipId": "34f63274-6543-4288-8929-c187b5f3027c",
+      "$targetId": "8f7a81b7-892d-4fe8-b8ed-0ff8ebb8b20a",
+      "$sourceId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022ffd049a6-4b3e-4ba1-8722-0832fb4abb97\u0022"
+    },
+    {
+      "$relationshipId": "52b34d12-7bc4-4cb8-bffa-e68bf942b486",
+      "$targetId": "82907b88-3136-42a6-8299-b1191f2b2076",
+      "$sourceId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u002288c9e8f7-c7d8-4c7a-b6ed-a732682ee1c2\u0022"
+    },
+    {
+      "$relationshipId": "801fa9ef-2037-457f-bbf0-1c9ab3e03bec",
+      "$targetId": "416e5a49-de07-4492-ac5c-4c3449da39b8",
+      "$sourceId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022b5908bf1-a20b-4d0c-bb2d-322001322fe7\u0022"
+    },
+    {
+      "$relationshipId": "ab2b8551-46af-4e08-a723-d4200461005f",
+      "$targetId": "21c5af41-e0a9-4dfc-8bcb-403a4b377e9b",
+      "$sourceId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022862826d7-ee8c-4f2b-9654-0f614ae079db\u0022"
+    },
+    {
+      "$relationshipId": "af5c73e0-626e-444f-8ae6-cdbdef78528d",
+      "$targetId": "9fc5b91c-e411-4c55-a506-628220a18ab0",
+      "$sourceId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u002264bb8ab0-dda8-4511-85e9-fa4112a1c2ba\u0022"
+    },
+    {
+      "$relationshipId": "b6fa9d61-62eb-4de9-9469-62fc508dc6e7",
+      "$targetId": "c00cd47a-e083-4b5e-a5b0-63ef0d5d608d",
+      "$sourceId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022fdf08a5e-cee1-4cf7-aea5-bf13301a7d6f\u0022"
+    },
+    {
+      "$relationshipId": "f6da4462-f270-47a7-81cf-11a00285cecd",
+      "$targetId": "ccb81240-a940-4923-9890-79923b626b89",
+      "$sourceId": "266606e8-8c11-4756-8bc3-870f637c6faf",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u002272554de8-5072-4aba-a446-39d4da0afdf4\u0022"
+    }
+  ]
 }
