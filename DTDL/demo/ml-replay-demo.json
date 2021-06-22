@@ -1,227 +1,224 @@
 {
-	"digitalTwinsFileInfo": {
-	  "fileVersion": "1.0.0"
-	},
-	"digitalTwinsGraph": {
-	  "digitalTwins": [
-		{
-		  "$dtId": "Edge",
-		  "$etag": "W/\"10536b53-3de9-4e10-88b9-0de53a0bcca9\"",
-		  "DeviceId": "779ed26a-4b3c-4501-9b3d-1dd652f337d4",
-		  "Name": "Replay Stream",
-		  "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApQH+7i7DFXx/7DnLiu6v\njduDKyi7yVl3ntNGZGemvkSrXTrA9qO6qsBeBewBQeb+tlg/BEYhlx4GlhjjOrxh\nkUlFpq5M0KOML0Fm3dQe1kTZGQKUmqAh/T4Wm6e9piKlY1HaNP6IezTvAcLqAWTC\n1qY/SYP0ZkVOObxs4OT7T9DSgl/iSW6aVFkwu5aB8FTsPOKVHcYoDgQgTK/u6k6l\nFBgZ386VD9ZCeBO1bmP/wzHRx6ODrtMXoJuGK+yXEBa3t0kUBhDyT7zCBAUOFIOA\nxX4Io0i5i1N709nR1IRfoJ7PKdQRfq+hJfww2VydrmdA7j63wI+msMYQkAkkDxLc\nLQIDAQAB\n-----END PUBLIC KEY----- ",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:device:edge;1"
-		  },
-		  "KeyStorageType": "NONE",
-		  "ProofKind": "SHA256_RSA2048_PSS"
-		},
-		{
-		  "$dtId": "ReplaySource",
-		  "$etag": "W/\"f4faedb7-c2ed-4024-a583-6223646bcabb\"",
-		  "RowValueMetaDataId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
-		  "Frequency": 5000,
-		  "Name": "Replay Stream Source",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:source:replay;1"
-		  }
-		},
-		{
-		  "$dtId": "v1",
-		  "$etag": "W/\"855b3039-9e4c-41d9-8ce9-f95ce3415838\"",
-		  "ColumnName": "v1",
-		  "Name": "v1",
-		  "ValueMetadataId": "c58160ea-c9be-4f17-adbb-fb421f20e495",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:stream:replay;1"
-		  }
-		},
-		{
-		  "$dtId": "v2",
-		  "$etag": "W/\"44642529-98cb-4c12-9dd3-3aa12c65cf40\"",
-		  "ColumnName": "v2",
-		  "Name": "v2",
-		  "ValueMetadataId": "9ec74117-3476-4afb-a09b-3d59507164a3",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:stream:replay;1"
-		  }
-		},
-		{
-		  "$dtId": "v3",
-		  "$etag": "W/\"da0c3547-95ef-469d-8fe5-7af7b2c83618\"",
-		  "ColumnName": "v3",
-		  "Name": "v3",
-		  "ValueMetadataId": "14aba3db-75e8-4e56-b5de-60d6ebcbb178",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:stream:replay;1"
-		  }
-		},
-		{
-		  "$dtId": "v4",
-		  "$etag": "W/\"dc0b982a-6468-4d12-b78a-77615e1b73b5\"",
-		  "ColumnName": "v4",
-		  "Name": "v4",
-		  "ValueMetadataId": "38b23325-da99-46df-a3ec-9266a204b2e7",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:stream:replay;1"
-		  }
-		},
-		{
-		  "$dtId": "v5",
-		  "$etag": "W/\"a7c7163b-24c9-4897-ba9c-cc3645b173c5\"",
-		  "ColumnName": "v5",
-		  "Name": "v5",
-		  "ValueMetadataId": "61252823-4b8b-47c9-8ae8-b38431e479ab",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:stream:replay;1"
-		  }
-		},
-		{
-		  "$dtId": "v6",
-		  "$etag": "W/\"456c8bb5-3872-4d1a-98a1-9fd73801aa1d\"",
-		  "ColumnName": "v6",
-		  "Name": "v6",
-		  "ValueMetadataId": "04883c86-e87d-4aa9-b5b0-89c47d6619d1",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:stream:replay;1"
-		  }
-		},
-		{
-		  "$dtId": "v7",
-		  "$etag": "W/\"036005d2-c8d2-4319-9efb-f55ba0d039d2\"",
-		  "ColumnName": "v7",
-		  "Name": "v7",
-		  "ValueMetadataId": "91b4d243-aa0d-4019-b322-2e8dfcbb69a2",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:stream:replay;1"
-		  }
-		},
-		{
-		  "$dtId": "v8",
-		  "$etag": "W/\"1f4aa5b5-e1d2-4b5f-a52c-c8e062301aa9\"",
-		  "ColumnName": "v8",
-		  "Name": "v8",
-		  "ValueMetadataId": "b7cb9794-80a2-4373-bc2b-43095e91bd33",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:stream:replay;1"
-		  }
-		},
-		{
-		  "$dtId": "v9",
-		  "$etag": "W/\"d6254486-1b3a-4027-a29c-620be9b88451\"",
-		  "ColumnName": "v9",
-		  "Name": "v9",
-		  "ValueMetadataId": "6a5b77cf-7b31-45f6-afb2-348f74451eae",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:stream:replay;1"
-		  }
-		},
-		{
-		  "$dtId": "v10",
-		  "$etag": "W/\"c6bdf1ae-89b1-403f-af90-0d035fcf9190\"",
-		  "ColumnName": "v10",
-		  "Name": "v10",
-		  "ValueMetadataId": "c35c4210-e8d5-4a02-ac77-a0f8871ef410",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:stream:replay;1"
-		  }
-		},
-		{
-		  "$dtId": "v11",
-		  "$etag": "W/\"154f3e9d-5fac-47be-9eb0-95438b1ae969\"",
-		  "ColumnName": "v11",
-		  "Name": "v11",
-		  "ValueMetadataId": "04ef6c73-8c58-4aca-9c46-ee9f1ee8c62d",
-		  "$metadata": {
-			"$model": "dtmi:io:tributech:stream:replay;1"
-		  }
-		}
-	  ],
-	  "relationships": [
-		{
-		  "$relationshipId": "4ed76ca5-fa29-41e9-9133-281c8d476025",
-		  "$etag": "W/\"8077dea5-c28e-493d-9d0c-e00fd3fed4ba\"",
-		  "$sourceId": "Edge",
-		  "$relationshipName": "Sources",
-		  "$targetId": "ReplaySource"
-		},
-		{
-		  "$relationshipId": "022ee9d9-740d-4fdb-ba3b-701f398624ca",
-		  "$etag": "W/\"f98d5b01-f0cd-47f7-acff-3e1c31bbff3c\"",
-		  "$sourceId": "ReplaySource",
-		  "$relationshipName": "Streams",
-		  "$targetId": "v3"
-		},
-		{
-		  "$relationshipId": "0b223047-4463-495f-b8fd-d58863d8fafc",
-		  "$etag": "W/\"1b4515df-d8b7-474d-9755-1fcb442eedcc\"",
-		  "$sourceId": "ReplaySource",
-		  "$relationshipName": "Streams",
-		  "$targetId": "v9"
-		},
-		{
-		  "$relationshipId": "1419b3af-38a7-48e9-88fe-c74f087b034b",
-		  "$etag": "W/\"18141668-d6c7-447a-8f6d-eeea32d97fca\"",
-		  "$sourceId": "ReplaySource",
-		  "$relationshipName": "Streams",
-		  "$targetId": "v8"
-		},
-		{
-		  "$relationshipId": "226f86c8-fb48-454d-aa3d-0301cdf94b07",
-		  "$etag": "W/\"675be44d-e3d6-47df-bb68-c9fab6a713c1\"",
-		  "$sourceId": "ReplaySource",
-		  "$relationshipName": "Streams",
-		  "$targetId": "v6"
-		},
-		{
-		  "$relationshipId": "7e954aed-56bf-4354-95d7-fdea535e9f64",
-		  "$etag": "W/\"332e10fd-2bb1-4102-b876-4cb144720479\"",
-		  "$sourceId": "ReplaySource",
-		  "$relationshipName": "Streams",
-		  "$targetId": "v5"
-		},
-		{
-		  "$relationshipId": "83a1616d-879b-4735-9fb9-32fc49afe7ad",
-		  "$etag": "W/\"ebaeadfe-8c7e-4da7-bdd2-586622b4ae15\"",
-		  "$sourceId": "ReplaySource",
-		  "$relationshipName": "Streams",
-		  "$targetId": "v1"
-		},
-		{
-		  "$relationshipId": "9a9fc273-afb1-4d64-8a9f-53cd2a7ae021",
-		  "$etag": "W/\"10dec71d-ceb7-4d2e-a50b-d04aaaef91e8\"",
-		  "$sourceId": "ReplaySource",
-		  "$relationshipName": "Streams",
-		  "$targetId": "v2"
-		},
-		{
-		  "$relationshipId": "a99215ba-38cf-4ed0-98f2-ab963aa30682",
-		  "$etag": "W/\"1bf8917e-5b5e-49bd-b3c3-825e371fd2cc\"",
-		  "$sourceId": "ReplaySource",
-		  "$relationshipName": "Streams",
-		  "$targetId": "v11"
-		},
-		{
-		  "$relationshipId": "ab7c42e0-69a8-4675-83c6-cf946b1e16c2",
-		  "$etag": "W/\"e3304183-03af-4780-8b65-5f296ad7166e\"",
-		  "$sourceId": "ReplaySource",
-		  "$relationshipName": "Streams",
-		  "$targetId": "v10"
-		},
-		{
-		  "$relationshipId": "b0e35b38-7dfb-40cc-9d88-855dbd80bee8",
-		  "$etag": "W/\"8ffe6112-2f52-452f-9b09-af646080cf3c\"",
-		  "$sourceId": "ReplaySource",
-		  "$relationshipName": "Streams",
-		  "$targetId": "v4"
-		},
-		{
-		  "$relationshipId": "fbdecd12-85b7-4353-84ea-f051883c2e23",
-		  "$etag": "W/\"0429cfe1-cdcc-4184-8120-e7765be6e828\"",
-		  "$sourceId": "ReplaySource",
-		  "$relationshipName": "Streams",
-		  "$targetId": "v7"
-		}
-	  ]
-	}
-  }
+  "digitalTwinsFileInfo": {
+    "fileVersion": "1.0.0"
+  },
+  "digitalTwins": [
+    {
+      "Name": "Replay Stream",
+      "DeviceId": "779ed26a-4b3c-4501-9b3d-1dd652f337d4",
+      "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApQH\u002B7i7DFXx/7DnLiu6v\njduDKyi7yVl3ntNGZGemvkSrXTrA9qO6qsBeBewBQeb\u002Btlg/BEYhlx4GlhjjOrxh\nkUlFpq5M0KOML0Fm3dQe1kTZGQKUmqAh/T4Wm6e9piKlY1HaNP6IezTvAcLqAWTC\n1qY/SYP0ZkVOObxs4OT7T9DSgl/iSW6aVFkwu5aB8FTsPOKVHcYoDgQgTK/u6k6l\nFBgZ386VD9ZCeBO1bmP/wzHRx6ODrtMXoJuGK\u002ByXEBa3t0kUBhDyT7zCBAUOFIOA\nxX4Io0i5i1N709nR1IRfoJ7PKdQRfq\u002BhJfww2VydrmdA7j63wI\u002BmsMYQkAkkDxLc\nLQIDAQAB\n-----END PUBLIC KEY----- ",
+      "KeyStorageType": "NONE",
+      "ProofKind": "SHA256_RSA2048_PSS",
+      "$dtId": "10536b53-3de9-4e10-88b9-0de53a0bcca8",
+      "$etag": "W/\u002210536b53-3de9-4e10-88b9-0de53a0bcca9\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:device:edge;1"
+      }
+    },
+    {
+      "Frequency": 5000,
+      "Name": "Replay Stream Source",
+      "$dtId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$etag": "W/\u0022f4faedb7-c2ed-4024-a583-6223646bcabb\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:source:replay;1"
+      }
+    },
+    {
+      "ColumnName": "v1",
+      "Name": "v1",
+      "ValueMetadataId": "c58160ea-c9be-4f17-adbb-fb421f20e495",
+      "$dtId": "855b3039-9e4c-41d9-8ce9-f95ce3415837",
+      "$etag": "W/\u0022855b3039-9e4c-41d9-8ce9-f95ce3415838\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:replay;1"
+      }
+    },
+    {
+      "ColumnName": "v2",
+      "Name": "v2",
+      "ValueMetadataId": "9ec74117-3476-4afb-a09b-3d59507164a3",
+      "$dtId": "44642529-98cb-4c12-9dd3-3aa12c65cf3f",
+      "$etag": "W/\u002244642529-98cb-4c12-9dd3-3aa12c65cf40\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:replay;1"
+      }
+    },
+    {
+      "ColumnName": "v3",
+      "Name": "v3",
+      "ValueMetadataId": "14aba3db-75e8-4e56-b5de-60d6ebcbb178",
+      "$dtId": "da0c3547-95ef-469d-8fe5-7af7b2c83617",
+      "$etag": "W/\u0022da0c3547-95ef-469d-8fe5-7af7b2c83618\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:replay;1"
+      }
+    },
+    {
+      "ColumnName": "v4",
+      "Name": "v4",
+      "ValueMetadataId": "38b23325-da99-46df-a3ec-9266a204b2e7",
+      "$dtId": "dc0b982a-6468-4d12-b78a-77615e1b73b4",
+      "$etag": "W/\u0022dc0b982a-6468-4d12-b78a-77615e1b73b5\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:replay;1"
+      }
+    },
+    {
+      "ColumnName": "v5",
+      "Name": "v5",
+      "ValueMetadataId": "61252823-4b8b-47c9-8ae8-b38431e479ab",
+      "$dtId": "a7c7163b-24c9-4897-ba9c-cc3645b173c4",
+      "$etag": "W/\u0022a7c7163b-24c9-4897-ba9c-cc3645b173c5\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:replay;1"
+      }
+    },
+    {
+      "ColumnName": "v6",
+      "Name": "v6",
+      "ValueMetadataId": "04883c86-e87d-4aa9-b5b0-89c47d6619d1",
+      "$dtId": "456c8bb5-3872-4d1a-98a1-9fd73801aa1c",
+      "$etag": "W/\u0022456c8bb5-3872-4d1a-98a1-9fd73801aa1d\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:replay;1"
+      }
+    },
+    {
+      "ColumnName": "v7",
+      "Name": "v7",
+      "ValueMetadataId": "91b4d243-aa0d-4019-b322-2e8dfcbb69a2",
+      "$dtId": "036005d2-c8d2-4319-9efb-f55ba0d039d1",
+      "$etag": "W/\u0022036005d2-c8d2-4319-9efb-f55ba0d039d2\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:replay;1"
+      }
+    },
+    {
+      "ColumnName": "v8",
+      "Name": "v8",
+      "ValueMetadataId": "b7cb9794-80a2-4373-bc2b-43095e91bd33",
+      "$dtId": "1f4aa5b5-e1d2-4b5f-a52c-c8e062301aa8",
+      "$etag": "W/\u00221f4aa5b5-e1d2-4b5f-a52c-c8e062301aa9\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:replay;1"
+      }
+    },
+    {
+      "ColumnName": "v9",
+      "Name": "v9",
+      "ValueMetadataId": "6a5b77cf-7b31-45f6-afb2-348f74451eae",
+      "$dtId": "d6254486-1b3a-4027-a29c-620be9b88450",
+      "$etag": "W/\u0022d6254486-1b3a-4027-a29c-620be9b88451\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:replay;1"
+      }
+    },
+    {
+      "ColumnName": "v10",
+      "Name": "v10",
+      "ValueMetadataId": "c35c4210-e8d5-4a02-ac77-a0f8871ef410",
+      "$dtId": "c6bdf1ae-89b1-403f-af90-0d035fcf918f",
+      "$etag": "W/\u0022c6bdf1ae-89b1-403f-af90-0d035fcf9190\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:replay;1"
+      }
+    },
+    {
+      "ColumnName": "v11",
+      "Name": "v11",
+      "ValueMetadataId": "04ef6c73-8c58-4aca-9c46-ee9f1ee8c62d",
+      "$dtId": "154f3e9d-5fac-47be-9eb0-95438b1ae968",
+      "$etag": "W/\u0022154f3e9d-5fac-47be-9eb0-95438b1ae969\u0022",
+      "$metadata": {
+        "$model": "dtmi:io:tributech:stream:replay;1"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "$relationshipId": "4ed76ca5-fa29-41e9-9133-281c8d476025",
+      "$targetId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$sourceId": "10536b53-3de9-4e10-88b9-0de53a0bcca8",
+      "$relationshipName": "Sources",
+      "$etag": "W/\u00228077dea5-c28e-493d-9d0c-e00fd3fed4ba\u0022"
+    },
+    {
+      "$relationshipId": "022ee9d9-740d-4fdb-ba3b-701f398624ca",
+      "$targetId": "da0c3547-95ef-469d-8fe5-7af7b2c83617",
+      "$sourceId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022f98d5b01-f0cd-47f7-acff-3e1c31bbff3c\u0022"
+    },
+    {
+      "$relationshipId": "0b223047-4463-495f-b8fd-d58863d8fafc",
+      "$targetId": "d6254486-1b3a-4027-a29c-620be9b88450",
+      "$sourceId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u00221b4515df-d8b7-474d-9755-1fcb442eedcc\u0022"
+    },
+    {
+      "$relationshipId": "1419b3af-38a7-48e9-88fe-c74f087b034b",
+      "$targetId": "1f4aa5b5-e1d2-4b5f-a52c-c8e062301aa8",
+      "$sourceId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u002218141668-d6c7-447a-8f6d-eeea32d97fca\u0022"
+    },
+    {
+      "$relationshipId": "226f86c8-fb48-454d-aa3d-0301cdf94b07",
+      "$targetId": "456c8bb5-3872-4d1a-98a1-9fd73801aa1c",
+      "$sourceId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022675be44d-e3d6-47df-bb68-c9fab6a713c1\u0022"
+    },
+    {
+      "$relationshipId": "7e954aed-56bf-4354-95d7-fdea535e9f64",
+      "$targetId": "a7c7163b-24c9-4897-ba9c-cc3645b173c4",
+      "$sourceId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022332e10fd-2bb1-4102-b876-4cb144720479\u0022"
+    },
+    {
+      "$relationshipId": "83a1616d-879b-4735-9fb9-32fc49afe7ad",
+      "$targetId": "855b3039-9e4c-41d9-8ce9-f95ce3415837",
+      "$sourceId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022ebaeadfe-8c7e-4da7-bdd2-586622b4ae15\u0022"
+    },
+    {
+      "$relationshipId": "9a9fc273-afb1-4d64-8a9f-53cd2a7ae021",
+      "$targetId": "44642529-98cb-4c12-9dd3-3aa12c65cf3f",
+      "$sourceId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u002210dec71d-ceb7-4d2e-a50b-d04aaaef91e8\u0022"
+    },
+    {
+      "$relationshipId": "a99215ba-38cf-4ed0-98f2-ab963aa30682",
+      "$targetId": "154f3e9d-5fac-47be-9eb0-95438b1ae968",
+      "$sourceId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u00221bf8917e-5b5e-49bd-b3c3-825e371fd2cc\u0022"
+    },
+    {
+      "$relationshipId": "ab7c42e0-69a8-4675-83c6-cf946b1e16c2",
+      "$targetId": "c6bdf1ae-89b1-403f-af90-0d035fcf918f",
+      "$sourceId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u0022e3304183-03af-4780-8b65-5f296ad7166e\u0022"
+    },
+    {
+      "$relationshipId": "b0e35b38-7dfb-40cc-9d88-855dbd80bee8",
+      "$targetId": "dc0b982a-6468-4d12-b78a-77615e1b73b4",
+      "$sourceId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u00228ffe6112-2f52-452f-9b09-af646080cf3c\u0022"
+    },
+    {
+      "$relationshipId": "fbdecd12-85b7-4353-84ea-f051883c2e23",
+      "$targetId": "036005d2-c8d2-4319-9efb-f55ba0d039d1",
+      "$sourceId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
+      "$relationshipName": "Streams",
+      "$etag": "W/\u00220429cfe1-cdcc-4184-8120-e7765be6e828\u0022"
+    }
+  ]
+}
