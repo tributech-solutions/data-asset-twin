@@ -18,6 +18,7 @@
     {
       "Frequency": 5000,
       "Name": "Replay Stream Source",
+      "RowValueMetadataId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
       "$dtId": "f4faedb7-c2ed-4024-a583-6223646bcabb",
       "$etag": "W/\u0022f4faedb7-c2ed-4024-a583-6223646bcabb\u0022",
       "$metadata": {
