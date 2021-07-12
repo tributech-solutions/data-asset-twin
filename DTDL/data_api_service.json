@@ -1,0 +1,51 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:service:dataapi;1",
+  "@type": "Interface",
+  "extends": "dtmi:io:tributech:service:base;1",
+  "displayName": "Data API service",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "StreamConfig",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1000,
+      "target": "dtmi:io:tributech:stream:base;1",
+      "displayName": "Streams",
+      "description": "Contains all streams in the Data API.",
+      "properties": [
+        {
+          "@type": "Property",
+          "name": "Persistance",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "postgre",
+                    "displayName": "PostgreSQL",
+                    "enumValue": "POSTGRE"
+                },
+                {
+                    "name": "influx",
+                    "displayName": "InfluxDB",
+                    "enumValue": "INFLUX"
+                }
+            ]
+        },
+          "writable": true,
+          "displayName": "Data API persistance provider",
+          "description": "Select a persistance provider for the stream."
+        },
+        {
+          "@type": "Property",
+          "name": "PublishToMessageBus",
+          "schema": "boolean",
+          "writable": true,
+          "displayName": "Publish to message bus",
+          "description": "Defines wether or not the stream is going to be published on the message bus."
+        }
+      ]
+    }
+  ]
+}

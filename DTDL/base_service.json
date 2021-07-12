@@ -1,0 +1,8 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:service:base;1",
+  "@type": "Interface",
+  "displayName": "Service base",
+  "contents": [
+  ]
+}
