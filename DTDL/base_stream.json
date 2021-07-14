@@ -63,6 +63,49 @@
       "description": "The estimated data submission interval/frequency of the stream in Hz (e.g. 1.2)."
     },
     {
+      "@type": "Property",
+      "name": "Encoding",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ByteArray",
+            "displayName": "Byte Array",
+            "enumValue": "BYTEARRAY"
+          },
+          {
+            "name": "Double",
+            "displayName": "Double",
+            "enumValue": "DOUBLE"
+          },
+          {
+            "name": "Int32",
+            "displayName": "Int32",
+            "enumValue": "INT32"
+          },
+          {
+            "name": "Int64",
+            "displayName": "Int64",
+            "enumValue": "INT64"
+          },
+          {
+            "name": "String_UTF8",
+            "displayName": "String UTF8",
+            "enumValue": "STRING_UTF8"
+          },
+          {
+            "name": "String_Base64",
+            "displayName": "String Base64",
+            "enumValue": "STRING_BASE64"
+          }
+        ]
+      },
+      "writable": true,
+      "displayName": "Data Encoding",
+      "description": "Specifies how the data is encoded."
+    },
+    {
       "@type": "Telemetry",
       "name": "CurrentValue",
       "schema": {
