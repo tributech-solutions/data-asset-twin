@@ -75,6 +75,11 @@
             "enumValue": "BYTEARRAY"
           },
           {
+            "name": "Float",
+            "displayName": "Float",
+            "enumValue": "FLOAT"
+          },
+          {
             "name": "Double",
             "displayName": "Double",
             "enumValue": "DOUBLE"
