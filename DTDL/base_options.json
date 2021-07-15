@@ -4,14 +4,5 @@
   "@type": "Interface",
   "displayName": "Options base",
   "contents": [
-    {
-      "@type": "Relationship",
-      "name": "StreamOptions",
-      "minMultiplicity": 0,
-      "maxMultiplicity": 1000,
-      "target": "dtmi:io:tributech:stream:base;1",
-      "displayName": "Streams",
-      "description": "Contains all streams in the Data API."
-    }
   ]
 }
