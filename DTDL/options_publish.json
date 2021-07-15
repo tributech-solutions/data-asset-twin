@@ -4,6 +4,7 @@
   "@type": "Interface",
   "extends": "dtmi:io:tributech:options:base;1",
   "displayName": "Publish options",
+  "description": "Configure various properties",
   "contents": [
     {
       "@type": "Property",
@@ -21,19 +22,19 @@
         "valueSchema": "string",
         "enumValues": [
           {
-            "name": "byte",
-            "displayName": "Byte",
-            "enumValue": "BYTE"
+            "name": "ByteArray",
+            "displayName": "Byte Array",
+            "enumValue": "BYTEARRAY"
           },
           {
-            "name": "double",
+            "name": "Double",
             "displayName": "Double",
             "enumValue": "DOUBLE"
           },
           {
-            "name": "string",
-            "displayName": "String",
-            "enumValue": "STRING"
+            "name": "String_Base64",
+            "displayName": "String Base64",
+            "enumValue": "STRING_BASE64"
           }
         ]
       },
