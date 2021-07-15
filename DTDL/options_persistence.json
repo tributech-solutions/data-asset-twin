@@ -7,7 +7,7 @@
   "contents": [
     {
       "@type": "Property",
-      "name": "Persistance",
+      "name": "PersistenceProvider",
       "schema": {
         "@type": "Enum",
         "valueSchema": "string",
@@ -25,8 +25,8 @@
         ]
       },
       "writable": true,
-      "displayName": "Data API persistance provider",
-      "description": "Select a persistance provider for the stream."
+      "displayName": "Data API persistence provider",
+      "description": "Select a persistence provider for the stream."
     },
     {
       "@type": "Property",
