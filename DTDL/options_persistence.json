@@ -1,0 +1,60 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:options:persistence;1",
+  "@type": "Interface",
+  "extends": "dtmi:io:tributech:options:base;1",
+  "displayName": "Persistence options",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Persistance",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "postgre",
+            "displayName": "PostgreSQL",
+            "enumValue": "POSTGRE"
+          },
+          {
+            "name": "influx",
+            "displayName": "InfluxDB",
+            "enumValue": "INFLUX"
+          }
+        ]
+      },
+      "writable": true,
+      "displayName": "Data API persistance provider",
+      "description": "Select a persistance provider for the stream."
+    },
+    {
+      "@type": "Property",
+      "name": "PersistType",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "byte",
+            "displayName": "Byte",
+            "enumValue": "BYTE"
+          },
+          {
+            "name": "double",
+            "displayName": "Double",
+            "enumValue": "DOUBLE"
+          },
+          {
+            "name": "string",
+            "displayName": "String",
+            "enumValue": "STRING"
+          }
+        ]
+      },
+      "writable": true,
+      "displayName": "Persistence type",
+      "description": "Defines which type the stream is persisted as."
+    }
+  ]
+}
