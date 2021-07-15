@@ -4,7 +4,6 @@
   "@type": "Interface",
   "extends": "dtmi:io:tributech:options:base;1",
   "displayName": "Publish options",
-  "description": "Configure various properties",
   "contents": [
     {
       "@type": "Property",
