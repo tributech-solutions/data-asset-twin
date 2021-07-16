@@ -1,0 +1,8 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:options:base;1",
+  "@type": "Interface",
+  "displayName": "Options base",
+  "contents": [
+  ]
+}

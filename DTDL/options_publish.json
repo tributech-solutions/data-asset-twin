@@ -1,0 +1,45 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:options:publish;1",
+  "@type": "Interface",
+  "extends": "dtmi:io:tributech:options:base;1",
+  "displayName": "Publish options",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "PublishToMessageBus",
+      "schema": "boolean",
+      "writable": true,
+      "displayName": "Publish to message bus",
+      "description": "Defines wether or not the stream is going to be published on the message bus."
+    },
+    {
+      "@type": "Property",
+      "name": "PublishType",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "ByteArray",
+            "displayName": "Byte Array",
+            "enumValue": "BYTEARRAY"
+          },
+          {
+            "name": "Double",
+            "displayName": "Double",
+            "enumValue": "DOUBLE"
+          },
+          {
+            "name": "String_Base64",
+            "displayName": "String Base64",
+            "enumValue": "STRING_BASE64"
+          }
+        ]
+      },
+      "writable": true,
+      "displayName": "Publish type",
+      "description": "Defines which type the stream is published as."
+    }
+  ]
+}

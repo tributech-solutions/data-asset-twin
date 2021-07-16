@@ -163,6 +163,15 @@
     },
     {
       "@type": "Relationship",
+      "name": "Options",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1000,
+      "target": "dtmi:io:tributech:options:base;1",
+      "displayName": "Options",
+      "description": "Attach options to the stream to configure its properties."
+    },
+    {
+      "@type": "Relationship",
       "name": "Annotations",
       "minMultiplicity": 0,
       "maxMultiplicity": 1,
