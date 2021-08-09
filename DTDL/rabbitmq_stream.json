@@ -9,7 +9,7 @@
             "@type": "Property",
             "name": "QueueName",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Queue name",
             "description": "The RabbitMQ queue name"
         }

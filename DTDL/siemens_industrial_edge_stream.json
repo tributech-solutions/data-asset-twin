@@ -9,7 +9,7 @@
             "@type": "Property",
             "name": "ConnectionName",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Connection name",
             "description": "The name of the connection (e.g. PLC_1, S7, BottleMachine)."
         },
@@ -17,7 +17,7 @@
             "@type": "Property",
             "name": "CollectionName",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Tag/Data point collection name",
             "description": "The tag/data point collection name (e.g. default)."
         },
@@ -25,7 +25,7 @@
             "@type": "Property",
             "name": "DataPointName",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Tag/Data point name",
             "description": "Defines the name of the tag/data point (e.g. TankSignals_actLevel, EnergySignals_energyConsHeatingTank,...)."
         }

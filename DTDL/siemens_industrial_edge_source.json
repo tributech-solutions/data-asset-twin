@@ -9,7 +9,7 @@
             "@type": "Property",
             "name": "MetadataDiscoveryTopic",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Metadata discovery topic",
             "description": "The MQTT topic for discovery of metadata for tags/data points from the Siemens IE Databus (e.g. \"ie/m/j/simatic/v1/s7c1/dp\" where ie: industrial edge, m: metadata, j: json, s7c1: SIMATIC S7 Connector instance 1, dp: datapoint)."
         },
@@ -17,7 +17,7 @@
             "@type": "Property",
             "name": "MaxBatchSize",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Max batch size",
             "description": "The maximum number of values to send as batch in one message to the EdgeAgent. (e.g. 1024)"
         },
@@ -25,7 +25,7 @@
             "@type": "Property",
             "name": "FlushInterval",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Flush interval",
             "description": "The interval (in seconds) in which the values should be flushed from the buffer and send to the Data-API. Regardless if the MaxBatchSize was reached. (e.g. 1)"
         },
