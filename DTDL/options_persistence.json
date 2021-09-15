@@ -55,6 +55,14 @@
       "writable": true,
       "displayName": "Persistence type",
       "description": "Defines which type the stream is persisted as."
+    },
+    {
+      "@type": "Property",
+      "name": "PersistOnAzureDataLake",
+      "schema": "boolean",
+      "writable": true,
+      "displayName": "Persist on Azure Data Lake",
+      "description": "Defines wether or not the stream is going to be persisted on the Azure Data Lake."
     }
   ]
 }
