@@ -40,6 +40,14 @@
       "writable": true,
       "displayName": "Publish type",
       "description": "Defines which type the stream is published as."
+    },
+    {
+      "@type": "Property",
+      "name": "PublishToAzureEventHub",
+      "schema": "boolean",
+      "writable": true,
+      "displayName": "Publish to Azure Event Hub",
+      "description": "Defines wether or not the stream is going to be published on the message bus."
     }
   ]
 }
