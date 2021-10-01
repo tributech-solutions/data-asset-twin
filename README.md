@@ -1,18 +1,27 @@
 # Tributech DataSpace Kit - Data Asset Twins
 
-The DataSpace Kit (DSK) follows the approach to describes all entities of the system and relations between them using well known standards.
+The DataSpace Kit (DSK) follows the approach of describing all entities of the system and their relations using the open-source [Digital Twins Definition Language (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md) standard.
 
-The supported standards are:
-- [Digital Twins Definition Language (DTDL) Version 2](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md)
-- [Web of Things (WoT)](https://www.w3.org/TR/wot-thing-description/)
+## Tooling
 
-The definitions can be found in the corresponding sub-folders [DTDL](./DTDL) and [WoT](./WoT).
+The DSK provides various services and additional tooling to work with the given definitions. The open source services of our tooling can be found at the following repositories:
 
-The DTDL-models are in widespread use by services of the DSK. The DSK exposes various services- and provides additional tooling to work with the given definitions.
+[Twin-API](https://github.com/tributech-solutions/tributech-twin-api)
 
-Tools which are not part of a DSK ecosystem which can be used with the DTDL-definitions are:
-- [VSCode extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-dtdl)
-- [Azure Digital Twins (ADT)](https://azure.microsoft.com/en-us/services/digital-twins/)
-- [Azure Digital Twins (ADT) explorer](https://github.com/Azure-Samples/digital-twins-explorer)
+[Catalog-API](https://github.com/tributech-solutions/tributech-catalog-api)
 
-REMARK: The DTDL-definitions are maintained by Tributech. The WoT-definitions should be seen experimental and are currently not actively maintained.
+
+### Other models
+
+In addition to these core models we also offer specific models for various use-cases.
+
+[GAIA-X Self-Descriptions](https://github.com/tributech-solutions/gaia-x-self-descriptions)
+
+
+### Learn more
+
+To learn more about our vision for digital twins amd their use-cases check out our blog series:
+
+[Introduction to Digital Twins](https://www.tributech.io/blog/introduction-digital-twins)
+
+[Digital Twins at Tributech](https://www.tributech.io/blog/digital-twins-at-tributech)
