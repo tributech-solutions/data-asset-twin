@@ -1,0 +1,77 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:workflow:audit:execution;1",
+  "@type": "Interface",
+  "extends": ["dtmi:io:tributech:workflow:base:execution;1"],
+  "displayName": "Data Audit Execution",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Result",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Success",
+            "displayName": "Success",
+            "enumValue": "Success"
+          },
+          {
+            "name": "Failure",
+            "displayName": "Failure",
+            "enumValue": "Failure"
+          }
+        ]
+      },
+      "writable": true,
+      "displayName": "Result",
+      "description": "Indicates the result of the data audit."
+    },
+    {
+      "@type": "Property",
+      "name": "Audits",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "ValueMetadataId",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "Results",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "TotalProofCount",
+                "schema": "int"
+              },
+              {
+                "name": "ValidProofCount",
+                "schema": "int"
+              },
+              {
+                "name": "ErrorProofCount",
+                "schema": "int"
+              },
+              {
+                "name": "Errors",
+                "schema": {
+                  "@type": "Map",
+                  "mapKey": {
+                    "name": "Timestamp",
+                    "schema": "dateTime"
+                  },
+                  "mapValue": {
+                    "name": "Message",
+                    "schema": "string"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
