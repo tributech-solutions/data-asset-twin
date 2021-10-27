@@ -1,0 +1,18 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:workflow:base:execution;1",
+  "@type": "Interface",
+  "displayName": "Workflow Execution Base",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "ExecutionStart",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "ExecutionEnd",
+      "schema": "dateTime"
+    }
+  ]
+}
