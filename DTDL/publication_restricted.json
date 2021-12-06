@@ -1,0 +1,47 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:publication:restricted;1",
+  "@type": "Interface",
+  "extends": ["dtmi:io:tributech:publication:base;1"],
+  "displayName": "Restricted Publication",
+  "description": "A restricted publication represents the will of a Node to share data with selected nodes.",
+  "comment": "Only present at owning side.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Disabled",
+      "schema": "boolean",
+      "writable": true,
+      "displayName": "Disabled",
+      "description": "Publication is set to disabled when doing a soft-delete."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Dataflows",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 100,
+      "target": "dtmi:io:tributech:dataflow:base;1",
+      "displayName": "Dataflows",
+      "description": "List of Dataflows for the Publication."
+    },
+    {
+      "@type": "Relationship",
+      "name": "InvitedNodes",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 100,
+      "target": "dtmi:io:tributech:node;1",
+      "displayName": "Invited Nodes",
+      "description": "List of nodes invited to the publication.",
+      "properties": [
+        {
+          "@type": "Property",
+          "name": "Timestamp",
+          "schema": "dateTime",
+          "writable": true,
+          "displayName": "Timestamp",
+          "description": "The date/time when the invite was created."
+        }
+      ]
+    }
+  ]
+}

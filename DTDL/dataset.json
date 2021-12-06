@@ -3,7 +3,7 @@
   "@id": "dtmi:io:tributech:dataset;1",
   "@type": "Interface",
   "displayName": "Dataset",
-  "description": "Datasets can be used to bundle different sources and streams into a package that can be shared.",
+  "description": "Datasets can be used to bundle different sources and its streams into a package that can be shared.",
   "contents": [
     {
       "@type": "Property",
@@ -53,6 +53,15 @@
       "target": "dtmi:io:tributech:source:base;1",
       "displayName": "Sources",
       "description": "Contains all sources of the given dataset."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Publications",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 100,
+      "target": "dtmi:io:tributech:publication:base;1",
+      "displayName": "Publications",
+      "description": "Contains all publications of the given dataset."
     }
   ]
 }

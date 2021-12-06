@@ -1,0 +1,28 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:publication:public;1",
+  "@type": "Interface",
+  "extends": ["dtmi:io:tributech:publication:base;1"],
+  "displayName": "Public Publication",
+  "description": "A public publication represents the will of a Node to share data with the entire hub/ecosystem.",
+  "comment": "Only present at owning side.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Disabled",
+      "schema": "boolean",
+      "writable": true,
+      "displayName": "Disabled",
+      "description": "Publication is set to disabled when doing a soft-delete."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Requests",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 100,
+      "target": "dtmi:io:tributech:dataflow:request;1",
+      "displayName": "Requests",
+      "description": "List of Requests for the Publication."
+    }
+  ]
+}

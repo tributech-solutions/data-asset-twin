@@ -1,0 +1,76 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:company;1",
+  "@type": "Interface",
+  "displayName": "Company",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "City",
+      "schema": "string",
+      "writable": true,
+      "displayName": "City",
+      "description": "The name of the city.",
+      "comment": "Inlined from address."
+    },
+    {
+      "@type": "Property",
+      "name": "Country",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Country",
+      "description": "The name of the country.",
+      "comment": "Inlined from address."
+    },
+    {
+      "@type": "Property",
+      "name": "Street",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Street",
+      "description": "The name of the street.",
+      "comment": "Inlined from address."
+    },
+    {
+      "@type": "Property",
+      "name": "ZIP",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Zip/Postal Code",
+      "description": "The zip/postal code.",
+      "comment": "Inlined from address."
+    },
+    {
+      "@type": "Property",
+      "name": "LogoData",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Logo Data",
+      "description": "The image/logo of the Node as base64 encoded string for embedding in HTML."
+    },
+    {
+      "@type": "Property",
+      "name": "Industry",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Industry",
+      "description": "The industry of the Company."
+    },
+    {
+      "@type": "Property",
+      "name": "Specialities",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Specialities",
+      "description": "The specialities of the Company."
+    },
+    {
+      "@type": "Property",
+      "name": "Web",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Web",
+      "description": "Link to the website of the Company."
+    }
+  ]
+}

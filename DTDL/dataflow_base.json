@@ -1,0 +1,113 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:dataflow:base;1",
+  "@type": "Interface",
+  "displayName": "Dataflow",
+  "description": "Base entity of dataflow.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Status",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Open",
+            "displayName": "Open",
+            "enumValue": "OPEN",
+            "description": "Open - Not yet granted/denied by publishing Node."
+          },
+          {
+            "name": "Granted",
+            "displayName": "Granted",
+            "enumValue": "GRANTED",
+            "description": "Granted - Granted by publishing Node."
+          },
+          {
+            "name": "Denied",
+            "displayName": "Denied",
+            "enumValue": "DENIED",
+            "description": "Denied - Denied by publishing Node."
+          },
+          {
+            "name": "Revoked",
+            "displayName": "Revoked",
+            "enumValue": "REVOKED",
+            "description": "Revoked - Revoked by publishing Node (after possible initial grant)."
+          },
+          {
+            "name": "Unsubscribed",
+            "displayName": "Unsubscribed",
+            "enumValue": "UNSUBSCRIBED",
+            "description": "Unsubscribed - Unsubscribed by requesting Node."
+          }
+        ]
+      },
+      "writable": true,
+      "displayName": "Status",
+      "description": "The status of the dataflow."
+    },
+    {
+      "@type": "Property",
+      "name": "CreatedOn",
+      "schema": "dateTime",
+      "writable": true,
+      "displayName": "Created On",
+      "description": "The creation date of the dataflow."
+    },
+    {
+      "@type": "Property",
+      "name": "CreatedBy",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Created By",
+      "description": "The id of the user that created the dataflow."
+    },
+    {
+      "@type": "Property",
+      "name": "StartDate",
+      "schema": "dateTime",
+      "writable": true,
+      "displayName": "Start Date",
+      "description": "Start date/time for dataflow (inclusive). (optional)",
+      "comment": "Inclusive means that values starting from inclusive (>=) From will be included in the range."
+    },
+    {
+      "@type": "Property",
+      "name": "EndDate",
+      "schema": "dateTime",
+      "writable": true,
+      "displayName": "End Date",
+      "description": "End date/time for dataflow (exclusive). (optional)",
+      "comment": "Exclusive means that only values before (<) To will be included in the range."
+    },
+    {
+      "@type": "Relationship",
+      "name": "InitiatorNode",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1,
+      "target": "dtmi:io:tributech:node;1",
+      "displayName": "Initiator Node",
+      "description": "The Node that initiated the flow."
+    },
+    {
+      "@type": "Relationship",
+      "name": "TargetNode",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1,
+      "target": "dtmi:io:tributech:node;1",
+      "displayName": "Target Node",
+      "description": "The Node that is targeted for the dataflow."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Initiator",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1,
+      "target": "dtmi:io:tributech:user;1",
+      "displayName": "Initiator",
+      "description": "The user that initiated the flow."
+    }
+  ]
+}
