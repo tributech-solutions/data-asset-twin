@@ -1,51 +1,51 @@
 {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:source:replay;1",
-    "@type": "Interface",
-    "extends": "dtmi:io:tributech:source:base;1",
-    "displayName": "Replay Source",
-    "description": "The replay source offers the possibility to replay values from an CSV file. The replay source creates an additional stream internally that publishes the JSON values of all streams at a certain time.",
-    "contents": [
-        {
-            "@type": "Property",
-            "name": "RowValueMetadataId",
-            "schema": "string",
-            "writable": true,
-            "displayName": "Row ValueMetadataId",
-            "description": "Override GUID for JSON row value stream."
-        },
-        {
-            "@type": "Property",
-            "name": "FileName",
-            "schema": "string",
-            "writable": true,
-            "displayName": "File Name",
-            "description": "The name of the CSV file to use (e.g. \"Data/demo_data.csv\")."
-        },
-        {
-            "@type": "Property",
-            "name": "Frequency",
-            "schema": "double",
-            "writable": true,
-            "displayName": "Frequency",
-            "description": "The interval (in milliseconds) to use for replaying values line by line in (e.g. 100)"
-        },
-        {
-            "@type": "Property",
-            "name": "RestartAutomatically",
-            "schema": "boolean",
-            "writable": true,
-            "displayName": "Restart Automatically",
-            "description": "Restart replay from top after reaching end."
-        },
-        {
-            "@type": "Relationship",
-            "name": "Streams",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 10,
-            "target": "dtmi:io:tributech:stream:replay;1",
-            "displayName": "Streams",
-            "description": "Link to all replay streams of this source."
-        }
-    ]
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:source:replay;1",
+  "@type": "Interface",
+  "extends": "dtmi:io:tributech:source:base;1",
+  "displayName": "Replay Source",
+  "description": "The replay source offers the possibility to replay values from an CSV file. The replay source creates an additional stream internally that publishes the JSON values of all streams at a certain time.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "RowValueMetadataId",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Row ValueMetadataId",
+      "description": "Override GUID for JSON row value stream."
+    },
+    {
+      "@type": "Property",
+      "name": "FileName",
+      "schema": "string",
+      "writable": true,
+      "displayName": "File Name",
+      "description": "The name of the CSV file to use (e.g. \"Data/demo_data.csv\")."
+    },
+    {
+      "@type": "Property",
+      "name": "Frequency",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Frequency",
+      "description": "The interval (in milliseconds) to use for replaying values line by line in (e.g. 100)"
+    },
+    {
+      "@type": "Property",
+      "name": "RestartAutomatically",
+      "schema": "boolean",
+      "writable": true,
+      "displayName": "Restart Automatically",
+      "description": "Restart replay from top after reaching end."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Streams",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 10,
+      "target": "dtmi:io:tributech:stream:replay;1",
+      "displayName": "Streams",
+      "description": "Link to all replay streams of this source."
+    }
+  ]
 }

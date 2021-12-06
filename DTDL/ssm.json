@@ -4,7 +4,7 @@
   "extends": "dtmi:io:tributech:device:base;1",
   "@type": "Interface",
   "displayName": "Sensor Security Module",
-  "contents": [ 
+  "contents": [
     {
       "@type": "Property",
       "name": "SoftwareVersion",

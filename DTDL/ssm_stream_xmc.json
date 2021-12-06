@@ -12,16 +12,16 @@
         "@type": "Enum",
         "valueSchema": "string",
         "enumValues": [
-            {
-                "name": "Temperature",
-                "displayName": "Temperature",
-                "enumValue": "Temperature"
-            },
-            {
-                "name": "AnalogInput",
-                "displayName": "Analog Input",
-                "enumValue": "AnalogInput"
-            }
+          {
+            "name": "Temperature",
+            "displayName": "Temperature",
+            "enumValue": "Temperature"
+          },
+          {
+            "name": "AnalogInput",
+            "displayName": "Analog Input",
+            "enumValue": "AnalogInput"
+          }
         ]
       },
       "writable": false,

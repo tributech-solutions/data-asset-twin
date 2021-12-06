@@ -1,66 +1,66 @@
 {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:sink:ssm;1",
-    "extends": "dtmi:io:tributech:sink:base;1",
-    "@type": "Interface",
-    "displayName": "Sensor Security Module Sink",
-    "contents": [ 
-      {
-        "@type": "Property",
-        "name": "ProofsEndpoint",
-        "schema": "string",
-        "writable": true,
-        "displayName": "Proofs Endpoint",
-        "description": "Endpoint-URI for the submission of the proofs. E.g. <dsk-node-subdomain>.dataspace-node.com. REMARK: Appropriate TLS-certificates needs to be in place."
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:sink:ssm;1",
+  "extends": "dtmi:io:tributech:sink:base;1",
+  "@type": "Interface",
+  "displayName": "Sensor Security Module Sink",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "ProofsEndpoint",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Proofs Endpoint",
+      "description": "Endpoint-URI for the submission of the proofs. E.g. <dsk-node-subdomain>.dataspace-node.com. REMARK: Appropriate TLS-certificates needs to be in place."
+    },
+    {
+      "@type": "Property",
+      "name": "RawValuesEndpoint",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Values Endpoint",
+      "description": "Endpoint-URI for the submission of the raw-values. E.g. <dsk-node-subdomain>.dataspace-node.com. REMARK: Appropriate TLS-certificates needs to be in place."
+    },
+    {
+      "@type": "Property",
+      "name": "ConnectivityTechnology",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "None",
+            "displayName": "None",
+            "enumValue": "NONE"
+          },
+          {
+            "name": "NBIoT",
+            "displayName": "NB-IoT",
+            "enumValue": "NBIoT"
+          },
+          {
+            "name": "CATM",
+            "displayName": "CAT-M",
+            "enumValue": "CATM"
+          },
+          {
+            "name": "LTE",
+            "displayName": "LTE",
+            "enumValue": "LTE"
+          }
+        ]
       },
-      {
-        "@type": "Property",
-        "name": "RawValuesEndpoint",
-        "schema": "string",
-        "writable": true,
-        "displayName": "Values Endpoint",
-        "description": "Endpoint-URI for the submission of the raw-values. E.g. <dsk-node-subdomain>.dataspace-node.com. REMARK: Appropriate TLS-certificates needs to be in place."
-      },
-      {
-        "@type": "Property",
-        "name": "ConnectivityTechnology",
-        "schema": {
-            "@type": "Enum",
-            "valueSchema": "string",
-            "enumValues": [
-                {
-                    "name": "None",
-                    "displayName": "None",
-                    "enumValue": "NONE"
-                },
-                {
-                    "name": "NBIoT",
-                    "displayName": "NB-IoT",
-                    "enumValue": "NBIoT"
-                },
-                {
-                    "name": "CATM",
-                    "displayName": "CAT-M",
-                    "enumValue": "CATM"
-                },
-                {
-                    "name": "LTE",
-                    "displayName": "LTE",
-                    "enumValue": "LTE"
-                }
-            ]
-        },
-        "writable": true,
-        "displayName": "Connectivity Technology",
-        "description": "Cellular connectivity technology used to submit proofs and values."
-      },
-      {
-        "@type": "Property",
-        "name": "APN",
-        "schema": "string",
-        "writable": true,
-        "displayName": "Access Point Name",
-        "description": "Access Point Name for the cellular connectivity."
-      }
-    ]
-  }
+      "writable": true,
+      "displayName": "Connectivity Technology",
+      "description": "Cellular connectivity technology used to submit proofs and values."
+    },
+    {
+      "@type": "Property",
+      "name": "APN",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Access Point Name",
+      "description": "Access Point Name for the cellular connectivity."
+    }
+  ]
+}

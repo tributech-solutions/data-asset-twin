@@ -2,7 +2,9 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:io:tributech:workflow:audit;1",
   "@type": "Interface",
-  "extends": ["dtmi:io:tributech:workflow:base;1"],
+  "extends": [
+    "dtmi:io:tributech:workflow:base;1"
+  ],
   "displayName": "Data Audit Workflow",
   "contents": [
     {
@@ -16,7 +18,7 @@
       "@type": "Relationship",
       "name": "Executions",
       "minMultiplicity": 0,
-      "maxMultiplicity": 10000,
+      "maxMultiplicity": 500,
       "target": "dtmi:io:tributech:workflow:audit:execution;1"
     }
   ]

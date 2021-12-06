@@ -60,21 +60,21 @@
         "@type": "Enum",
         "valueSchema": "string",
         "enumValues": [
-            {
-                "name": "None",
-                "displayName": "None",
-                "enumValue": "NONE"
-            },
-            {
-                "name": "Odd",
-                "displayName": "Odd",
-                "enumValue": "ODD"
-            },
-            {
-                "name": "Even",
-                "displayName": "Even",
-                "enumValue": "EVEN"
-            }
+          {
+            "name": "None",
+            "displayName": "None",
+            "enumValue": "NONE"
+          },
+          {
+            "name": "Odd",
+            "displayName": "Odd",
+            "enumValue": "ODD"
+          },
+          {
+            "name": "Even",
+            "displayName": "Even",
+            "enumValue": "EVEN"
+          }
         ]
       },
       "writable": true,

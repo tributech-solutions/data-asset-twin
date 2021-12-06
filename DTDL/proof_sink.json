@@ -1,65 +1,64 @@
 {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:sink:proof;1",
-    "@type": "Interface",
-    "displayName": "Proof Sink",
-    "extends": "dtmi:io:tributech:sink:base;1",
-    "contents": [
-        {
-            "@type": "Property",
-            "name": "BaseUrl",
-            "schema": "string",
-            "writable": true,
-            "displayName": "Trust-API Url",
-            "description": "URL of the Trust-API (e.g. https://trust-api.your-node-name.dataspace-node.com)"
-        },
-        {
-            "@type": "Property",
-            "name": "AuthUrl",
-            "schema": "string",
-            "writable": true,
-            "displayName": "Auth Server Token URL",
-            "description": "URL of the Token API at the Auth Server (e.g. https://auth.your-hub-name.dataspace-hub.com/auth/realms/your-node-name/protocol/openid-connect/token)"
-        },
-        {
-            "@type": "Property",
-            "name": "AuthScope",
-            "schema": "string",
-            "writable": true,
-            "displayName": "OAuth scope",
-            "description": "OAuth scope (e.g. \"profile email trust-api data-api node-id\")"
-        },
-        {
-            "@type": "Property",
-            "name": "ClientId",
-            "schema": "string",
-            "writable": true,
-            "displayName": "Client id for authentication",
-            "description": "Client Id used for authenticaiton (e.g. \"trust-api\")"
-        },
-        {
-            "@type": "Property",
-            "name": "ClientSecret",
-            "schema": "string",
-            "writable": true,
-            "displayName": "Client secret for authentication",
-            "description": ""
-        },
-        {
-            "@type": "Property",
-            "name": "MaxRetries",
-            "schema": "integer",
-            "writable": true,
-            "displayName": "Max retries",
-            "description": "Number of maximum retries for calls at Trust-API (e.g. 3)."
-        },
-        {
-            "@type": "Property",
-            "name": "MaxRetryInterval",
-            "schema": "integer",
-            "writable": true,
-            "displayName": "Max retry interval",
-            "description": "Maximum interval (in seconds) for delays of calls at Trust-API on error (e.g. 30)"
-        }
-    ]
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:sink:proof;1",
+  "@type": "Interface",
+  "displayName": "Proof Sink",
+  "extends": "dtmi:io:tributech:sink:base;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "BaseUrl",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Trust-API Url",
+      "description": "URL of the Trust-API (e.g. https://trust-api.your-node-name.dataspace-node.com)"
+    },
+    {
+      "@type": "Property",
+      "name": "AuthUrl",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Auth Server Token URL",
+      "description": "URL of the Token API at the Auth Server (e.g. https://auth.your-hub-name.dataspace-hub.com/auth/realms/your-node-name/protocol/openid-connect/token)"
+    },
+    {
+      "@type": "Property",
+      "name": "AuthScope",
+      "schema": "string",
+      "writable": true,
+      "displayName": "OAuth scope",
+      "description": "OAuth scope (e.g. \"profile email trust-api data-api node-id\")"
+    },
+    {
+      "@type": "Property",
+      "name": "ClientId",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Client id for authentication",
+      "description": "Client Id used for authenticaiton (e.g. \"trust-api\")"
+    },
+    {
+      "@type": "Property",
+      "name": "ClientSecret",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Client secret for authentication"
+    },
+    {
+      "@type": "Property",
+      "name": "MaxRetries",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "Max retries",
+      "description": "Number of maximum retries for calls at Trust-API (e.g. 3)."
+    },
+    {
+      "@type": "Property",
+      "name": "MaxRetryInterval",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "Max retry interval",
+      "description": "Maximum interval (in seconds) for delays of calls at Trust-API on error (e.g. 30)"
+    }
+  ]
 }

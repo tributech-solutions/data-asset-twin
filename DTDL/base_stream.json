@@ -22,22 +22,6 @@
     },
     {
       "@type": "Property",
-      "name": "StreamConfig",
-      "writable": true,
-      "schema": {
-        "@type": "Map",
-        "mapKey": {
-          "name": "key",
-          "schema": "string"
-        },
-        "mapValue": {
-          "name": "value",
-          "schema": "string"
-        }
-      }
-    },
-    {
-      "@type": "Property",
       "name": "MerkleTreeDepth",
       "schema": "integer",
       "writable": true,
@@ -165,7 +149,7 @@
       "@type": "Relationship",
       "name": "Options",
       "minMultiplicity": 0,
-      "maxMultiplicity": 1000,
+      "maxMultiplicity": 500,
       "target": "dtmi:io:tributech:options:base;1",
       "displayName": "Options",
       "description": "Attach options to the stream to configure its properties."
@@ -177,7 +161,7 @@
       "maxMultiplicity": 1,
       "target": "dtmi:io:tributech:annotations:base;1",
       "displayName": "Annotations",
-      "description": "Associated annotations.."
+      "description": "Associated annotations."
     }
   ]
 }

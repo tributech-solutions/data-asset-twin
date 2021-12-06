@@ -2,7 +2,9 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:io:tributech:workflow:audit:execution;1",
   "@type": "Interface",
-  "extends": ["dtmi:io:tributech:workflow:base:execution;1"],
+  "extends": [
+    "dtmi:io:tributech:workflow:base:execution;1"
+  ],
   "displayName": "Data Audit Execution",
   "contents": [
     {
@@ -44,15 +46,15 @@
             "fields": [
               {
                 "name": "TotalProofCount",
-                "schema": "int"
+                "schema": "integer"
               },
               {
                 "name": "ValidProofCount",
-                "schema": "int"
+                "schema": "integer"
               },
               {
                 "name": "ErrorProofCount",
-                "schema": "int"
+                "schema": "integer"
               },
               {
                 "name": "Errors",
@@ -60,7 +62,7 @@
                   "@type": "Map",
                   "mapKey": {
                     "name": "Timestamp",
-                    "schema": "dateTime"
+                    "schema": "string"
                   },
                   "mapValue": {
                     "name": "Message",

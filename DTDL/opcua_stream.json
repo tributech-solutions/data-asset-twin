@@ -1,17 +1,17 @@
 {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:stream:opcua;1",
-    "@type": "Interface",
-    "displayName": "OPC UA Stream",
-    "extends": "dtmi:io:tributech:stream:base;1",
-    "contents": [
-        {
-            "@type": "Property",
-            "name": "Identifier",
-            "schema": "string",
-            "writable": true,
-            "displayName": "Identifier",
-            "description": "The identifier for the OPC UA value source (eg. \"ns=1;i=0\")"
-        }
-    ]
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:opcua;1",
+  "@type": "Interface",
+  "displayName": "OPC UA Stream",
+  "extends": "dtmi:io:tributech:stream:base;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Identifier",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Identifier",
+      "description": "The identifier for the OPC UA value source (eg. \"ns=1;i=0\")"
+    }
+  ]
 }
