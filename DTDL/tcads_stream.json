@@ -1,0 +1,25 @@
+{
+    "@context" : "dtmi:dtdl:context;2",
+    "@id" : "dtmi:io:tributech:stream:tcads;1", 
+    "@type": "Interface", 
+    "extends": "dtmi:io:tributech:stream:base;1",
+    "displayName": "Beckhoff TwinCat ADS Stream", 
+    "contents" : [
+        {
+            "@type" : "Property", 
+            "name" : "Identifier", 
+            "schema" : "string", 
+            "writeable" : true, 
+            "displayName" : "Symbol Path", 
+            "description" : "The Symbol Path for the Twin Cat ADS Source (eg. \"Main.iTest\")"
+        },
+        {
+            "@type" : "Property", 
+            "name" : "Datatype", 
+            "schema" : "string", 
+            "writeable" : true, 
+            "displayName" : "ADS Datatype", 
+            "description" : "The DataType for the ADS Variable (eg. \"INT\", \"WORD\", etc..)"
+        }
+    ]
+}
