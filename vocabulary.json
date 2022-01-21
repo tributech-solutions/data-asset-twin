@@ -46,6 +46,8 @@
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/ssm_stream_modbus.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/ssm_stream_xmc.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/workflow_audit.json",
-        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/workflow_audit_execution.json"
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/workflow_audit_execution.json",
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_source.json",
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_stream.json"
     ]
 }
