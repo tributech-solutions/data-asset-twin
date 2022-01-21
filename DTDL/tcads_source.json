@@ -7,7 +7,7 @@
     "contents" : [
         {
             "@type" : "Property", 
-            "name" : "ConnectionString", 
+            "name" : "AMSNetId", 
             "schema" : "string", 
             "writable" : true, 
             "displayName" : "AMS Net Id",
