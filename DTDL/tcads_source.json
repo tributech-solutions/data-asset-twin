@@ -1,0 +1,41 @@
+{
+    "@context" : "dtmi:dtdl:context;2",
+    "@id" : "dtmi:io:tributech:source:tcads;1", 
+    "@type": "Interface", 
+    "extends": "dtmi:io:tributech:source:base;1",
+    "displayName": "Beckhoff TwinCat ADS Source", 
+    "contents" : [
+        {
+            "@type" : "Property", 
+            "name" : "AMSNetId", 
+            "schema" : "string", 
+            "writable" : true, 
+            "displayName" : "AMS Net Id",
+            "description" : "PLC Router Identifier for Network browsing"
+        }, 
+        {
+            "@type" : "Property", 
+            "name" : "Port", 
+            "schema" : "integer", 
+            "writable" : true,
+            "displayName" : "ADS Port", 
+            "description" : "TwinCat ADS Port to Beckhoff PLC"
+        }, 
+        {
+            "@type" : "Property",
+            "name" : "PublishingInterval",
+            "schema" : "integer", 
+            "writable" : true,
+            "displayName" : "The TwinCat publishing interval to the Agent in milliseconds (e.g 100)"
+        }, 
+        {
+            "@type" : "Relationship", 
+            "name" :"Streams", 
+            "minMultiplicity" : 0, 
+            "maxMultiplicity" : 100,
+            "target": "dtmi:io:tributech:stream:tcads;1",
+            "displayName" : "Streams",
+            "description" : "Contains all the TwinCat ADS streams at the given Source"
+        }
+    ]
+}
