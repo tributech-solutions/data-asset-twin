@@ -86,7 +86,7 @@
                     {
                         "name" : "REAL", 
                         "displayName" : "REAL (Float)", 
-                        "enumValue":  "DWORD", 
+                        "enumValue":  "REAL", 
                         "comment": "NET Type : System.Single"
                     },
                     {
