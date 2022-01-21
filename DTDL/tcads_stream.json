@@ -9,14 +9,14 @@
             "@type" : "Property", 
             "name" : "Identifier", 
             "schema" : "string", 
-            "writeable" : true, 
+            "writable" : true, 
             "displayName" : "Symbol Path", 
             "description" : "The Symbol Path for the Twin Cat ADS Source (eg. \"Main.iTest\")"
         },
         {
             "@type" : "Property", 
             "name" : "Datatype", 
-            "writeable" : true, 
+            "writable" : true, 
             "displayName" : "ADS Datatype", 
             "description" : "The DataType for the ADS Variable (eg. \"INT\", \"WORD\", etc..)", 
             "schema" : {
