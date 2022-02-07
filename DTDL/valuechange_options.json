@@ -1,0 +1,33 @@
+{
+    "@context" : "dtmi:dtdl:context;2",
+    "@id" : "dtmi:io:tributech:options:tcads;1", 
+    "@type": "Interface", 
+    "extends": "dtmi:io:tributech:options:base;1",
+    "displayName": "Beckhoff TwinCat ADS Value Options", 
+    "contents" : [
+        {
+            "@type" : "Property", 
+            "name" : "PMIN", 
+            "schema" : "integer", 
+            "writable" : true,
+            "displayName" : "Minimum Period (Seconds)", 
+            "description" : "Minimum Time Difference between Value Changes (Value will be ignored if it changes faster)"
+        }, 
+        {
+            "@type" : "Property", 
+            "name" : "PMAX", 
+            "schema" : "integer", 
+            "writable" : true,
+            "displayName" : "Maximum Period (Minutes)", 
+            "description" : "Maximum Time Difference between Value Changes (Value will be submitted manually if Time Difference exceeds)"
+        }, 
+        {
+            "@type" : "Property", 
+            "name" : "ST", 
+            "schema" : "integer", 
+            "writable" : true,
+            "displayName" : "Step (Delta)", 
+            "description" : "Minimum Value Difference between New and Old Value (If Value is smaller than the Delta Value will be ignored)"
+        } 
+    ]
+}

@@ -4,5 +4,13 @@
   "@type": "Interface",
   "displayName": "Options base",
   "contents": [
+    {
+      "@type": "Property",
+      "name": "Name",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Name",
+      "description": "Human-readable name of the source."
+    }
   ]
 }
