@@ -10,7 +10,7 @@
       "schema": "string",
       "writable": true,
       "displayName": "Name",
-      "description": "Human-readable name of the source."
+      "description": "Human-readable Name"
     }
   ]
 }
