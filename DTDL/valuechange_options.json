@@ -16,9 +16,9 @@
         {
             "@type" : "Property", 
             "name" : "PMAX", 
-            "schema" : "double", 
+            "schema" : "integer", 
             "writable" : true,
-            "displayName" : "Maximum Period (Minutes)", 
+            "displayName" : "Maximum Period (Seconds)", 
             "description" : "Maximum Time Difference between Value Changes (Value will be submitted manually if Time Difference exceeds) eg.: 1.5"
         }, 
         {
