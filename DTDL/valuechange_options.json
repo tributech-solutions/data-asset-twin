@@ -11,23 +11,23 @@
             "schema" : "integer", 
             "writable" : true,
             "displayName" : "Minimum Period (Seconds)", 
-            "description" : "Minimum Time Difference between Value Changes (Value will be ignored if it changes faster)"
+            "description" : "Minimum Time Difference between Value Changes (Value will be ignored if it changes faster) eg.: 1"
         }, 
         {
             "@type" : "Property", 
             "name" : "PMAX", 
-            "schema" : "integer", 
+            "schema" : "double", 
             "writable" : true,
             "displayName" : "Maximum Period (Minutes)", 
-            "description" : "Maximum Time Difference between Value Changes (Value will be submitted manually if Time Difference exceeds)"
+            "description" : "Maximum Time Difference between Value Changes (Value will be submitted manually if Time Difference exceeds) eg.: 1.5"
         }, 
         {
             "@type" : "Property", 
             "name" : "ST", 
-            "schema" : "integer", 
+            "schema" : "double", 
             "writable" : true,
             "displayName" : "Step (Delta)", 
-            "description" : "Minimum Value Difference between New and Old Value (If Value is smaller than the Delta Value will be ignored)"
+            "description" : "Minimum Value Difference between New and Old Value (If Value is smaller than the Delta Value will be ignored) eg.: 1.2"
         } 
     ]
 }
