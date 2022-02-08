@@ -47,10 +47,10 @@
         },
         {
             "@type" : "Property",
-            "name" : "PublishingInterval",
+            "name" : "DefaultReadCycleInterval",
             "schema" : "integer", 
             "writable" : true,
-            "displayName": "Cycle Default Interval (Seconds)",
+            "displayName": "Read Cycle Default Interval (Seconds)",
             "description" : "Default reading Interval for Symbol Values"
         }, 
         {

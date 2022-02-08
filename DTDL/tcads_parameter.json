@@ -35,73 +35,73 @@
                         "name" : "BOOL", 
                         "displayName" : "Boolean", 
                         "enumValue":  "BOOL", 
-                        "comment": "NET Type : System.Boolean"
+                        "comment": ".NET Type : System.Boolean"
                     },
                     {
                         "name" : "BYTE", 
                         "displayName" : "Byte", 
                         "enumValue":  "BYTE", 
-                        "comment": "NET Type : System.Byte"
+                        "comment": ".NET Type : System.Byte"
                     },
                     {
                         "name" : "USINT", 
                         "displayName" : "USINT (Integer 8)", 
                         "enumValue":  "USINT", 
-                        "comment": "NET Type : System.Byte"
+                        "comment": ".NET Type : System.Byte"
                     },
                     {
                         "name" : "SINT", 
                         "displayName" : "SINT (Signed Integer 8)", 
                         "enumValue":  "SINT", 
-                        "comment": "NET Type : System.SByte"
+                        "comment": ".NET Type : System.SByte"
                     },
                     {
                         "name" : "INT", 
                         "displayName" : "INT (Integer 8) ", 
                         "enumValue":  "INT", 
-                        "comment": "NET Type : System.Int16"
+                        "comment": ".NET Type : System.Int16"
                     },
                     {
                         "name" : "WORD", 
                         "displayName" : "WORD (Signed Integer 16)", 
                         "enumValue":  "WORD", 
-                        "comment": "NET Type : System.UInt16"
+                        "comment": ".NET Type : System.UInt16"
                     },
                     {
                         "name" : "UINT", 
                         "displayName" : "UINT (Signed Integer 16)", 
                         "enumValue":  "UINT", 
-                        "comment": "NET Type : System.UINT16"
+                        "comment": ".NET Type : System.UINT16"
                     },
                     {
                         "name" : "DINT", 
                         "displayName" : "DINT (Integer 32)", 
                         "enumValue":  "DINT", 
-                        "comment": "NET Type : System.Int32"
+                        "comment": ".NET Type : System.Int32"
                     },
                     {
                         "name" : "UDINT", 
                         "displayName" : "UDINT (Unsigned Integer 32)", 
                         "enumValue":  "UDINT", 
-                        "comment": "NET Type : System.UInt32"
+                        "comment": ".NET Type : System.UInt32"
                     },
                     {
                         "name" : "DWORD", 
                         "displayName" : "DWORD (Unsigned Integer 16)", 
                         "enumValue":  "DWORD", 
-                        "comment": "NET Type : System.UInt32"
+                        "comment": ".NET Type : System.UInt32"
                     },
                     {
                         "name" : "REAL", 
                         "displayName" : "REAL (Float)", 
                         "enumValue":  "REAL", 
-                        "comment": "NET Type : System.Single"
+                        "comment": ".NET Type : System.Single"
                     },
                     {
                         "name" : "LREAL", 
                         "displayName" : "LREAL (Double)", 
                         "enumValue":  "LREAL", 
-                        "comment": "NET Type : System.Double"
+                        "comment": ".NET Type : System.Double"
                     }, 
                     {
                         "name" : "STRING", 
