@@ -1,9 +1,9 @@
 {
     "@context" : "dtmi:dtdl:context;2",
-    "@id" : "dtmi:io:tributech:stream:tcads;1", 
+    "@id" : "dtmi:io:tributech:parameter:tcads;1", 
     "@type": "Interface", 
-    "extends": "dtmi:io:tributech:stream:base;1",
-    "displayName": "Beckhoff TwinCat ADS Stream", 
+    "extends": "dtmi:io:tributech:parameter:base;1",
+    "displayName": "Beckhoff TwinCat ADS Parameter", 
     "contents" : [
         {
             "@type" : "Property", 
@@ -11,7 +11,15 @@
             "schema" : "string", 
             "writable" : true, 
             "displayName" : "Symbol Path", 
-            "description" : "The Symbol Path for the Twin Cat ADS Source (eg. \"Main.iTest\")"
+            "description" : "The Symbol Path for the ADS Server to write to (eg. \"Main.iTest\")"
+        },
+        {
+            "@type" : "Property", 
+            "name" : "Value", 
+            "schema" : "string", 
+            "writable" : true, 
+            "displayName" : "Write Value", 
+            "description" : "Value which will be written to the Symbol Path(eg.\"LREAL\" : 1.2232, \"INT\" : 1)"
         },
         {
             "@type" : "Property", 
@@ -102,51 +110,8 @@
                         "comment" : "ANSI or UTF16 Encoded"
                     }
                 ]
-            } 
-        }, 
-        {
-            "@type" : "Property", 
-            "name" : "ReadMode", 
-            "writable" : true, 
-            "displayName" : "Read Mode", 
-            "description" : "Way of receiving Value from the Server", 
-            "schema" : {
-                "@type": "Enum", 
-                "valueSchema":  "string", 
-                "enumValues" : [
-                    {
-                        "name" : "CYCLE", 
-                        "displayName" : "Cyclic Reading", 
-                        "enumValue":  "CYCLE", 
-                        "description": "Client will read the Value from the ADS Server in an Interval",
-                        "comment": "Should be used when the Value doesn't change that often"
-                    },
-                    {
-                        "name" : "ONCHANGE", 
-                        "displayName": "On Change",
-                        "enumValue" : "ONCHANGE", 
-                        "description": "Server will notify Client that the Symbol Value has changed", 
-                        "comment": "For real time Change Notifications"
-                    }
-                ]
             }
-        }, 
-        {
-            "@type" : "Property", 
-            "name" : "ReadCycleInterval", 
-            "schema" : "integer", 
-            "writable" : true,
-            "displayName" : "Reading Cycle Interval", 
-            "description" : "If Cycle Mode is selected, this Interval will be chosen to read the Value. When not set defaults to Cycle Default Interval (Seconds)"
-        }, 
-        {
-            "@type" : "Relationship", 
-            "name" :"ValueOption", 
-            "minMultiplicity" : 0, 
-            "maxMultiplicity" : 1,
-            "target": "dtmi:io:tributech:options:valuechange;1",
-            "displayName" : "Value Change Options",
-            "description" : "Specifies when an Value will be submitted to the Cloud"
         }
     ]
+
 }

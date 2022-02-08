@@ -9,6 +9,7 @@
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/base_device.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/base_execution.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/base_options.json",
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/base_parameter.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/base_sink.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/base_source.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/base_stream.json",
@@ -26,6 +27,7 @@
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/opcua_stream.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/options_persistence.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/options_publish.json",
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/valuechange_options.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/proof_sink.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/rabbitmq_source.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/rabbitmq_stream.json",
@@ -48,6 +50,7 @@
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/workflow_audit.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/workflow_audit_execution.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_source.json",
-        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_stream.json"
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_stream.json", 
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_parameter.json"
     ]
 }
