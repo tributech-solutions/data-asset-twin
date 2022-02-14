@@ -144,7 +144,7 @@
             "name" :"ValueOption", 
             "minMultiplicity" : 0, 
             "maxMultiplicity" : 1,
-            "target": "dtmi:io:tributech:options:valuechange;1",
+            "target": "dtmi:io:tributech:options:tcads;1",
             "displayName" : "Value Change Options",
             "description" : "Specifies when an Value will be submitted to the Cloud"
         }
