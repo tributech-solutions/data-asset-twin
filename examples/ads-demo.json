@@ -1,0 +1,197 @@
+{
+    "digitalTwins": [
+      {
+        "MaxMerkleTreeDepth": 16,
+        "MaxMerkleTreeAge": 600,
+        "Name": "Edge",
+        "DeviceId": "b11b733c-fe15-417b-86ea-7f76fe1e8d26",
+        "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2iU6vzuPoN30nquU+UUf\nyD8tSltc/9FEMjq6QThacmn9FMYtAl1/+NOPV2xe/h6fcCeh3B8275TPGQ2o0wLl\nfqbi8oauL67b4epYOtE3OZWAx1KUnFNuFmDqPk7+XdgPMt5Jl07sQg0LPsGEIU+o\nPtst5i/VVe4inOympwM8P7KTJIsGlykP5TAkB6W8riv7K+omxKrHhFFmjFtJQbu3\nh/XN9VnvIQwWYDhBTY59xdHpYBfapW0lK7yCCzuToGKr1HFDVNDVQGiPDueesr3S\n/sOV0nSxa5AQE02quoRUTwOzkYDKG+MUdiNdawbwSIoD7hhf5TzVVIqRsQk/3LTl\ngQIDAQAB\n-----END PUBLIC KEY-----",
+        "KeyStorageType": "NONE",
+        "ProofKind": "SHA256_RSA2048_PSS",
+        "$dtId": "b11b733c-fe15-417b-86ea-7f76fe1e8d26",
+        "$etag": "aac34e0e-0226-4488-b4b9-942144d79ea2",
+        "$metadata": {
+          "$model": "dtmi:io:tributech:device:edge;1"
+        }
+      },
+      {
+        "AMSNetId": "5.82.14.52.1.1",
+        "Port": 851,
+        "DefaultReadCycleInterval": 1,
+        "RouterPort": 48898,
+        "RouterAMSNetId": "11.11.11.11.1.1",
+        "ADSServerAddress": "10.0.0.53",
+        "WriteCycleTime": 120,
+        "Name": "Beckhoff TwinCat ADS Source",
+        "$dtId": "7b1cfdbd-0992-4596-a093-c6bed924701d",
+        "$etag": "W/\"ab75a9f3-0742-45c6-9875-df9fb97f9e39\"",
+        "$metadata": {
+          "$model": "dtmi:io:tributech:source:tcads;1"
+        }
+      },
+      {
+        "Identifier": "GVL_Cloudtest.wValue",
+        "Datatype": "WORD",
+        "ReadMode": "ONCHANGE",
+        "Name": "Word On Change",
+        "ValueMetadataId": "dfa162af-1720-4ad0-822d-d2233b659195",
+        "Unit": "Int",
+        "Encoding": "INT32",
+        "$dtId": "16bf9290-4123-4ed1-ab4f-7428541f63e8",
+        "$etag": "W/\"c973417f-da86-4b90-aa43-ef9c54c41746\"",
+        "$metadata": {
+          "$model": "dtmi:io:tributech:stream:tcads;1"
+        }
+      },
+      {
+        "Identifier": "GVL_Cloudtest.lrValue",
+        "Datatype": "LREAL",
+        "ReadMode": "CYCLE",
+        "ReadCycleInterval": 1,
+        "Name": "LReal Cyclic",
+        "ValueMetadataId": "3b5fb212-c1b4-4fc8-ab3a-6fcb952ee1b6",
+        "Unit": "Double",
+        "Encoding": "DOUBLE",
+        "$dtId": "131fc9f3-ebdf-44be-8db4-89d0a761a8cc",
+        "$etag": "W/\"3b0af344-f82f-4160-99c6-7dc0b846e8d3\"",
+        "$metadata": {
+          "$model": "dtmi:io:tributech:stream:tcads;1"
+        }
+      },
+      {
+        "Identifier": "GVL_Cloudtest.wValue",
+        "Datatype": "WORD",
+        "Value": "4",
+        "Name": "Write Word",
+        "$dtId": "7eb552fd-a963-41b8-a32d-0091766073b9",
+        "$etag": "W/\"01e9bf6c-7a80-4fbd-9d54-fd8bca56c606\"",
+        "$metadata": {
+          "$model": "dtmi:io:tributech:parameter:tcads;1"
+        }
+      },
+      {
+        "Identifier": "GVL_Cloudtest.lrValue",
+        "Datatype": "LREAL",
+        "Value": "0.5",
+        "Name": "LReal Write",
+        "$dtId": "5c944e01-c8b5-4194-8534-c3c13ad1d6d0",
+        "$etag": "W/\"d3603cd9-df77-44f3-ad4b-5074dde6cf21\"",
+        "$metadata": {
+          "$model": "dtmi:io:tributech:parameter:tcads;1"
+        }
+      },
+      {
+        "PMIN": 1,
+        "PMAX": 30,
+        "ST": 0.5,
+        "Name": "Beckhoff TwinCat ADS Value Options",
+        "$dtId": "638dcdec-8117-4581-aec9-bc93c7421ab2",
+        "$etag": "W/\"c8e22c59-89f6-4f7d-a946-a16c71ae8f0c\"",
+        "$metadata": {
+          "$model": "dtmi:io:tributech:options:tcads;1"
+        }
+      },
+      {
+        "Identifier": "GVL_Cloudtest.iValue",
+        "Datatype": "INT",
+        "ReadMode": "CYCLE",
+        "ReadCycleInterval": 30,
+        "Name": "INT",
+        "ValueMetadataId": "8ca67d85-d302-4a85-b703-9eb4b0060464",
+        "$dtId": "42b2fe99-3ac6-4c36-b4ea-39800e7dccd3",
+        "$etag": "W/\"200a6dc5-2a11-4eb6-be44-e04bcd010dee\"",
+        "$metadata": {
+          "$model": "dtmi:io:tributech:stream:tcads;1"
+        }
+      },
+      {
+        "Identifier": "GVL_Cloudtest.dwValue",
+        "Datatype": "DWORD",
+        "ReadMode": "ONCHANGE",
+        "ReadCycleInterval": 1,
+        "Name": "DWORD Change",
+        "ValueMetadataId": "a9f84ca7-955a-4e3f-ac87-5f8f5b192b32",
+        "$dtId": "4088a33b-e0cf-4367-8996-3503ef15bba3",
+        "$etag": "W/\"ce5c33da-7402-43b6-9f09-c56c11173601\"",
+        "$metadata": {
+          "$model": "dtmi:io:tributech:stream:tcads;1"
+        }
+      },
+      {
+        "PMIN": 10,
+        "PMAX": 3600,
+        "ST": 10,
+        "Name": "Beckhoff TwinCat ADS Value Options",
+        "$dtId": "b5d1f58c-29af-404d-8e02-1c25592b1893",
+        "$etag": "W/\"2ce7c7e1-8b6e-4d22-9caa-b3e8dee979a5\"",
+        "$metadata": {
+          "$model": "dtmi:io:tributech:options:tcads;1"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "$relationshipId": "b347ca74-5664-425d-bbfb-461506ac4cd8",
+        "$targetId": "7b1cfdbd-0992-4596-a093-c6bed924701d",
+        "$sourceId": "b11b733c-fe15-417b-86ea-7f76fe1e8d26",
+        "$relationshipName": "Sources",
+        "$etag": "W/\"0d56a14f-af7a-4595-92af-d66397ae0afe\""
+      },
+      {
+        "$relationshipId": "3d6036d5-29d6-47c4-b274-4256d848691d",
+        "$targetId": "16bf9290-4123-4ed1-ab4f-7428541f63e8",
+        "$sourceId": "7b1cfdbd-0992-4596-a093-c6bed924701d",
+        "$relationshipName": "Streams",
+        "$etag": "W/\"76d6004d-af58-4d05-a71b-c52500107a3c\""
+      },
+      {
+        "$relationshipId": "716af9a8-c8dd-4ece-8209-7423acda200c",
+        "$targetId": "131fc9f3-ebdf-44be-8db4-89d0a761a8cc",
+        "$sourceId": "7b1cfdbd-0992-4596-a093-c6bed924701d",
+        "$relationshipName": "Streams",
+        "$etag": "W/\"4f55b30d-0407-48d1-be2b-d5d6ca1635e9\""
+      },
+      {
+        "$relationshipId": "200e94c2-6dfb-4d54-8fa6-69537491e697",
+        "$targetId": "7eb552fd-a963-41b8-a32d-0091766073b9",
+        "$sourceId": "7b1cfdbd-0992-4596-a093-c6bed924701d",
+        "$relationshipName": "Parameter",
+        "$etag": "W/\"aa7525b8-f18d-4e1b-9a84-e80d9e9fe109\""
+      },
+      {
+        "$relationshipId": "2d7927fd-befc-47c7-a8ac-9eb360720011",
+        "$targetId": "5c944e01-c8b5-4194-8534-c3c13ad1d6d0",
+        "$sourceId": "7b1cfdbd-0992-4596-a093-c6bed924701d",
+        "$relationshipName": "Parameter",
+        "$etag": "W/\"70e615f9-bd88-453c-8f53-780514b11f59\""
+      },
+      {
+        "$relationshipId": "6f9c0d65-71c7-410f-a603-eea1ba98d4f5",
+        "$targetId": "638dcdec-8117-4581-aec9-bc93c7421ab2",
+        "$sourceId": "131fc9f3-ebdf-44be-8db4-89d0a761a8cc",
+        "$relationshipName": "ValueOption",
+        "$etag": "W/\"bb3f3fa6-72f7-440b-b38c-a92c5d19d47c\""
+      },
+      {
+        "$relationshipId": "3d21b865-9046-48ef-ba09-c4b1c2dc4a96",
+        "$targetId": "42b2fe99-3ac6-4c36-b4ea-39800e7dccd3",
+        "$sourceId": "7b1cfdbd-0992-4596-a093-c6bed924701d",
+        "$relationshipName": "Streams",
+        "$etag": "W/\"0df0fac6-ba4b-45c8-90c1-92966ce9cf3c\""
+      },
+      {
+        "$relationshipId": "db437f71-50c0-41fb-a75e-bfdb035d26ee",
+        "$targetId": "4088a33b-e0cf-4367-8996-3503ef15bba3",
+        "$sourceId": "7b1cfdbd-0992-4596-a093-c6bed924701d",
+        "$relationshipName": "Streams",
+        "$etag": "W/\"53c0e96e-1288-4a44-b0d9-07b75e9de8fb\""
+      },
+      {
+        "$relationshipId": "daa62429-63ff-4f0d-ae58-8f54d66d3f81",
+        "$targetId": "b5d1f58c-29af-404d-8e02-1c25592b1893",
+        "$sourceId": "4088a33b-e0cf-4367-8996-3503ef15bba3",
+        "$relationshipName": "ValueOption",
+        "$etag": "W/\"dd578bc8-9168-47f1-b882-babec3660839\""
+      }
+    ]
+  }
