@@ -138,15 +138,6 @@
             "writable" : true,
             "displayName" : "Reading Cycle Interval", 
             "description" : "If Cycle Mode is selected, this Interval will be chosen to read the Value. When not set defaults to Cycle Default Interval (Seconds)"
-        }, 
-        {
-            "@type" : "Relationship", 
-            "name" :"ValueOption", 
-            "minMultiplicity" : 0, 
-            "maxMultiplicity" : 1,
-            "target": "dtmi:io:tributech:options:tcads;1",
-            "displayName" : "Value Change Options",
-            "description" : "Specifies when an Value will be submitted to the Cloud"
         }
     ]
 }

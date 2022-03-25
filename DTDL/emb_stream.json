@@ -1,0 +1,9 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:emb;1",
+  "@type": "Interface",
+  "extends": "dtmi:io:tributech:stream:base;1",
+  "displayName": "Embedded Stream",
+  "contents": [
+  ]
+}

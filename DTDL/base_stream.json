@@ -176,8 +176,8 @@
       "minMultiplicity": 0,
       "maxMultiplicity": 1,
       "target": "dtmi:io:tributech:annotations:base;1",
-      "displayName": "Machine learning annotation",
-      "description": "Machine learning annotation."
+      "displayName": "Annotations",
+      "description": "Associated annotations.."
     }
   ]
 }
