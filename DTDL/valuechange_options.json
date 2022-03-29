@@ -1,9 +1,9 @@
 {
     "@context" : "dtmi:dtdl:context;2",
-    "@id" : "dtmi:io:tributech:options:tcads;1", 
+    "@id" : "dtmi:io:tributech:options:valuechange;1", 
     "@type": "Interface", 
     "extends": "dtmi:io:tributech:options:base;1",
-    "displayName": "Beckhoff TwinCat ADS Value Options", 
+    "displayName": "Value change options", 
     "contents" : [
         {
             "@type" : "Property", 

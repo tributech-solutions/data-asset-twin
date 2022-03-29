@@ -31,6 +31,14 @@
         },
         {
             "@type": "Property",
+            "name": "MQTTBroker",
+            "schema": "string",
+            "writable": false,
+            "displayName": "MQTT broker",
+            "description": "Defines the MQTT broker. E.g.: mqtts://node-x.dataspace-node.com:1883"
+        },
+        {
+            "@type": "Property",
             "name": "AgentConfig",
             "schema": {
                 "@type": "Map",

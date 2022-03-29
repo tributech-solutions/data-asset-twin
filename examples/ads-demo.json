@@ -88,7 +88,7 @@
         "$dtId": "638dcdec-8117-4581-aec9-bc93c7421ab2",
         "$etag": "W/\"c8e22c59-89f6-4f7d-a946-a16c71ae8f0c\"",
         "$metadata": {
-          "$model": "dtmi:io:tributech:options:tcads;1"
+          "$model": "dtmi:io:tributech:options:valuechange;1"
         }
       },
       {
@@ -125,7 +125,7 @@
         "$dtId": "b5d1f58c-29af-404d-8e02-1c25592b1893",
         "$etag": "W/\"2ce7c7e1-8b6e-4d22-9caa-b3e8dee979a5\"",
         "$metadata": {
-          "$model": "dtmi:io:tributech:options:tcads;1"
+          "$model": "dtmi:io:tributech:options:valuechange;1"
         }
       }
     ],
@@ -169,7 +169,7 @@
         "$relationshipId": "6f9c0d65-71c7-410f-a603-eea1ba98d4f5",
         "$targetId": "638dcdec-8117-4581-aec9-bc93c7421ab2",
         "$sourceId": "131fc9f3-ebdf-44be-8db4-89d0a761a8cc",
-        "$relationshipName": "ValueOption",
+        "$relationshipName": "Options",
         "$etag": "W/\"bb3f3fa6-72f7-440b-b38c-a92c5d19d47c\""
       },
       {
@@ -190,7 +190,7 @@
         "$relationshipId": "daa62429-63ff-4f0d-ae58-8f54d66d3f81",
         "$targetId": "b5d1f58c-29af-404d-8e02-1c25592b1893",
         "$sourceId": "4088a33b-e0cf-4367-8996-3503ef15bba3",
-        "$relationshipName": "ValueOption",
+        "$relationshipName": "Options",
         "$etag": "W/\"dd578bc8-9168-47f1-b882-babec3660839\""
       }
     ]
