@@ -1,117 +1,116 @@
 {
-    "@context" : "dtmi:dtdl:context;2",
-    "@id" : "dtmi:io:tributech:parameter:tcads;1", 
-    "@type": "Interface", 
-    "extends": "dtmi:io:tributech:parameter:base;1",
-    "displayName": "Beckhoff TwinCat ADS Parameter", 
-    "contents" : [
-        {
-            "@type" : "Property", 
-            "name" : "Identifier", 
-            "schema" : "string", 
-            "writable" : true, 
-            "displayName" : "Symbol Path", 
-            "description" : "The Symbol Path for the ADS Server to write to (eg. \"Main.iTest\")"
-        },
-        {
-            "@type" : "Property", 
-            "name" : "Value", 
-            "schema" : "string", 
-            "writable" : true, 
-            "displayName" : "Write Value", 
-            "description" : "Value which will be written to the Symbol Path(eg.\"LREAL\" : 1.2232, \"INT\" : 1)"
-        },
-        {
-            "@type" : "Property", 
-            "name" : "Datatype", 
-            "writable" : true, 
-            "displayName" : "ADS Datatype", 
-            "description" : "The DataType for the ADS Variable (eg. \"INT\", \"WORD\", etc..)", 
-            "schema" : {
-                "@type": "Enum", 
-                "valueSchema":  "string", 
-                "enumValues" : [
-                    {
-                        "name" : "BOOL", 
-                        "displayName" : "Boolean", 
-                        "enumValue":  "BOOL", 
-                        "comment": ".NET Type : System.Boolean"
-                    },
-                    {
-                        "name" : "BYTE", 
-                        "displayName" : "Byte", 
-                        "enumValue":  "BYTE", 
-                        "comment": ".NET Type : System.Byte"
-                    },
-                    {
-                        "name" : "USINT", 
-                        "displayName" : "USINT (Integer 8)", 
-                        "enumValue":  "USINT", 
-                        "comment": ".NET Type : System.Byte"
-                    },
-                    {
-                        "name" : "SINT", 
-                        "displayName" : "SINT (Signed Integer 8)", 
-                        "enumValue":  "SINT", 
-                        "comment": ".NET Type : System.SByte"
-                    },
-                    {
-                        "name" : "INT", 
-                        "displayName" : "INT (Integer 8) ", 
-                        "enumValue":  "INT", 
-                        "comment": ".NET Type : System.Int16"
-                    },
-                    {
-                        "name" : "WORD", 
-                        "displayName" : "WORD (Signed Integer 16)", 
-                        "enumValue":  "WORD", 
-                        "comment": ".NET Type : System.UInt16"
-                    },
-                    {
-                        "name" : "UINT", 
-                        "displayName" : "UINT (Signed Integer 16)", 
-                        "enumValue":  "UINT", 
-                        "comment": ".NET Type : System.UINT16"
-                    },
-                    {
-                        "name" : "DINT", 
-                        "displayName" : "DINT (Integer 32)", 
-                        "enumValue":  "DINT", 
-                        "comment": ".NET Type : System.Int32"
-                    },
-                    {
-                        "name" : "UDINT", 
-                        "displayName" : "UDINT (Unsigned Integer 32)", 
-                        "enumValue":  "UDINT", 
-                        "comment": ".NET Type : System.UInt32"
-                    },
-                    {
-                        "name" : "DWORD", 
-                        "displayName" : "DWORD (Unsigned Integer 16)", 
-                        "enumValue":  "DWORD", 
-                        "comment": ".NET Type : System.UInt32"
-                    },
-                    {
-                        "name" : "REAL", 
-                        "displayName" : "REAL (Float)", 
-                        "enumValue":  "REAL", 
-                        "comment": ".NET Type : System.Single"
-                    },
-                    {
-                        "name" : "LREAL", 
-                        "displayName" : "LREAL (Double)", 
-                        "enumValue":  "LREAL", 
-                        "comment": ".NET Type : System.Double"
-                    }, 
-                    {
-                        "name" : "STRING", 
-                        "displayName" : "STRING", 
-                        "enumValue" : "STRING", 
-                        "comment" : "ANSI or UTF16 Encoded"
-                    }
-                ]
-            }
-        }
-    ]
-
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:parameter:tcads;1",
+  "@type": "Interface",
+  "extends": "dtmi:io:tributech:parameter:base;1",
+  "displayName": "Beckhoff TwinCat ADS Parameter",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Identifier",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Symbol Path",
+      "description": "The Symbol Path for the ADS Server to write to (eg. \"Main.iTest\")"
+    },
+    {
+      "@type": "Property",
+      "name": "Value",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Write Value",
+      "description": "Value which will be written to the Symbol Path(eg.\"LREAL\" : 1.2232, \"INT\" : 1)"
+    },
+    {
+      "@type": "Property",
+      "name": "Datatype",
+      "writable": true,
+      "displayName": "ADS Datatype",
+      "description": "The DataType for the ADS Variable (eg. \"INT\", \"WORD\", etc..)",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "BOOL",
+            "displayName": "Boolean",
+            "enumValue": "BOOL",
+            "comment": ".NET Type : System.Boolean"
+          },
+          {
+            "name": "BYTE",
+            "displayName": "Byte",
+            "enumValue": "BYTE",
+            "comment": ".NET Type : System.Byte"
+          },
+          {
+            "name": "USINT",
+            "displayName": "USINT (Integer 8)",
+            "enumValue": "USINT",
+            "comment": ".NET Type : System.Byte"
+          },
+          {
+            "name": "SINT",
+            "displayName": "SINT (Signed Integer 8)",
+            "enumValue": "SINT",
+            "comment": ".NET Type : System.SByte"
+          },
+          {
+            "name": "INT",
+            "displayName": "INT (Integer 8) ",
+            "enumValue": "INT",
+            "comment": ".NET Type : System.Int16"
+          },
+          {
+            "name": "WORD",
+            "displayName": "WORD (Signed Integer 16)",
+            "enumValue": "WORD",
+            "comment": ".NET Type : System.UInt16"
+          },
+          {
+            "name": "UINT",
+            "displayName": "UINT (Signed Integer 16)",
+            "enumValue": "UINT",
+            "comment": ".NET Type : System.UINT16"
+          },
+          {
+            "name": "DINT",
+            "displayName": "DINT (Integer 32)",
+            "enumValue": "DINT",
+            "comment": ".NET Type : System.Int32"
+          },
+          {
+            "name": "UDINT",
+            "displayName": "UDINT (Unsigned Integer 32)",
+            "enumValue": "UDINT",
+            "comment": ".NET Type : System.UInt32"
+          },
+          {
+            "name": "DWORD",
+            "displayName": "DWORD (Unsigned Integer 16)",
+            "enumValue": "DWORD",
+            "comment": ".NET Type : System.UInt32"
+          },
+          {
+            "name": "REAL",
+            "displayName": "REAL (Float)",
+            "enumValue": "REAL",
+            "comment": ".NET Type : System.Single"
+          },
+          {
+            "name": "LREAL",
+            "displayName": "LREAL (Double)",
+            "enumValue": "LREAL",
+            "comment": ".NET Type : System.Double"
+          },
+          {
+            "name": "STRING",
+            "displayName": "STRING",
+            "enumValue": "STRING",
+            "comment": "ANSI or UTF16 Encoded"
+          }
+        ]
+      }
+    }
+  ]
 }

@@ -78,7 +78,6 @@
       "displayName": "Kind",
       "description": "The kind of the Publication."
     },
-  
     {
       "@type": "Property",
       "name": "PublicationDate",

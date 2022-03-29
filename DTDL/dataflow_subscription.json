@@ -2,7 +2,9 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:io:tributech:dataflow:subscription;1",
   "@type": "Interface",
-  "extends": ["dtmi:io:tributech:dataflow:base;1"],
+  "extends": [
+    "dtmi:io:tributech:dataflow:base;1"
+  ],
   "displayName": "Subscription",
   "description": "Represents the data flow from an external node to the current node.",
   "contents": [

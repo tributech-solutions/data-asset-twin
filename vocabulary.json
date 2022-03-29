@@ -20,7 +20,6 @@
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/base_stream.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/base_workflow.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/company.json",
-    "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/data_api_value_sink.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/dataflow_base.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/dataflow_request.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/dataflow_subscription.json",
@@ -36,8 +35,8 @@
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/opcua_source.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/opcua_stream.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/options_persistence.json",
-    "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/options_publish.json","https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/valuechange_options.json",
-    "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/proof_sink.json",
+    "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/options_publish.json",
+    "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/valuechange_options.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/publication_base.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/publication_public.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/publication_restricted.json",
@@ -61,11 +60,11 @@
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/ssm_stream_xmc.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/workflow_audit.json",
     "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/workflow_audit_execution.json",
-  "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_source.json",
-        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_stream.json",
-        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_parameter.json",
-        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/emb.json",
-        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/emb_source.json",
-        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/emb_stream.json"
-    ]
+    "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_source.json",
+    "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_stream.json",
+    "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/tcads_parameter.json",
+    "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/emb.json",
+    "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/emb_source.json",
+    "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin/master/DTDL/emb_stream.json"
+  ]
 }

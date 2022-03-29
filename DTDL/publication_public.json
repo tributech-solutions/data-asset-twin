@@ -2,7 +2,9 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:io:tributech:publication:public;1",
   "@type": "Interface",
-  "extends": ["dtmi:io:tributech:publication:base;1"],
+  "extends": [
+    "dtmi:io:tributech:publication:base;1"
+  ],
   "displayName": "Public Publication",
   "description": "A public publication represents the will of a Node to share data with the entire hub/ecosystem.",
   "comment": "Only present at owning side.",

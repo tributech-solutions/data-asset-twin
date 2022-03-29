@@ -2,7 +2,9 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:io:tributech:publication:restricted;1",
   "@type": "Interface",
-  "extends": ["dtmi:io:tributech:publication:base;1"],
+  "extends": [
+    "dtmi:io:tributech:publication:base;1"
+  ],
   "displayName": "Restricted Publication",
   "description": "A restricted publication represents the will of a Node to share data with selected nodes.",
   "comment": "Only present at owning side.",
