@@ -1,7 +1,6 @@
 {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:annotations:base;1",
-    "@type": "Interface",
-    "displayName": "Annotation",
-    "contents": []
-  }
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:annotations:base;1",
+  "@type": "Interface",
+  "displayName": "Annotation"
+}

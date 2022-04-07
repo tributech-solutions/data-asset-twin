@@ -1,0 +1,99 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:publication:base;1",
+  "@type": "Interface",
+  "displayName": "Publication",
+  "description": "Base class for publication, see subclasses for detailed descriptions.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "DisplayName",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Display Name",
+      "description": "The display name of the publication."
+    },
+    {
+      "@type": "Property",
+      "name": "Description",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Description",
+      "description": "A short discription about the publication and its content."
+    },
+    {
+      "@type": "Property",
+      "name": "Category",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Category",
+      "description": "Indicates to what category this publication belongs."
+    },
+    {
+      "@type": "Property",
+      "name": "AvailableFrom",
+      "schema": "dateTime",
+      "writable": true,
+      "displayName": "Available From",
+      "description": "Start date/time for data to be shared (inclusive). (optional)",
+      "comment": "Inclusive means that values starting from inclusive (>=) From will be included in the range."
+    },
+    {
+      "@type": "Property",
+      "name": "AvailableUntil",
+      "schema": "dateTime",
+      "writable": true,
+      "displayName": "Available Until",
+      "description": "End date/time for data to be shared (exclusive). (optional)",
+      "comment": "Exclusive means that only values before (<) To will be included in the range."
+    },
+    {
+      "@type": "Property",
+      "name": "TermsOfUsage",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Terms Of Usage",
+      "description": "The Terms Of Usage that apply."
+    },
+    {
+      "@type": "Property",
+      "name": "Kind",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Public",
+            "displayName": "Public",
+            "enumValue": "PUBLIC"
+          },
+          {
+            "name": "Restricted",
+            "displayName": "Restricted",
+            "enumValue": "RESTRICTED"
+          }
+        ]
+      },
+      "writable": true,
+      "displayName": "Kind",
+      "description": "The kind of the Publication."
+    },
+    {
+      "@type": "Property",
+      "name": "PublicationDate",
+      "schema": "dateTime",
+      "writable": true,
+      "displayName": "Publication Date",
+      "description": "The date/time when the publication was created."
+    },
+    {
+      "@type": "Relationship",
+      "name": "PublishedStreams",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 100,
+      "target": "dtmi:io:tributech:stream:base;1",
+      "displayName": "Published Streams",
+      "description": "List of Published Streams."
+    }
+  ]
+}

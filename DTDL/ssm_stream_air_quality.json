@@ -12,26 +12,26 @@
         "@type": "Enum",
         "valueSchema": "string",
         "enumValues": [
-            {
-                "name": "CO2",
-                "displayName": "CO2",
-                "enumValue": "CO2"
-            },
-            {
-                "name": "Temperature",
-                "displayName": "Temperature",
-                "enumValue": "Temperature"
-            },
-            {
-                "name": "VOC",
-                "displayName": "VOC",
-                "enumValue": "VOC"
-            },
-            {
-                "name": "Humidity",
-                "displayName": "Humidity",
-                "enumValue": "Humidity"
-            }
+          {
+            "name": "CO2",
+            "displayName": "CO2",
+            "enumValue": "CO2"
+          },
+          {
+            "name": "Temperature",
+            "displayName": "Temperature",
+            "enumValue": "Temperature"
+          },
+          {
+            "name": "VOC",
+            "displayName": "VOC",
+            "enumValue": "VOC"
+          },
+          {
+            "name": "Humidity",
+            "displayName": "Humidity",
+            "enumValue": "Humidity"
+          }
         ]
       },
       "writable": true,

@@ -1,0 +1,39 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:dataflow:request;1",
+  "@type": "Interface",
+  "extends": [
+    "dtmi:io:tributech:dataflow:base;1"
+  ],
+  "displayName": "Request",
+  "description": "Allows to request a dataflow form an external node to the current node.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Comment",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Comment",
+      "description": "The comment for the Request. (optional)"
+    },
+    {
+      "@type": "Relationship",
+      "name": "RequestedStreams",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 100,
+      "target": "dtmi:io:tributech:stream:base;1",
+      "displayName": "Requested Streams",
+      "description": "List of Requested Streams from the Publication for the Request.",
+      "properties": [
+        {
+          "@type": "Property",
+          "name": "Timestamp",
+          "schema": "dateTime",
+          "writable": true,
+          "displayName": "Timestamp",
+          "description": "The date/time when the selection was made."
+        }
+      ]
+    }
+  ]
+}

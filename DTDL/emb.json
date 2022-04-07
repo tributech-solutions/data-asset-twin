@@ -4,7 +4,7 @@
   "extends": "dtmi:io:tributech:device:base;1",
   "@type": "Interface",
   "displayName": "Embedded Security Module",
-  "contents": [ 
+  "contents": [
     {
       "@type": "Property",
       "name": "SoftwareVersion",
@@ -25,25 +25,25 @@
       "@type": "Property",
       "name": "ConnectivityTechnology",
       "schema": {
-          "@type": "Enum",
-          "valueSchema": "string",
-          "enumValues": [
-              {
-                  "name": "Auto",
-                  "displayName": "Auto",
-                  "enumValue": "Auto"
-              },
-              {
-                  "name": "NBIoT",
-                  "displayName": "NB-IoT",
-                  "enumValue": "NBIoT"
-              },
-              {
-                  "name": "CATM",
-                  "displayName": "CAT-M",
-                  "enumValue": "CATM"
-              }
-          ]
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Auto",
+            "displayName": "Auto",
+            "enumValue": "Auto"
+          },
+          {
+            "name": "NBIoT",
+            "displayName": "NB-IoT",
+            "enumValue": "NBIoT"
+          },
+          {
+            "name": "CATM",
+            "displayName": "CAT-M",
+            "enumValue": "CATM"
+          }
+        ]
       },
       "writable": true,
       "displayName": "Connectivity technology",

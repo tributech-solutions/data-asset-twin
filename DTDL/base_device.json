@@ -1,134 +1,110 @@
 {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:device:base;1",
-    "@type": "Interface",
-    "displayName": "Device",
-    "contents": [
-        {
-            "@type": "Property",
-            "name": "DeviceId",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Device Id",
-            "description": "Represents the unique ID of the Tributech-device.",
-            "comment": "Device ID needs to be a UUID."
-        },
-        {
-            "@type": "Property",
-            "name": "Name",
-            "schema": "string",
-            "writable": true,
-            "displayName": "Name",
-            "description": "Represents the name of the Tributech-device."
-        },
-        {
-            "@type": "Property",
-            "name": "PublicKey",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Public Key",
-            "description": "Represents the current public-key of the device."
-        },
-        {
-            "@type": "Property",
-            "name": "MQTTBroker",
-            "schema": "string",
-            "writable": false,
-            "displayName": "MQTT broker",
-            "description": "Defines the MQTT broker. E.g.: mqtts://node-x.dataspace-node.com:1883"
-        },
-        {
-            "@type": "Property",
-            "name": "AgentConfig",
-            "schema": {
-                "@type": "Map",
-                "mapKey": {
-                    "name": "key",
-                    "schema": "string"
-                },
-                "mapValue": {
-                    "name": "value",
-                    "schema": "string"
-                }
-            }
-        },
-        {
-            "@type": "Property",
-            "name": "KeyStorageType",
-            "schema": {
-                "@type": "Enum",
-                "valueSchema": "string",
-                "enumValues": [
-                    {
-                        "name": "None",
-                        "displayName": "None",
-                        "enumValue": "NONE"
-                    },
-                    {
-                        "name": "Tpm20",
-                        "displayName": "TPM 20",
-                        "enumValue": "TPM_2_0"
-                    },
-                    {
-                        "name": "OptigaTrustM",
-                        "displayName": "Optiga Trust M",
-                        "enumValue": "OPTIGA_TRUST_M"
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "Key Storage Type",
-            "description": "The supported key storage type of the device."
-        },
-        {
-            "@type": "Property",
-            "name": "ProofKind",
-            "schema": {
-                "@type": "Enum",
-                "valueSchema": "string",
-                "enumValues": [
-                    {
-                        "name": "SHA256_RSA2048_PSS",
-                        "displayName": "SHA256 RSA2048-PSS",
-                        "enumValue": "SHA256_RSA2048_PSS"
-                    },
-                    {
-                        "name": "SHA256_RSA2048_PKCS1",
-                        "displayName": "SHA256 RSA2048-PKCS1",
-                        "enumValue": "SHA256_RSA2048_PKCS1"
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "Proof Kind",
-            "description": "The supported proof kind of the device."
-        },
-        {
-            "@type": "Relationship",
-            "name": "Sources",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 10,
-            "target": "dtmi:io:tributech:source:base;1",
-            "displayName": "Sources",
-            "description": "Contains all sources of the given device."
-        },
-        {
-            "@type": "Relationship",
-            "name": "Annotations",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 1,
-            "target": "dtmi:io:tributech:annotations:base;1",
-            "displayName": "Annotations",
-            "description": "Contains all annotations of the given device."
-        },
-        {
-            "@type": "Relationship",
-            "name": "Sinks",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 2,
-            "target": "dtmi:io:tributech:sink:base;1",
-            "displayName": "Sinks",
-            "description": "Contains all sinks of the given device."
-        }
-    ]
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:device:base;1",
+  "@type": "Interface",
+  "displayName": "Device",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "DeviceId",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Device Id",
+      "description": "Represents the unique ID of the Tributech-device.",
+      "comment": "Device ID needs to be a UUID."
+    },
+    {
+      "@type": "Property",
+      "name": "Name",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Name",
+      "description": "Represents the name of the Tributech-device."
+    },
+    {
+      "@type": "Property",
+      "name": "PublicKey",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Public Key",
+      "description": "Represents the current public-key of the device."
+    },
+    {
+      "@type": "Property",
+      "name": "MQTTBroker",
+      "schema": "string",
+      "writable": false,
+      "displayName": "MQTT broker",
+      "description": "Defines the MQTT broker. E.g.: mqtts://node-x.dataspace-node.com:1883"
+    },
+    {
+      "@type": "Property",
+      "name": "KeyStorageType",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "None",
+            "displayName": "None",
+            "enumValue": "NONE"
+          },
+          {
+            "name": "Tpm20",
+            "displayName": "TPM 20",
+            "enumValue": "TPM_2_0"
+          },
+          {
+            "name": "OptigaTrustM",
+            "displayName": "Optiga Trust M",
+            "enumValue": "OPTIGA_TRUST_M"
+          }
+        ]
+      },
+      "writable": false,
+      "displayName": "Key Storage Type",
+      "description": "The supported key storage type of the device."
+    },
+    {
+      "@type": "Property",
+      "name": "ProofKind",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "SHA256_RSA2048_PSS",
+            "displayName": "SHA256 RSA2048-PSS",
+            "enumValue": "SHA256_RSA2048_PSS"
+          },
+          {
+            "name": "SHA256_RSA2048_PKCS1",
+            "displayName": "SHA256 RSA2048-PKCS1",
+            "enumValue": "SHA256_RSA2048_PKCS1"
+          }
+        ]
+      },
+      "writable": false,
+      "displayName": "Proof Kind",
+      "description": "The supported proof kind of the device."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Sources",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 10,
+      "target": "dtmi:io:tributech:source:base;1",
+      "displayName": "Sources",
+      "description": "Contains all sources of the given device."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Annotations",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1,
+      "target": "dtmi:io:tributech:annotations:base;1",
+      "displayName": "Annotations",
+      "description": "Contains all annotations of the given device."
+    }
+  ]
 }

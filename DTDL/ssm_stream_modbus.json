@@ -29,31 +29,31 @@
         "@type": "Enum",
         "valueSchema": "string",
         "enumValues": [
-            {
-                "name": "Uint16",
-                "displayName": "Uint16",
-                "enumValue": "UINT16"
-            },
-            {
-                "name": "Uint32",
-                "displayName": "Uint32",
-                "enumValue": "UINT32"
-            },
-            {
-              "name": "Int16",
-              "displayName": "Int16",
-              "enumValue": "INT16"
-            },
-            {
-                "name": "Int32",
-                "displayName": "Int32",
-                "enumValue": "INT32"
-            },
-            {
-                "name": "Float",
-                "displayName": "Float",
-                "enumValue": "FLOAT"
-            }
+          {
+            "name": "Uint16",
+            "displayName": "Uint16",
+            "enumValue": "UINT16"
+          },
+          {
+            "name": "Uint32",
+            "displayName": "Uint32",
+            "enumValue": "UINT32"
+          },
+          {
+            "name": "Int16",
+            "displayName": "Int16",
+            "enumValue": "INT16"
+          },
+          {
+            "name": "Int32",
+            "displayName": "Int32",
+            "enumValue": "INT32"
+          },
+          {
+            "name": "Float",
+            "displayName": "Float",
+            "enumValue": "FLOAT"
+          }
         ]
       },
       "writable": true,

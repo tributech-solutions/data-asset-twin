@@ -13,22 +13,6 @@
       "description": "Human-readable name of the source."
     },
     {
-      "@type": "Property",
-      "name": "SourceConfig",
-      "writable": true,
-      "schema": {
-        "@type": "Map",
-        "mapKey": {
-          "name": "key",
-          "schema": "string"
-        },
-        "mapValue": {
-          "name": "value",
-          "schema": "string"
-        }
-      }
-    },
-    {
       "@type": "Relationship",
       "name": "Annotations",
       "minMultiplicity": 0,

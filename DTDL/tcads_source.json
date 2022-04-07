@@ -1,83 +1,83 @@
 {
-    "@context" : "dtmi:dtdl:context;2",
-    "@id" : "dtmi:io:tributech:source:tcads;1", 
-    "@type": "Interface", 
-    "extends": "dtmi:io:tributech:source:base;1",
-    "displayName": "Beckhoff TwinCat ADS Source", 
-    "contents" : [
-        {
-            "@type" : "Property", 
-            "name" : "AMSNetId", 
-            "schema" : "string", 
-            "writable" : true, 
-            "displayName" : "Server AMS Net Id",
-            "description" : "ADS AMS Net Id which should be connected to"
-        }, 
-        {
-            "@type" : "Property", 
-            "name" : "Port", 
-            "schema" : "integer", 
-            "writable" : true,
-            "displayName" : "ADS Server Port", 
-            "description" : "TwinCat ADS Port to Beckhoff PLC"
-        }, 
-        {
-            "@type" : "Property", 
-            "name" : "ADSServerAddress", 
-            "schema" : "string", 
-            "writable" : true, 
-            "displayName" : "ADS Server IP Address",
-            "description" : "Whitelist Entry for Network Discovery"
-        },
-        {
-            "@type" : "Property", 
-            "name" : "RouterAMSNetId", 
-            "schema" : "string", 
-            "writable" : true, 
-            "displayName" : "Client AMS Net Id",
-            "description" : "Client Identifier for the Router Whitelist"
-        }, 
-        {
-            "@type" : "Property", 
-            "name" : "RouterPort", 
-            "schema" : "integer", 
-            "writable" : true,
-            "displayName" : "InProcess Router Port", 
-            "description" : "Exposed ADS Router Port"
-        },
-        {
-            "@type" : "Property",
-            "name" : "DefaultReadCycleInterval",
-            "schema" : "integer", 
-            "writable" : true,
-            "displayName": "Read Cycle Default Interval (Seconds)",
-            "description" : "Default reading Interval for Symbol Values"
-        }, 
-        {
-            "@type" : "Property",
-            "name" : "WriteCycleTime",
-            "schema" : "integer", 
-            "writable" : true,
-            "displayName" : "Configuration writing Cycle (Seconds)", 
-            "description": "Interval for cyclic Configuration writing"
-        }, 
-        {
-            "@type" : "Relationship", 
-            "name" :"Streams", 
-            "minMultiplicity" : 0, 
-            "maxMultiplicity" : 100,
-            "target": "dtmi:io:tributech:stream:tcads;1",
-            "displayName" : "Streams",
-            "description" : "Contains all the TwinCat ADS streams at the given Source"
-        },
-        {
-            "@type" : "Relationship", 
-            "name" :"Parameter", 
-            "minMultiplicity" : 0, 
-            "maxMultiplicity" : 100,
-            "target": "dtmi:io:tributech:parameter:tcads;1",
-            "displayName" : "Parameters",
-            "description" : "For writing Configuration Values to the ADS Server"
-        }
-    ]
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:source:tcads;1",
+  "@type": "Interface",
+  "extends": "dtmi:io:tributech:source:base;1",
+  "displayName": "Beckhoff TwinCat ADS Source",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "AMSNetId",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Server AMS Net Id",
+      "description": "ADS AMS Net Id which should be connected to"
+    },
+    {
+      "@type": "Property",
+      "name": "Port",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "ADS Server Port",
+      "description": "TwinCat ADS Port to Beckhoff PLC"
+    },
+    {
+      "@type": "Property",
+      "name": "ADSServerAddress",
+      "schema": "string",
+      "writable": true,
+      "displayName": "ADS Server IP Address",
+      "description": "Whitelist Entry for Network Discovery"
+    },
+    {
+      "@type": "Property",
+      "name": "RouterAMSNetId",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Client AMS Net Id",
+      "description": "Client Identifier for the Router Whitelist"
+    },
+    {
+      "@type": "Property",
+      "name": "RouterPort",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "InProcess Router Port",
+      "description": "Exposed ADS Router Port"
+    },
+    {
+      "@type": "Property",
+      "name": "DefaultReadCycleInterval",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "Read Cycle Default Interval (Seconds)",
+      "description": "Default reading Interval for Symbol Values"
+    },
+    {
+      "@type": "Property",
+      "name": "WriteCycleTime",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "Configuration writing Cycle (Seconds)",
+      "description": "Interval for cyclic Configuration writing"
+    },
+    {
+      "@type": "Relationship",
+      "name": "Streams",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 100,
+      "target": "dtmi:io:tributech:stream:tcads;1",
+      "displayName": "Streams",
+      "description": "Contains all the TwinCat ADS streams at the given Source"
+    },
+    {
+      "@type": "Relationship",
+      "name": "Parameter",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 100,
+      "target": "dtmi:io:tributech:parameter:tcads;1",
+      "displayName": "Parameters",
+      "description": "For writing Configuration Values to the ADS Server"
+    }
+  ]
 }

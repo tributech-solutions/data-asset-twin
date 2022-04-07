@@ -1,18 +1,18 @@
 {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:stream:replay;1",
-    "@type": "Interface",
-    "displayName": "Replay Value Stream",
-    "description": "This stream allows to replay values from a specific column inside of the sources CSV file.",
-    "extends": "dtmi:io:tributech:stream:base;1",
-    "contents": [
-        {
-            "@type": "Property",
-            "name": "ColumnName",
-            "schema": "string",
-            "writable": true,
-            "displayName": "Column name",
-            "description": "The name of the column to use for replaying values."
-        }
-    ]
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:replay;1",
+  "@type": "Interface",
+  "displayName": "Replay Value Stream",
+  "description": "This stream allows to replay values from a specific column inside of the sources CSV file.",
+  "extends": "dtmi:io:tributech:stream:base;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "ColumnName",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Column name",
+      "description": "The name of the column to use for replaying values."
+    }
+  ]
 }

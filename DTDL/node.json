@@ -1,0 +1,99 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:node;1",
+  "@type": "Interface",
+  "displayName": "Node",
+  "description": "A Node represents a customer or its subdivision in the Hub/Ecosystem.",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "DisplayName",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Display Name",
+      "description": "The display name of the Node (e.g. 'Dev Node A')."
+    },
+    {
+      "@type": "Property",
+      "name": "Name",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Name",
+      "description": "The name of the Node (aka the subdomain, e.g. dev-node-a).",
+      "comment": " Must be unique within the ecosystem. Maximum 30 characters"
+    },
+    {
+      "@type": "Property",
+      "name": "Description",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Description",
+      "description": "The description of the Node."
+    },
+    {
+      "@type": "Component",
+      "name": "Owner",
+      "schema": "dtmi:io:tributech:company;1",
+      "displayName": "Owner",
+      "description": "The owner of the node."
+    },
+    {
+      "@type": "Property",
+      "name": "SyncEndpointUri",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Sync Endpoint Uri",
+      "description": "The URL for the synchronization endpoint of the Node."
+    },
+    {
+      "@type": "Property",
+      "name": "NotificationEndpointUri",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Notification Endpoint Uri",
+      "description": "The URL for the notification endpoint of the Node."
+    },
+    {
+      "@type": "Property",
+      "name": "Verified",
+      "schema": "boolean",
+      "writable": true,
+      "displayName": "Verified",
+      "description": "An indication if the Node was verified by the coordinator of the ecosystem."
+    },
+    {
+      "@type": "Relationship",
+      "name": "LinkedAgents",
+      "target": "dtmi:io:tributech:device:base;1",
+      "displayName": "Linked Agents",
+      "description": "List of Agents linked to the Node."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Datasets",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 100,
+      "target": "dtmi:io:tributech:dataset;1",
+      "displayName": "Datasets",
+      "description": "List of DataSets where the Node is the owner."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Publications",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 100,
+      "target": "dtmi:io:tributech:publication:base;1",
+      "displayName": "Publications",
+      "description": "List of Invites to Publications for the Node."
+    },
+    {
+      "@type": "Relationship",
+      "name": "Dataflows",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 100,
+      "target": "dtmi:io:tributech:dataflow:base;1",
+      "displayName": "Dataflows",
+      "description": "List of all Dataflows of the Node."
+    }
+  ]
+}
