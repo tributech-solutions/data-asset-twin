@@ -39,21 +39,6 @@
         },
         {
             "@type": "Property",
-            "name": "AgentConfig",
-            "schema": {
-                "@type": "Map",
-                "mapKey": {
-                    "name": "key",
-                    "schema": "string"
-                },
-                "mapValue": {
-                    "name": "value",
-                    "schema": "string"
-                }
-            }
-        },
-        {
-            "@type": "Property",
             "name": "KeyStorageType",
             "schema": {
                 "@type": "Enum",
@@ -125,7 +110,7 @@
             "@type": "Relationship",
             "name": "Sinks",
             "minMultiplicity": 0,
-            "maxMultiplicity": 2,
+            "maxMultiplicity": 1,
             "target": "dtmi:io:tributech:sink:base;1",
             "displayName": "Sinks",
             "description": "Contains all sinks of the given device."

@@ -22,22 +22,6 @@
     },
     {
       "@type": "Property",
-      "name": "StreamConfig",
-      "writable": true,
-      "schema": {
-        "@type": "Map",
-        "mapKey": {
-          "name": "key",
-          "schema": "string"
-        },
-        "mapValue": {
-          "name": "value",
-          "schema": "string"
-        }
-      }
-    },
-    {
-      "@type": "Property",
       "name": "MerkleTreeDepth",
       "schema": "integer",
       "writable": true,
@@ -111,49 +95,6 @@
       "description": "Specifies how the data is encoded."
     },
     {
-      "@type": "Telemetry",
-      "name": "CurrentValue",
-      "schema": {
-        "@type": "Object",
-        "fields": [
-          {
-            "name": "String",
-            "schema": "string",
-            "description": "String-value (UTF-8)."
-          },
-          {
-            "name": "Double",
-            "schema": "double",
-            "description": "Double-encoded value."
-          },
-          {
-            "name": "Long",
-            "schema": "long",
-            "description": "Long-encoded value."
-          },
-          {
-            "name": "Boolean",
-            "schema": "boolean",
-            "description": "Boolean-encoded value."
-          },
-          {
-            "name": "DateTime",
-            "schema": "dateTime",
-            "description": "DateTime-encoded value."
-          },
-          {
-            "name": "Base64String",
-            "schema": "string",
-            "description": "Base64-encoded value."
-          }
-        ],
-        "displayName": "Value",
-        "description": "Strongly typed value. At least one field must be set. Multiple encodings are possible."
-      },
-      "displayName": "Current Value",
-      "description": "Current value of the stream."
-    },
-    {
       "@type": "Property",
       "name": "Unit",
       "schema": "string",
@@ -165,7 +106,7 @@
       "@type": "Relationship",
       "name": "Options",
       "minMultiplicity": 0,
-      "maxMultiplicity": 1000,
+      "maxMultiplicity": 500,
       "target": "dtmi:io:tributech:options:base;1",
       "displayName": "Options",
       "description": "Attach options to the stream to configure its properties."
@@ -177,7 +118,7 @@
       "maxMultiplicity": 1,
       "target": "dtmi:io:tributech:annotations:base;1",
       "displayName": "Annotations",
-      "description": "Associated annotations.."
+      "description": "Associated annotations."
     }
   ]
 }

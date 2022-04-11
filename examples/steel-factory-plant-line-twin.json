@@ -21,13 +21,6 @@
       }
     },
     {
-      "$dtId": "7baf31d2-4725-4a2d-9ab8-12f4a98ca6a2",
-      "$etag": "W/\u00229a4fd6a9-9da2-495c-ad2b-0f85d079ae5d\u0022",
-      "$metadata": {
-        "$model": "dtmi:io:tributech:sink:proof;1"
-      }
-    },
-    {
       "MaxValue": 20,
       "Frequency": 0.016,
       "Name": "Converter Temperature 1",
@@ -37,13 +30,6 @@
       "$etag": "W/\u002238813a4b-c404-4445-8374-e7fc724e48b2\u0022",
       "$metadata": {
         "$model": "dtmi:io:tributech:stream:simulated;1"
-      }
-    },
-    {
-      "$dtId": "f22822df-0d15-4a8e-a233-0dc744841010",
-      "$etag": "W/\u0022d40bd92c-72e1-4908-a961-3a97cc168816\u0022",
-      "$metadata": {
-        "$model": "dtmi:io:tributech:sink:dataapivaluesink;1"
       }
     },
     {
