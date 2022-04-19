@@ -34,7 +34,6 @@
         "Datatype": "WORD",
         "ReadMode": "ONCHANGE",
         "Name": "Word On Change",
-        "ValueMetadataId": "dfa162af-1720-4ad0-822d-d2233b659195",
         "Unit": "Int",
         "Encoding": "INT32",
         "$dtId": "16bf9290-4123-4ed1-ab4f-7428541f63e8",
@@ -49,7 +48,6 @@
         "ReadMode": "CYCLE",
         "ReadCycleInterval": 1,
         "Name": "LReal Cyclic",
-        "ValueMetadataId": "3b5fb212-c1b4-4fc8-ab3a-6fcb952ee1b6",
         "Unit": "Double",
         "Encoding": "DOUBLE",
         "$dtId": "131fc9f3-ebdf-44be-8db4-89d0a761a8cc",
@@ -97,7 +95,6 @@
         "ReadMode": "CYCLE",
         "ReadCycleInterval": 30,
         "Name": "INT",
-        "ValueMetadataId": "8ca67d85-d302-4a85-b703-9eb4b0060464",
         "$dtId": "42b2fe99-3ac6-4c36-b4ea-39800e7dccd3",
         "$etag": "W/\"200a6dc5-2a11-4eb6-be44-e04bcd010dee\"",
         "$metadata": {
@@ -110,7 +107,6 @@
         "ReadMode": "ONCHANGE",
         "ReadCycleInterval": 1,
         "Name": "DWORD Change",
-        "ValueMetadataId": "a9f84ca7-955a-4e3f-ac87-5f8f5b192b32",
         "$dtId": "4088a33b-e0cf-4367-8996-3503ef15bba3",
         "$etag": "W/\"ce5c33da-7402-43b6-9f09-c56c11173601\"",
         "$metadata": {

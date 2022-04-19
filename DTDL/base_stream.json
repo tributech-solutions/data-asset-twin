@@ -14,14 +14,6 @@
     },
     {
       "@type": "Property",
-      "name": "ValueMetadataId",
-      "schema": "string",
-      "writable": true,
-      "displayName": "ValueMetadataId",
-      "description": "Represents the global unique id (UUID) of a stream."
-    },
-    {
-      "@type": "Property",
       "name": "MerkleTreeDepth",
       "schema": "integer",
       "writable": true,

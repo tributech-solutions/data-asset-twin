@@ -24,7 +24,6 @@
     {
       "Identifier": "sn=0",
       "Name": "OPCUA-Stream-1",
-      "ValueMetadataId": "bb024d1a-1f9c-4702-9de8-0494741fe1dc",
       "Unit": "",
       "$dtId": "b84666f6-7b5b-45b7-8532-70fd1ffe110a",
       "$etag": "W/\u0022b84666f6-7b5b-45b7-8532-70fd1ffe110b\u0022",
@@ -35,7 +34,6 @@
     {
       "Identifier": "sn=2",
       "Name": "OPCUA-Stream-2",
-      "ValueMetadataId": "85680b81-a176-4c50-a538-4e0067defcb2",
       "$dtId": "ffafa5f4-a74c-4724-a792-f40428a2ec1b",
       "$etag": "W/\u0022ffafa5f4-a74c-4724-a792-f40428a2ec1c\u0022",
       "$metadata": {

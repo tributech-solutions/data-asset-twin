@@ -32,7 +32,6 @@
               "$model": "dtmi:io:tributech:stream:siemens_industrial_edge;1"
           },
           "Name": "sim-tag1",
-          "ValueMetadataId": "b0bdb197-52ad-4c6b-a8c5-8089b6326df0",
           "Encoding": "INT32",
           "ConnectionName": "plcsim",
           "CollectionName": "default",
@@ -45,7 +44,6 @@
               "$model": "dtmi:io:tributech:stream:siemens_industrial_edge;1"
           },
           "Name": "sim-tag2",
-          "ValueMetadataId": "86978bc4-5687-4665-bbbd-358b8f118f5d",
           "Encoding": "FLOAT",
           "ConnectionName": "plcsim",
           "CollectionName": "default",
@@ -58,7 +56,6 @@
               "$model": "dtmi:io:tributech:stream:siemens_industrial_edge;1"
           },
           "Name": "sim-tag3",
-          "ValueMetadataId": "09dad21f-c37d-4d1b-8f67-03533ac1c91b",
           "Encoding": "STRING_UTF8",
           "ConnectionName": "plcsim",
           "CollectionName": "default",
@@ -71,7 +68,6 @@
               "$model": "dtmi:io:tributech:stream:siemens_industrial_edge;1"
           },
           "Name": "sim-tag4",
-          "ValueMetadataId": "e1eeea11-8eb6-4344-ab0d-22786ef09524",
           "Encoding": "BYTEARRAY",
           "ConnectionName": "plcsim",
           "CollectionName": "default",
