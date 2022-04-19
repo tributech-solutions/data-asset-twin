@@ -2,7 +2,6 @@
   "digitalTwins": [
     {
       "Name": "DSK Edge",
-      "DeviceId": "bfb4e69d-3b71-40e3-b1eb-80346c09df36",
       "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1LbWvLKChtdoMhan67DV\nJhPqxmme7/mdsevRnRC3SkIg7\u002B8DlN90tzXNThztt4o2D4rRZ4pzFmpDCBh6ynN7\nj5O9ejYpqfv\u002B8v/n\u002BqbjkuO/07QUBu9ml5\u002Btmu4zyxVBhcwTh1DIRofj\u002BjYQqEre\n18IHBxzhHCU0JJ91gw/pSGsWnsi38KOR9Y5wIddesglSScl/gkUVHGMgVnBGW/In\nozRVnY1QzgSAAQoae\u002B/a7c4iOZVkv7r\u002BLKHni1InaiCLIQAWOT1pqQe\u002BytvdPKau\nRAPbowbYAEuOt9wlrXUI4W\u002BycauzeHYtZWfLJflaDQkDorBU3N12WiEx4faLJ9it\nkwIDAQAB\n-----END PUBLIC KEY-----",
       "KeyStorageType": "NONE",
       "ProofKind": "SHA256_RSA2048_PSS",

@@ -10,7 +10,6 @@
     },
     {
       "Name": "Steel Factory Plant Line #21",
-      "DeviceId": "0803cb52-f60f-4d15-9de7-b155373d9b00",
       "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArVCsutPbfbxb7hCkURE9\nxueRmBjtTe1lxXCz2VqkvZHRcFEvJeiXnyjCsYAyrHmmChAXgz95kvkzzvlYsME7\nonjac22smQVbAaJl7cMtq7YeduVacUlgTAHv5De7K4zUG2epy7UiyXqaaUS10uqi\ny8IyvxB1IbwABRU2kXt7cTzGLR7NkCnewlE53REuwaZhYOtEF7gyakz5lEs6MgGP\nY4ivQcDDrDRis3OFFY22T1Q4kGDRP3Q8yvefFi0spWCiDhiR9dLZ8KaV\u002B4fwYpru\nSi8AsLeAjb7P7ebwTdumojm9uvJK2qDFPFv2rGN336AmNpnc6WbiWKFGD9f4Te1h\ncwIDAQAB\n-----END PUBLIC KEY-----",
       "KeyStorageType": "NONE",
       "ProofKind": "SHA256_RSA2048_PSS",

@@ -4,7 +4,6 @@
         "MaxMerkleTreeDepth": 16,
         "MaxMerkleTreeAge": 600,
         "Name": "Edge",
-        "DeviceId": "b11b733c-fe15-417b-86ea-7f76fe1e8d26",
         "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2iU6vzuPoN30nquU+UUf\nyD8tSltc/9FEMjq6QThacmn9FMYtAl1/+NOPV2xe/h6fcCeh3B8275TPGQ2o0wLl\nfqbi8oauL67b4epYOtE3OZWAx1KUnFNuFmDqPk7+XdgPMt5Jl07sQg0LPsGEIU+o\nPtst5i/VVe4inOympwM8P7KTJIsGlykP5TAkB6W8riv7K+omxKrHhFFmjFtJQbu3\nh/XN9VnvIQwWYDhBTY59xdHpYBfapW0lK7yCCzuToGKr1HFDVNDVQGiPDueesr3S\n/sOV0nSxa5AQE02quoRUTwOzkYDKG+MUdiNdawbwSIoD7hhf5TzVVIqRsQk/3LTl\ngQIDAQAB\n-----END PUBLIC KEY-----",
         "KeyStorageType": "NONE",
         "ProofKind": "SHA256_RSA2048_PSS",

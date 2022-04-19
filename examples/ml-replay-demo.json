@@ -5,7 +5,6 @@
   "digitalTwins": [
     {
       "Name": "Replay Stream",
-      "DeviceId": "779ed26a-4b3c-4501-9b3d-1dd652f337d4",
       "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApQH\u002B7i7DFXx/7DnLiu6v\njduDKyi7yVl3ntNGZGemvkSrXTrA9qO6qsBeBewBQeb\u002Btlg/BEYhlx4GlhjjOrxh\nkUlFpq5M0KOML0Fm3dQe1kTZGQKUmqAh/T4Wm6e9piKlY1HaNP6IezTvAcLqAWTC\n1qY/SYP0ZkVOObxs4OT7T9DSgl/iSW6aVFkwu5aB8FTsPOKVHcYoDgQgTK/u6k6l\nFBgZ386VD9ZCeBO1bmP/wzHRx6ODrtMXoJuGK\u002ByXEBa3t0kUBhDyT7zCBAUOFIOA\nxX4Io0i5i1N709nR1IRfoJ7PKdQRfq\u002BhJfww2VydrmdA7j63wI\u002BmsMYQkAkkDxLc\nLQIDAQAB\n-----END PUBLIC KEY----- ",
       "KeyStorageType": "NONE",
       "ProofKind": "SHA256_RSA2048_PSS",
