@@ -9,7 +9,7 @@
       "@type": "Relationship",
       "name": "Streams",
       "minMultiplicity": 0,
-      "maxMultiplicity": 1000,
+      "maxMultiplicity": 500,
       "target": "dtmi:io:tributech:stream:mqtt;1",
       "displayName": "Streams",
       "description": "Contains all MQTT streams in the given source."
