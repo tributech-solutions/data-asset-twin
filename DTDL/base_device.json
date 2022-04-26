@@ -6,15 +6,6 @@
     "contents": [
         {
             "@type": "Property",
-            "name": "DeviceId",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Device Id",
-            "description": "Represents the unique ID of the Tributech-device.",
-            "comment": "Device ID needs to be a UUID."
-        },
-        {
-            "@type": "Property",
             "name": "Name",
             "schema": "string",
             "writable": true,

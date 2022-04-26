@@ -3,7 +3,6 @@
       {
           "MaxMerkleTreeDepth": 12,
           "MaxMerkleTreeAge": 600,
-          "DeviceId": "e3735b39-5044-40ab-970f-9ddd844c678c",
           "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzrsHjotV4sOaxqTjcBl2\ndvjLwRgcvUxoNsxOd2+QYAemIpJjlXuFFA9iZ6L9y7ZVKpMj7kyWpUGseVwxd9dx\nteAvP1lufMsy2u5PHH4T5zb4d4L7gzd6lcL4JQp/LE6/e4fyw51+w39FqGQZDCCo\n+GWaanksMn4DpLXdsvomPsbHjM6Y1x3waADUYZ4T2455RSWtIHT3/YMpXfmT0JTi\njUPZTDrrWljdApd5yeTozYq5tXakGK+6SbaB2vHS5I5yzBna6qD5aCbwBUiysnIm\na4vP+u+GL4TvCuhgLTKS822vLYIvvrfm5quJG3z9Dq9gg6CEMR2RtP64mQpKYDgy\nQwIDAQAB\n-----END PUBLIC KEY-----",
           "KeyStorageType": "NONE",
           "ProofKind": "SHA256_RSA2048_PSS",
