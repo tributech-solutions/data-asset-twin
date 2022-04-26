@@ -28,7 +28,6 @@
     {
       "ColumnName": "v1",
       "Name": "v1",
-      "ValueMetadataId": "c58160ea-c9be-4f17-adbb-fb421f20e495",
       "$dtId": "855b3039-9e4c-41d9-8ce9-f95ce3415837",
       "$etag": "W/\u0022855b3039-9e4c-41d9-8ce9-f95ce3415838\u0022",
       "$metadata": {
@@ -38,7 +37,6 @@
     {
       "ColumnName": "v2",
       "Name": "v2",
-      "ValueMetadataId": "9ec74117-3476-4afb-a09b-3d59507164a3",
       "$dtId": "44642529-98cb-4c12-9dd3-3aa12c65cf3f",
       "$etag": "W/\u002244642529-98cb-4c12-9dd3-3aa12c65cf40\u0022",
       "$metadata": {
@@ -48,7 +46,6 @@
     {
       "ColumnName": "v3",
       "Name": "v3",
-      "ValueMetadataId": "14aba3db-75e8-4e56-b5de-60d6ebcbb178",
       "$dtId": "da0c3547-95ef-469d-8fe5-7af7b2c83617",
       "$etag": "W/\u0022da0c3547-95ef-469d-8fe5-7af7b2c83618\u0022",
       "$metadata": {
@@ -58,7 +55,6 @@
     {
       "ColumnName": "v4",
       "Name": "v4",
-      "ValueMetadataId": "38b23325-da99-46df-a3ec-9266a204b2e7",
       "$dtId": "dc0b982a-6468-4d12-b78a-77615e1b73b4",
       "$etag": "W/\u0022dc0b982a-6468-4d12-b78a-77615e1b73b5\u0022",
       "$metadata": {
@@ -68,7 +64,6 @@
     {
       "ColumnName": "v5",
       "Name": "v5",
-      "ValueMetadataId": "61252823-4b8b-47c9-8ae8-b38431e479ab",
       "$dtId": "a7c7163b-24c9-4897-ba9c-cc3645b173c4",
       "$etag": "W/\u0022a7c7163b-24c9-4897-ba9c-cc3645b173c5\u0022",
       "$metadata": {
@@ -78,7 +73,6 @@
     {
       "ColumnName": "v6",
       "Name": "v6",
-      "ValueMetadataId": "04883c86-e87d-4aa9-b5b0-89c47d6619d1",
       "$dtId": "456c8bb5-3872-4d1a-98a1-9fd73801aa1c",
       "$etag": "W/\u0022456c8bb5-3872-4d1a-98a1-9fd73801aa1d\u0022",
       "$metadata": {
@@ -88,7 +82,6 @@
     {
       "ColumnName": "v7",
       "Name": "v7",
-      "ValueMetadataId": "91b4d243-aa0d-4019-b322-2e8dfcbb69a2",
       "$dtId": "036005d2-c8d2-4319-9efb-f55ba0d039d1",
       "$etag": "W/\u0022036005d2-c8d2-4319-9efb-f55ba0d039d2\u0022",
       "$metadata": {
@@ -98,7 +91,6 @@
     {
       "ColumnName": "v8",
       "Name": "v8",
-      "ValueMetadataId": "b7cb9794-80a2-4373-bc2b-43095e91bd33",
       "$dtId": "1f4aa5b5-e1d2-4b5f-a52c-c8e062301aa8",
       "$etag": "W/\u00221f4aa5b5-e1d2-4b5f-a52c-c8e062301aa9\u0022",
       "$metadata": {
@@ -108,7 +100,6 @@
     {
       "ColumnName": "v9",
       "Name": "v9",
-      "ValueMetadataId": "6a5b77cf-7b31-45f6-afb2-348f74451eae",
       "$dtId": "d6254486-1b3a-4027-a29c-620be9b88450",
       "$etag": "W/\u0022d6254486-1b3a-4027-a29c-620be9b88451\u0022",
       "$metadata": {
@@ -118,7 +109,6 @@
     {
       "ColumnName": "v10",
       "Name": "v10",
-      "ValueMetadataId": "c35c4210-e8d5-4a02-ac77-a0f8871ef410",
       "$dtId": "c6bdf1ae-89b1-403f-af90-0d035fcf918f",
       "$etag": "W/\u0022c6bdf1ae-89b1-403f-af90-0d035fcf9190\u0022",
       "$metadata": {
@@ -128,7 +118,6 @@
     {
       "ColumnName": "v11",
       "Name": "v11",
-      "ValueMetadataId": "04ef6c73-8c58-4aca-9c46-ee9f1ee8c62d",
       "$dtId": "154f3e9d-5fac-47be-9eb0-95438b1ae968",
       "$etag": "W/\u0022154f3e9d-5fac-47be-9eb0-95438b1ae969\u0022",
       "$metadata": {
