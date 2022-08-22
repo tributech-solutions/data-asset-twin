@@ -79,6 +79,11 @@
             "name": "String_Base64",
             "displayName": "String Base64",
             "enumValue": "STRING_BASE64"
+          },
+          {
+            "name": "Boolean",
+            "displayName": "Boolean",
+            "enumValue": "BOOLEAN"
           }
         ]
       },
