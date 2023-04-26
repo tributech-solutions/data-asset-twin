@@ -26,6 +26,21 @@
                         "name": "Binary",
                         "displayName": "Binary",
                         "enumValue": "Binary"
+                    },
+                    {
+                        "name": "Float",
+                        "displayName": "Float",
+                        "enumValue": "Float"
+                    },
+                    {
+                        "name":"String_UTF8",
+                        "displayName":"String_UTF8",
+                        "enumValue":"String_UTF8"
+                    },
+                    {
+                        "name" : "BOOL", 
+                        "displayName" : "Boolean", 
+                        "enumValue":  "BOOL"
                     }
                 ]
             },
