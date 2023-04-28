@@ -1,0 +1,25 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:mqttpayload;1",
+  "@type": "Interface",
+  "displayName": "MQTT Pre-defined Payload",
+  "extends": "dtmi:io:tributech:stream:base;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "MachineID",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Source Identifier",
+      "description": "Identifier for the current source (may be a machine name or dataset name etc ..)"
+    },
+    {
+      "@type": "Property",
+      "name": "SensorID",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Value Identifier",
+      "description": "Identifier for the current specific value (may be a sensor name or variable name etc ..)"
+    },
+  ]
+}
