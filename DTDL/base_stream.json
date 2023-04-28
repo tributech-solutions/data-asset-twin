@@ -66,6 +66,11 @@
             "enumValue": "INT32"
           },
           {
+            "name": "Int64",
+            "displayName": "Long",
+            "enumValue": "INT64"
+          }
+          {
             "name": "String_UTF8",
             "displayName": "String UTF8",
             "enumValue": "STRING_UTF8"
