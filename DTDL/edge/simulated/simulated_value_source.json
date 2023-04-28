@@ -2,7 +2,7 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:io:tributech:source:simulated;1",
     "@type": "Interface",
-    "extends": "dtmi:io:tributech:source:base;1",
+    "extends": "dtmi:io:tributech:source:edge:base;1",
     "displayName": "Simulated Source",
     "contents": [
         {
