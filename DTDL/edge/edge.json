@@ -31,6 +31,6 @@
       "target": "dtmi:io:tributech:source:edge:base;1",
       "displayName": "Sources",
       "description": "Contains all sources of the given device."
-  }
+    }
   ]
 }
