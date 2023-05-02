@@ -1,0 +1,9 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:io:tributech:source:oem:base;1",
+    "@type": "Interface",
+    "extends": "dtmi:io:tributech:source:base;1",
+    "displayName": "OEM Base Source",
+    "contents": [
+    ]
+}

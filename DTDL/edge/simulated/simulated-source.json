@@ -1,25 +1,17 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:io:tributech:source:rabbitmq;1",
+    "@id": "dtmi:io:tributech:source:simulated;1",
     "@type": "Interface",
-    "extends": "dtmi:io:tributech:source:base;1",
-    "displayName": "RabbitMQ Source",
+    "extends": "dtmi:io:tributech:source:edge:base;1",
+    "displayName": "Simulated Source",
     "contents": [
-        {
-            "@type": "Property",
-            "name": "ConnectionString",
-            "schema": "string",
-            "writable": true,
-            "displayName": "RabbitMQ Connection string",
-            "description": "The connection string for the RabbitMQ value source (e.g. \"amqp://user:pass@host:10000/vhost\")."
-        },
         {
             "@type": "Property",
             "name": "MaxBatchSize",
             "schema": "integer",
             "writable": true,
             "displayName": "Max batch size",
-            "description": "The maximum number of values to send as batch in one message to the EdgeAgent. (e.g. 1024)"
+            "description": "The maximum number of values to send as batch in one message to the EdgeAgent (e.g. 1024)"
         },
         {
             "@type": "Property",
@@ -34,9 +26,9 @@
             "name": "Streams",
             "minMultiplicity": 0,
             "maxMultiplicity": 10,
-            "target": "dtmi:io:tributech:stream:rabbitmq;1",
+            "target": "dtmi:io:tributech:stream:simulated;1",
             "displayName": "Streams",
-            "description": "Contains all RabbitMQ streams the given source."
+            "description": "Contains all Simualted streams the given source."
         }
     ]
 }

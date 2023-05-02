@@ -11,15 +11,6 @@
       "writable": true,
       "displayName": "Name",
       "description": "Human-readable name of the source."
-    },
-    {
-      "@type": "Relationship",
-      "name": "Annotations",
-      "minMultiplicity": 0,
-      "maxMultiplicity": 1,
-      "target": "dtmi:io:tributech:annotations:base;1",
-      "displayName": "Annotations",
-      "description": "Associated annotations."
     }
   ]
 }
