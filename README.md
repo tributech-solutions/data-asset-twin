@@ -9,13 +9,6 @@ The Tributech Node provides various services and additional tooling to work with
 [Demeter](https://github.com/tributech-solutions/tributech-demeter)
 
 
-### Other models
-
-In addition to these core models we also offer specific models for various use-cases.
-
-[GAIA-X Self-Descriptions](https://github.com/tributech-solutions/gaia-x-self-descriptions)
-
-
 ### Learn more
 
 To learn more about our vision for digital twins amd their use-cases check out our blog series:
