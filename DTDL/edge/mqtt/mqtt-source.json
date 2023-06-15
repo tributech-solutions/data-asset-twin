@@ -7,21 +7,12 @@
   "contents": [
     {
       "@type": "Relationship",
-      "name": "Payloadstreams",
+      "name": "Streams",
       "minMultiplicity": 0,
       "maxMultiplicity": 500,
-      "target": "dtmi:io:tributech:stream:mqttpayload;1",
+      "target": "dtmi:io:tributech:stream:mqttbase;1",
       "displayName": "Streams",
       "description": "Contains all MQTT Payload streams in the given source."
-    },
-    {
-      "@type": "Relationship",
-      "name": "Topicstreams",
-      "minMultiplicity": 0,
-      "maxMultiplicity": 500,
-      "target": "dtmi:io:tributech:stream:mqtttopic;1",
-      "displayName": "Streams",
-      "description": "Contains all MQTT Topic streams in the given source."
     }
   ]
 }

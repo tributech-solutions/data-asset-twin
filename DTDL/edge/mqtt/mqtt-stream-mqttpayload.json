@@ -3,7 +3,7 @@
   "@id": "dtmi:io:tributech:stream:mqttpayload;1",
   "@type": "Interface",
   "displayName": "MQTT Pre-defined Payload",
-  "extends": "dtmi:io:tributech:stream:base;1",
+  "extends": "dtmi:io:tributech:stream:mqttbase;1",
   "contents": [
     {
       "@type": "Property",
