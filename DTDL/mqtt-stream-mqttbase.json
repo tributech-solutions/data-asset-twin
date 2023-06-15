@@ -1,0 +1,8 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:mqttbase;1",
+  "@type": "Interface",
+  "displayName": "MQTT Base STream",
+  "extends": "dtmi:io:tributech:stream:base;1",
+  "contents": [  ]
+}

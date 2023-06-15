@@ -1,18 +1,21 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:source:mqtt;1",
+  "@id": "dtmi:io:tributech:source:rest;1",
   "@type": "Interface",
   "extends": "dtmi:io:tributech:source:base;1",
-  "displayName": "MQTT Source",
+  "displayName": "REST Source",
   "contents": [
     {
       "@type": "Relationship",
       "name": "Streams",
       "minMultiplicity": 0,
       "maxMultiplicity": 500,
-      "target": "dtmi:io:tributech:stream:mqttbase;1",
+      "target": [
+        "dtmi:io:tributech:stream:restcompoundid;1",
+        "dtmi:io:tributech:stream:restfixedid;1"
+      ],
       "displayName": "Streams",
-      "description": "Contains all MQTT streams in the given source."
+      "description": "Contains all REST streams in the given source."
     }
   ]
 }
