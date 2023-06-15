@@ -1,0 +1,17 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:resttopic;1",
+  "@type": "Interface",
+  "displayName": "REST FixedId Stream",
+  "extends": "dtmi:io:tributech:stream:restbase;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "DataStreamID",
+      "schema": "string",
+      "writable": true,
+      "displayName": "REST DataStreamID",
+      "description": "Define a DataStreamID in form of a Guid that is accepted by the REST Source."
+    }
+  ]
+}
