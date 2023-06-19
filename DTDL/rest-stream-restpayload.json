@@ -3,7 +3,7 @@
   "@id": "dtmi:io:tributech:stream:restpayload;1",
   "@type": "Interface",
   "displayName": "REST CompoundId Stream",
-  "extends": "dtmi:io:tributech:stream:restbase;1",
+  "extends": "dtmi:io:tributech:stream:rest:base;1",
   "contents": [
     {
       "@type": "Property",
