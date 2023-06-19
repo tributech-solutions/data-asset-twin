@@ -1,8 +1,8 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:stream:rest:compoundid;1",
+  "@id": "dtmi:io:tributech:stream:rest:payload;1",
   "@type": "Interface",
-  "displayName": "REST CompoundId Stream",
+  "displayName": "REST Pre-defined Payload",
   "extends": "dtmi:io:tributech:stream:rest:base;1",
   "contents": [
     {
