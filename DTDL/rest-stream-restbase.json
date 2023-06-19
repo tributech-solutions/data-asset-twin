@@ -2,7 +2,7 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:io:tributech:stream:rest:base;1",
   "@type": "Interface",
-  "displayName": "REST Base Stream",
+  "displayName": "Base Stream",
   "extends": "dtmi:io:tributech:stream:base;1",
   "contents": [  ]
 }
