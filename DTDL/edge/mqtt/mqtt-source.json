@@ -10,7 +10,7 @@
       "name": "Streams",
       "minMultiplicity": 0,
       "maxMultiplicity": 500,
-      "target": "dtmi:io:tributech:stream:mqttbase;1",
+      "target": "dtmi:io:tributech:stream:mqtt:base;1",
       "displayName": "Streams",
       "description": "Contains all MQTT Payload streams in the given source."
     }
