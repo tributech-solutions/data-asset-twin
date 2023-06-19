@@ -1,9 +1,9 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:io:tributech:stream:mqtt:payload;1",
+  "@id": "dtmi:io:tributech:stream:rest:compoundid;1",
   "@type": "Interface",
-  "displayName": "MQTT Pre-defined Payload",
-  "extends": "dtmi:io:tributech:stream:mqtt:base;1",
+  "displayName": "REST CompoundId Stream",
+  "extends": "dtmi:io:tributech:stream:rest:base;1",
   "contents": [
     {
       "@type": "Property",
