@@ -14,8 +14,13 @@
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/edge.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/edge-source-base.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/mqtt/mqtt-source.json",
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/mqtt/mqtt-stream-base.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/mqtt/mqtt-stream-mqttpayload.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/mqtt/mqtt-stream-mqtttopic.json",
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/rest/rest-source.json",
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/rest/rest-stream-base.json",
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/rest/rest-stream-restcompoundid.json",
+        "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/rest/rest-stream-restfixedid.json",      
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/opcua/opcua-source.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/opcua/opcua-stream.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/edge/simulated/simulated-source.json",
@@ -28,4 +33,4 @@
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/oem/emb/emb-source.json",
         "https://raw.githubusercontent.com/tributech-solutions/data-asset-twin-v2/master/DTDL/oem/emb/emb-stream.json"
     ]
-}
+} 
