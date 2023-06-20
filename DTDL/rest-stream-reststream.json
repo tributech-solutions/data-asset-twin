@@ -1,0 +1,8 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:rest:stream;1",
+  "@type": "Interface",
+  "displayName": "REST Stream",
+  "extends": "dtmi:io:tributech:stream:rest:base;1",
+  "contents": []
+}
