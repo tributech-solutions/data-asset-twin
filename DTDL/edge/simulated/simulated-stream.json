@@ -23,6 +23,11 @@
                         "enumValue": "Int32"
                     },
                     {
+                        "name": "Int64",
+                        "displayName": "Int64",
+                        "enumValue": "Int64"
+                    },
+                    {
                         "name": "Binary",
                         "displayName": "Binary",
                         "enumValue": "Binary"

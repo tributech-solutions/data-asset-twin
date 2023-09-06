@@ -59,7 +59,7 @@
           },
           {
             "name": "Int64",
-            "displayName": "Long",
+            "displayName": "Int64",
             "enumValue": "INT64"
           },
           {
