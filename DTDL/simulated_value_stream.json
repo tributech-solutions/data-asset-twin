@@ -41,6 +41,11 @@
                         "name" : "BOOL", 
                         "displayName" : "Boolean", 
                         "enumValue":  "BOOL"
+                    },
+                    {
+                        "name": "Int64",
+                        "displayName": "Int64",
+                        "enumValue": "Int64"
                     }
                 ]
             },
