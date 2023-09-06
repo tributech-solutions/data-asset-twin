@@ -45,7 +45,7 @@
                     {
                         "name": "Int64",
                         "displayName": "Int64",
-                        "enumValue": "INT64"
+                        "enumValue": "Int64"
                     }
                 ]
             },
