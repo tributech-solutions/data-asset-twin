@@ -1,0 +1,46 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:syslog:stream;1",
+  "@type": "Interface",
+  "displayName": "Syslog Stream",
+  "extends": "dtmi:io:tributech:stream:base;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "SyslogMessageFormat",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "RFC3164",
+            "enumValue": "RFC3164"
+          },
+          {
+            "name": "RFC5424",
+            "enumValue": "RFC5424"
+          }
+        ]
+      },
+      "writable": true,
+      "displayName": "Syslog message format",
+      "description": "Syslog message format supported by stream"
+    },
+    {
+      "@type": "Property",
+      "name": "SyslogMessageHostname",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Syslog message hostname",
+      "description": "Syslog message hostname linked to this stream"
+    },
+    {
+      "@type": "Property",
+      "name": "SyslogMessageApplication",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Syslog message application",
+      "description": "Syslog message application linked to this stream"
+    }
+  ]
+}
