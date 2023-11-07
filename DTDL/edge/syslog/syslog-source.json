@@ -1,0 +1,59 @@
+{
+    "@context" : "dtmi:dtdl:context;2",
+    "@id" : "dtmi:io:tributech:source:syslog;1",
+    "@type": "Interface", 
+    "extends": "dtmi:io:tributech:source:edge:base;1",
+    "displayName": "Syslog Source",
+    "contents" : [
+        {
+            "@type": "Property",
+            "name": "ListenerProtocol",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "UDP",
+                        "enumValue": "UDP",
+                        "description": "User Datagram Protocol"
+                    },
+                    {
+                        "name": "DTLS",
+                        "enumValue": "DTLS",
+                        "description": "Datagram Transport Layer Security - UDP like protocol that support TLS"
+                    },
+                    {
+                        "name": "TCP",
+                        "enumValue": "TCP",
+                        "description": "Transmission Control Protocol"
+                    },
+                    {
+                        "name": "TCP_TLS",
+                        "enumValue": "TCP_TLS",
+                        "description": "Transmission Control Protocol with TLS"
+                    }
+                ]
+            },
+            "writable": true,
+            "displayName": "Listener protocol",
+            "description": "Listener protocol"
+        },
+        {
+            "@type": "Property",
+            "name": "listenerPort",
+            "schema": "integer",
+            "writable": true,
+            "displayName": "Listener port",
+            "description": "Listener port"
+        },
+        {
+            "@type": "Relationship",
+            "name": "Streams",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:io:tributech:stream:syslog:stream:base;1",
+            "displayName": "Streams",
+            "description": "Streams configuration."
+        }
+    ]
+}
