@@ -1,0 +1,17 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:syslog:stream:rfc5424;1",
+  "@type": "Interface",
+  "displayName": "Syslog RFC5424 Stream",
+  "extends": "dtmi:io:tributech:stream:syslog:stream:base;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "SyslogMessageApplication",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Syslog message application",
+      "description": "Optional syslog message hostname, used to filter syslog messages for this stream"
+    }
+  ]
+}

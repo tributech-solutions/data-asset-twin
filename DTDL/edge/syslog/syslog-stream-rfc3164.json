@@ -1,0 +1,9 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:io:tributech:stream:syslog:stream:rfc3164;1",
+  "@type": "Interface",
+  "displayName": "Syslog RFC3164 Stream",
+  "extends": "dtmi:io:tributech:stream:syslog:stream:base;1",
+  "contents": [
+  ]
+}
