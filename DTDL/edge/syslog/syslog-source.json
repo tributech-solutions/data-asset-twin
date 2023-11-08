@@ -15,21 +15,25 @@
                     {
                         "name": "UDP",
                         "enumValue": "UDP",
+                        "displayName" : "User Datagram Protocol",
                         "description": "User Datagram Protocol"
                     },
                     {
                         "name": "DTLS",
                         "enumValue": "DTLS",
+                        "displayName" : "Datagram Transport Layer Security",
                         "description": "Datagram Transport Layer Security - UDP like protocol that support TLS"
                     },
                     {
                         "name": "TCP",
                         "enumValue": "TCP",
+                        "displayName" : "Transmission Control Protocol",
                         "description": "Transmission Control Protocol"
                     },
                     {
                         "name": "TCP_TLS",
                         "enumValue": "TCP_TLS",
+                        "displayName" : "Transmission Control Protocol with TLS",
                         "description": "Transmission Control Protocol with TLS"
                     }
                 ]
@@ -40,7 +44,7 @@
         },
         {
             "@type": "Property",
-            "name": "listenerPort",
+            "name": "ListenerPort",
             "schema": "integer",
             "writable": true,
             "displayName": "Listener port",
