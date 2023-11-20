@@ -19,12 +19,6 @@
                         "description": "User Datagram Protocol"
                     },
                     {
-                        "name": "DTLS",
-                        "enumValue": "DTLS",
-                        "displayName" : "Datagram Transport Layer Security",
-                        "description": "Datagram Transport Layer Security - UDP like protocol that support TLS"
-                    },
-                    {
                         "name": "TCP",
                         "enumValue": "TCP",
                         "displayName" : "Transmission Control Protocol",
