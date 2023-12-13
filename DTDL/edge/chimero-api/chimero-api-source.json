@@ -1,0 +1,8 @@
+{
+    "@context" : "dtmi:dtdl:context;2",
+    "@id" : "dtmi:io:kreisel:source:chimero_edge_api;1", 
+    "@type": "Interface", 
+    "extends": "dtmi:io:tributech:source:edge:base;1",
+    "displayName": "Chimero API Source", 
+    "contents" : []
+}
